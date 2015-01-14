@@ -1,0 +1,88 @@
+[submodule "aaa"]
+	path = aaa
+	url = ../../aaa
+	branch = master
+[submodule "bgpcep"]
+	path = bgpcep
+	url = ../../bgpcep
+	branch = master
+[submodule "controller"]
+	path = controller
+	url = ../../controller
+	branch = master
+[submodule "dlux"]
+	path = dlux
+	url = ../../dlux
+	branch = master
+[submodule "groupbasedpolicy"]
+	path = groupbasedpolicy
+	url = ../../groupbasedpolicy
+	branch = master
+[submodule "integration"]
+	path = integration
+	url = ../../integration
+	branch = master
+[submodule "l2switch"]
+	path = l2switch
+	url = ../../l2switch
+	branch = master
+[submodule "lispflowmapping"]
+	path = lispflowmapping
+	url = ../../lispflowmapping
+	branch = develop
+[submodule "odlparent"]
+	path = odlparent
+	url = ../../odlparent
+	branch = master
+[submodule "openflowjava"]
+	path = openflowjava
+	url = ../../openflowjava
+	branch = master
+[submodule "openflowplugin"]
+	path = openflowplugin
+	url = ../../openflowplugin
+	branch = master
+[submodule "ovsdb"]
+	path = ovsdb
+	url = ../../ovsdb
+	branch = master
+[submodule "packetcable"]
+	path = packetcable
+	url = ../../packetcable
+	branch = master
+[submodule "plugin2oc"]
+	path = plugin2oc
+	url = ../../plugin2oc
+	branch = master
+[submodule "sdninterfaceapp"]
+	path = sdninterfaceapp
+	url = ../../sdninterfaceapp
+	branch = master
+[submodule "sfc"]
+	path = sfc
+	url = ../../sfc
+	branch = master
+[submodule "snbi"]
+	path = snbi
+	url = ../../snbi
+	branch = master
+[submodule "snmp4sdn"]
+	path = snmp4sdn
+	url = ../../snmp4sdn
+	branch = master
+[submodule "tcpmd5"]
+	path = tcpmd5
+	url = ../../tcpmd5
+	branch = master
+[submodule "ttp"]
+	path = ttp
+	url = ../../ttp
+	branch = master
+[submodule "vtn"]
+	path = vtn
+	url = ../../vtn
+	branch = master
+[submodule "yangtools"]
+	path = yangtools
+	url = ../../yangtools
+	branch = master
