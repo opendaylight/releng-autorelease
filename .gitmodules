@@ -46,10 +46,6 @@
 	path = ovsdb
 	url = ../../ovsdb
 	branch = master
-[submodule "packetcable"]
-	path = packetcable
-	url = ../../packetcable
-	branch = master
 [submodule "plugin2oc"]
 	path = plugin2oc
 	url = ../../plugin2oc

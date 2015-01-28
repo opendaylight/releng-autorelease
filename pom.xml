@@ -33,7 +33,6 @@
     <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
-    <module>packetcable</module>
     <module>plugin2oc</module>
     <module>sdninterfaceapp</module>
     <module>sfc</module>
