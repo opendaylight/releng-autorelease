@@ -22,24 +22,50 @@
   
   <modules>
     <module>aaa</module>
+    <!-- no code yet...
+    <module>alto</module>
+    -->
     <module>bgpcep</module>
+    <!-- no code yet...
+    <module>capwap</module>
+    -->
+    <module>coretutorials</module>
     <module>controller</module>
+    <module>didm</module>
+    <module>discovery</module>
     <module>dlux</module>
+    <module>docs</module>
     <module>groupbasedpolicy</module>
     <module>integration</module>
+    <module>iotdm</module>
     <module>l2switch</module>
+    <module>lacp</module>
     <module>lispflowmapping</module>
+    <!-- no code yet...
+    <module>maple</module>
+    -->
+    <module>neutron</module>
+    <module>nic</module>
     <module>odlparent</module>
     <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
+    <module>packetcable</module>
+    <module>persistence</module>
     <module>plugin2oc</module>
+    <module>reservation</module>
     <module>sdninterfaceapp</module>
     <module>sfc</module>
     <module>snbi</module>
+    <module>snmp</module>
     <module>snmp4sdn</module>
+    <module>sxp</module>
     <module>tcpmd5</module>
+    <module>topoprocessing</module>
+    <module>tsdr</module>
     <module>ttp</module>
+    <module>usc</module>
+    <module>vpnservice</module>
     <module>vtn</module>
     <module>yangtools</module>
   </modules>

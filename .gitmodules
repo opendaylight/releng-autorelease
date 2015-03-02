@@ -82,3 +82,60 @@
 	path = yangtools
 	url = ../../yangtools
 	branch = master
+[submodule "alto"]
+	path = alto
+	url = ../../alto
+[submodule "capwap"]
+	path = capwap
+	url = ../../capwap
+[submodule "coretutorials"]
+	path = coretutorials
+	url = ../../coretutorials
+[submodule "didm"]
+	path = didm
+	url = ../../didm
+[submodule "discovery"]
+	path = discovery
+	url = ../../discovery
+[submodule "docs"]
+	path = docs
+	url = ../../docs
+[submodule "iotdm"]
+	path = iotdm
+	url = ../../iotdm
+[submodule "lacp"]
+	path = lacp
+	url = ../../lacp
+[submodule "nic"]
+	path = nic
+	url = ../../nic
+[submodule "neutron"]
+	path = neutron
+	url = ../../neutron
+[submodule "packetcable"]
+	path = packetcable
+	url = ../../packetcable
+[submodule "persistence"]
+	path = persistence
+	url = ../../persistence
+[submodule "reservation"]
+	path = reservation
+	url = ../../reservation
+[submodule "snmp"]
+	path = snmp
+	url = ../../snmp
+[submodule "sxp"]
+	path = sxp
+	url = ../../sxp
+[submodule "tsdr"]
+	path = tsdr
+	url = ../../tsdr
+[submodule "topoprocessing"]
+	path = topoprocessing
+	url = ../../topoprocessing
+[submodule "usc"]
+	path = usc
+	url = ../../usc
+[submodule "vpnservice"]
+	path = vpnservice
+	url = ../../vpnservice
