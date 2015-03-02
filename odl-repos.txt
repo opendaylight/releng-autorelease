@@ -1,4 +1,5 @@
 aaa
+aalldp
 #affinity
 alto
 bgpcep
@@ -28,8 +29,8 @@ ovsdb
 packetcable
 persistence
 plugin2oc
-autorelease
-builder
+releng/autorelease
+releng/builder
 reservation
 sdninterfaceapp
 sfc
@@ -39,6 +40,7 @@ snmp4sdn
 sxp
 tcpmd5
 toolkit
+topoprocessing
 tsdr
 ttp
 usc
