@@ -11,12 +11,19 @@ as well as all the repos participating in the Lithium release.
 
 There are two repo lists at the moment
 * `odl-repos.txt` which contains all current ODL repos.
-* `li-repos.txt` which contains all OLD repos that are currently
+* `li-repos.txt` which contains all ODL repos that are currently
                  participating in the Lithium release.
 
 Note that `odl-repos.txt` has two lines commented out for projects
 that I believe are not currently updating their repos. They are still
 technically currently projects in good standing.
+
+The fastest way to produce a list of all projects in OpenDaylight that
+I've found is:
+
+```
+curl https://git.opendaylight.org/gerrit/projects/?d | grep :.*{ | egrep -o [a-z0-9/]+
+```
 
 ## using for-all.pl
 The general syntax is
@@ -26,8 +33,12 @@ The general syntax is
 ```
 
 By default, it runs `cd <line> && <command>` for each `<line>` in
-`<file>` where and occurrence of `{}` in `<command>` is replaced by
-`<line>`. If you pass `--no-cd` as an option it will skip the cd before
+`<file>` where any occurrence of `{}` in `<command>` is replaced by
+the text in `<line>` after the last `/`. Any occurrence of `{f}` is
+replaced by `<line>`. This is useful for using the different parts of a 
+repository name when it is hierarchical, e.g., `releng/builder`.
+
+If you pass `--no-cd` as an option it will skip the cd before
 running the command.
 
 It ignores lines in `<file>` where the first non-whitespace character
@@ -41,14 +52,6 @@ something like:
 ```
 ./odlutils/for-all.pl --no-cd odlutils/li-repos.txt "git clone https://git.opendaylight.org/gerrit/{}.git" 
 ```
-
-This will work for everything, but the releng repos (releng/builder and
-releng/autorelease) because those repos have a different "name" for
-their origin repo than they wind up for with a directory. _Note: I want
-to fix it so that you can have a line like_ `releng/builder` _and it
-will do the right thing and cd to builder, but you can reference
-either_ `builder` _or_ `releng/builder` _using either_ `{}` _or_
-`{full}`, _respectively._
 
 An example of working with existing cloned repos would be something
 like this:
