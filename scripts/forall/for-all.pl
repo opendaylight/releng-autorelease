@@ -16,7 +16,9 @@ if ($num_args < 2 or ($num_args == 3 and $ARGV[0] ne "--no-cd") or $num_args > 3
 	print "args: [--no-cd] <file> <command>\n\n";
 	print "   by default runs \"cd <line> && <command>\" for each <line> in <file>\n";
 	print "     if you would like to not cd first, use the --no-cd flag\n\n";
-	print "   any occurance of {} in <command> will be replaced by <line>\n";
+	print "   any occurance of {} in <command> will be replaced by the text after the last '/' in <line>\n";
+	print "   any occurance of {f} in <command> will be replaced by <line>\n\n";
+	print "   lines in <file> with '#' as the first non-whitespace character are ignored\n";
 	exit;
 }
 
@@ -33,8 +35,11 @@ while(<$file>){
 	if($_ =~ /^\s*#/) {
 		next;
 	}
-	my $command = $ARGV[1];
-	$command =~ s/{}/$_/g;
+	my $command = $ARGV[1]; #the command is the second argument
+	$command =~ s/{f}/$_/g; #replace {f} with the full line
+	my @words = split('/',$_); #parse out the stuff after the last '/'
+	$_ = $words[$#words];
+	$command =~ s/{}/$_/g; #repace {} the stuff after the last '/'
 	if($cd) {
 		$command = "cd $_ && $command";
 	}
