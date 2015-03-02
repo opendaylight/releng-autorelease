@@ -25,7 +25,7 @@ ovsdb
 packetcable
 persistence
 plugin2oc
-autorelease
+releng/autorelease
 reservation
 sdninterfaceapp
 sfc
@@ -34,6 +34,7 @@ snmp
 snmp4sdn
 sxp
 tcpmd5
+topoprocessing
 tsdr
 ttp
 usc
