@@ -29,7 +29,7 @@
 [submodule "lispflowmapping"]
 	path = lispflowmapping
 	url = ../../lispflowmapping
-	branch = develop
+	branch = master
 [submodule "odlparent"]
 	path = odlparent
 	url = ../../odlparent
