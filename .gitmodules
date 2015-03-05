@@ -85,57 +85,76 @@
 [submodule "alto"]
 	path = alto
 	url = ../../alto
+	branch = master
 [submodule "capwap"]
 	path = capwap
 	url = ../../capwap
+	branch = master
 [submodule "coretutorials"]
 	path = coretutorials
 	url = ../../coretutorials
+	branch = master
 [submodule "didm"]
 	path = didm
 	url = ../../didm
+	branch = master
 [submodule "discovery"]
 	path = discovery
 	url = ../../discovery
+	branch = master
 [submodule "docs"]
 	path = docs
 	url = ../../docs
+	branch = master
 [submodule "iotdm"]
 	path = iotdm
 	url = ../../iotdm
+	branch = master
 [submodule "lacp"]
 	path = lacp
 	url = ../../lacp
+	branch = master
 [submodule "nic"]
 	path = nic
 	url = ../../nic
+	branch = master
 [submodule "neutron"]
 	path = neutron
 	url = ../../neutron
+	branch = master
 [submodule "packetcable"]
 	path = packetcable
 	url = ../../packetcable
+	branch = master
 [submodule "persistence"]
 	path = persistence
 	url = ../../persistence
+	branch = master
 [submodule "reservation"]
 	path = reservation
 	url = ../../reservation
+	branch = master
 [submodule "snmp"]
 	path = snmp
 	url = ../../snmp
+	branch = master
 [submodule "sxp"]
 	path = sxp
 	url = ../../sxp
+	branch = master
 [submodule "tsdr"]
 	path = tsdr
 	url = ../../tsdr
+	branch = master
 [submodule "topoprocessing"]
 	path = topoprocessing
 	url = ../../topoprocessing
+	branch = master
 [submodule "usc"]
 	path = usc
 	url = ../../usc
+	branch = master
 [submodule "vpnservice"]
 	path = vpnservice
 	url = ../../vpnservice
+	branch = master
