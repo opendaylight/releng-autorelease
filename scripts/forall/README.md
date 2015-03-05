@@ -22,7 +22,7 @@ The fastest way to produce a list of all projects in OpenDaylight that
 I've found is:
 
 ```
-curl https://git.opendaylight.org/gerrit/projects/?d | grep :.*{ | egrep -o [a-z0-9/]+
+curl https://git.opendaylight.org/gerrit/projects/?d | grep :.*{ | egrep -o [-a-z0-9/]+
 ```
 
 ## using for-all.pl
