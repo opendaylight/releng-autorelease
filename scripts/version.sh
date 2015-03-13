@@ -37,13 +37,14 @@
 #   2.) take all x.y.z-Helium versions to x.y.(z+1)-SNAPSHOT and
 #   3.) take all x.y.z-SNAPSHOT versions to x.(y+1).0-SNAPSHOT
 
+USAGE="USAGE: versions <mode> <release-tag>\n\
+\n\
+mode - bump|release\n\
+tag  - example: Helium-SR1"
 
 if [ -z "$2" ]
 then
-    echo "USAGE: versions <mode> <release-tag>"
-    echo ""
-    echo "mode - bump|release"
-    echo "tag  - example: Helium-SR1"
+    echo -e "$USAGE"
     exit 1
 fi
 
@@ -62,7 +63,7 @@ then
         find . -type f -name "$name" -exec perl -i -pe "s/([^\d.]\d+)\.(\d+)\.(\d+)-SNAPSHOT/\$1.@{[1+\$2]}.0-SNAPSHOT/g" {} +
         find . -type f -name "$name" -exec perl -i -pe "s/([^\d.]\d+)\.(\d+)-SNAPSHOT/\$1.@{[1+\$2]}.0-SNAPSHOT/g" {} +
 
-        # Changes YYYY.MM.DD.y.z-Helium to YYYY.MM.DD.7-SNAPSHOT in pom.xml files
+        # Changes YYYY.MM.DD.y.z-SNAPSHOT to YYYY.MM.DD.7-SNAPSHOT in pom.xml files
         find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)\.(\d+)-SNAPSHOT/\$1.7-SNAPSHOT/g" {} +
         find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)-SNAPSHOT/\$1.7-SNAPSHOT/g" {} +
 
@@ -74,12 +75,13 @@ then
         find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)\.(\d+)-$RELEASE_TAG/\$1.\$2.@{[1+\$3]}-SNAPSHOT/g" {} +
         find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)-$RELEASE_TAG/\$1.\$2.1-SNAPSHOT/g" {} +
     done
-fi
-
-if [ "$MODE" == "release" ]
+elif [ "$MODE" == "release" ]
 then
     for name in $FILENAMES
     do
         find . -type f -name "$name" -exec perl -i -pe "s/SNAPSHOT/$RELEASE_TAG/g" {} +
     done
+else
+    echo "$USAGE"
+    exit 1
 fi
