@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a93c517_2ac5e85a",
+        "filename": "scripts/version.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 396
+      },
+      "writtenOn": "2015-03-13T21:41:03Z",
+      "side": 1,
+      "message": "To enable interpretation of backslash escapes, I think we should add -e for the echo command.\nOtherwise, \\n is not recognized as a \"new line\".\n\nI mean that my suggestion is that this command should be changed to \"echo -e \"$USAGE\"\".",
+      "range": {
+        "startLine": 47,
+        "startChar": 3,
+        "endLine": 47,
+        "endChar": 17
+      },
+      "revId": "0bc31b7f51f8719fbae48c3f0d643776eaa600a5",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a93c517_8aabdc88",
+        "filename": "scripts/version.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 396
+      },
+      "writtenOn": "2015-03-13T21:41:03Z",
+      "side": 1,
+      "message": "I think we should add -e for the echo command.",
+      "range": {
+        "startLine": 85,
+        "startChar": 4,
+        "endLine": 85,
+        "endChar": 17
+      },
+      "revId": "0bc31b7f51f8719fbae48c3f0d643776eaa600a5",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
