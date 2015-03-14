@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5a93c517_0af26c9a",
+        "filename": "scripts/version.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-03-14T00:15:04Z",
+      "side": 1,
+      "message": "Fixed.",
+      "parentUuid": "5a93c517_2ac5e85a",
+      "range": {
+        "startLine": 47,
+        "startChar": 3,
+        "endLine": 47,
+        "endChar": 17
+      },
+      "revId": "0bc31b7f51f8719fbae48c3f0d643776eaa600a5",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a93c517_8aabdc88",
         "filename": "scripts/version.sh",
         "patchSetId": 1
