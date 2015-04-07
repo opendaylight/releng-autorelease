@@ -22,22 +22,24 @@
   
   <modules>
     <module>aaa</module>
-    <!-- no code yet...
     <module>alto</module>
-    -->
     <module>bgpcep</module>
-    <!-- no code yet...
+    <!-- Needs patch https://git.opendaylight.org/gerrit/17459
     <module>capwap</module>
     -->
     <module>coretutorials</module>
     <module>controller</module>
+    <!-- Needs patch https://git.opendaylight.org/gerrit/17462
     <module>didm</module>
+    -->
     <module>discovery</module>
     <module>dlux</module>
     <module>docs</module>
     <module>groupbasedpolicy</module>
     <module>integration</module>
+    <!-- Needs patch https://git.opendaylight.org/gerrit/17465
     <module>iotdm</module>
+    -->
     <module>l2switch</module>
     <module>lacp</module>
     <module>lispflowmapping</module>
@@ -50,7 +52,9 @@
     <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
+    <!-- needs patch https://git.opendaylight.org/gerrit/17472/
     <module>packetcable</module>
+    -->
     <module>persistence</module>
     <module>plugin2oc</module>
     <module>reservation</module>
