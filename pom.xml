@@ -22,16 +22,12 @@
   
   <modules>
     <module>aaa</module>
-    <!-- Needs patch https://git.opendaylight.org/gerrit/17883
     <module>alto</module>
-    -->
     <module>bgpcep</module>
-    <!-- Needs patch https://git.opendaylight.org/gerrit/17459
     <module>capwap</module>
-    -->
     <module>coretutorials</module>
     <module>controller</module>
-    <!-- Needs patch https://git.opendaylight.org/gerrit/17462
+    <!-- Needs patch https://git.opendaylight.org/gerrit/17948
     <module>didm</module>
     -->
     <module>discovery</module>
