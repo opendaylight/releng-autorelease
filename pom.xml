@@ -69,7 +69,9 @@
     <module>tsdr</module>
     <module>ttp</module>
     <module>usc</module>
+    <!-- Needs patch https://git.opendaylight.org/gerrit/17955
     <module>vpnservice</module>
+    -->
     <module>vtn</module>
     <module>yangtools</module>
   </modules>
