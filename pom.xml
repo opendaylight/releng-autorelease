@@ -31,7 +31,9 @@
     <module>didm</module>
     -->
     <module>discovery</module>
+    <!-- Needs patch https://git.opendaylight.org/gerrit/17947
     <module>dlux</module>
+    -->
     <module>docs</module>
     <module>groupbasedpolicy</module>
     <module>integration</module>
@@ -57,7 +59,9 @@
     <!-- Unresponsive
     <module>plugin2oc</module>
     -->
+    <!-- needs patch for dlux
     <module>reservation</module>
+    -->
     <module>sdninterfaceapp</module>
     <module>sfc</module>
     <module>snbi</module>
@@ -68,7 +72,9 @@
     <module>topoprocessing</module>
     <module>tsdr</module>
     <module>ttp</module>
+    <!-- Needs patch for dlux
     <module>usc</module>
+    -->
     <!-- Needs patch https://git.opendaylight.org/gerrit/17955
     <module>vpnservice</module>
     -->
