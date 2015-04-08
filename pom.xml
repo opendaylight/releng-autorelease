@@ -25,7 +25,9 @@
     <module>alto</module>
     <module>bgpcep</module>
     <module>capwap</module>
+    <!-- Needs patch https://git.opendaylight.org/gerrit/17960
     <module>coretutorials</module>
+    -->
     <module>controller</module>
     <!-- Needs patch https://git.opendaylight.org/gerrit/17948
     <module>didm</module>
