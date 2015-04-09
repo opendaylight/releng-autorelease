@@ -25,13 +25,9 @@
     <module>alto</module>
     <module>bgpcep</module>
     <module>capwap</module>
-    <!-- Needs patch https://git.opendaylight.org/gerrit/17960
     <module>coretutorials</module>
-    -->
     <module>controller</module>
-    <!-- Needs patch https://git.opendaylight.org/gerrit/17948
     <module>didm</module>
-    -->
     <module>discovery</module>
     <!-- Needs patch https://git.opendaylight.org/gerrit/17947
     <module>dlux</module>
@@ -39,9 +35,7 @@
     <module>docs</module>
     <module>groupbasedpolicy</module>
     <module>integration</module>
-    <!-- Needs patch https://git.opendaylight.org/gerrit/17465
     <module>iotdm</module>
-    -->
     <module>l2switch</module>
     <module>lacp</module>
     <module>lispflowmapping</module>
@@ -77,9 +71,7 @@
     <!-- Needs patch for dlux
     <module>usc</module>
     -->
-    <!-- Needs patch https://git.opendaylight.org/gerrit/17955
     <module>vpnservice</module>
-    -->
     <module>vtn</module>
     <module>yangtools</module>
   </modules>
