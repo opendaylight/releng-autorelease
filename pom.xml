@@ -71,7 +71,9 @@
     <!-- Needs patch for dlux
     <module>usc</module>
     -->
+    <!-- Missing features-flow feature, moved to openflowplugin
     <module>vpnservice</module>
+    -->
     <module>vtn</module>
     <module>yangtools</module>
   </modules>
