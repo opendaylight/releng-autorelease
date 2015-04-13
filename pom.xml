@@ -29,9 +29,7 @@
     <module>controller</module>
     <module>didm</module>
     <module>discovery</module>
-    <!-- Needs patch https://git.opendaylight.org/gerrit/17947
     <module>dlux</module>
-    -->
     <module>docs</module>
     <module>groupbasedpolicy</module>
     <module>integration</module>
@@ -68,12 +66,8 @@
     <module>topoprocessing</module>
     <module>tsdr</module>
     <module>ttp</module>
-    <!-- Needs patch for dlux
     <module>usc</module>
-    -->
-    <!-- Missing features-flow feature, moved to openflowplugin
     <module>vpnservice</module>
-    -->
     <module>vtn</module>
     <module>yangtools</module>
   </modules>
