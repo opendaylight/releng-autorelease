@@ -2,14 +2,16 @@
 
 use strict;
 
-#use Getopt::Long;
-#GetOptions( 'no-cd' => \$nocd, 'fake' => \$fake, 'verbose' => \$verbose );
+# TODOs:
+#  * Move to use Getopt::Long;
+#    * GetOptions( 'no-cd' => \$nocd, 'fake' => \$fake, 'verbose' => \$verbose );
+#    * new options to add:
+#        -f for fake
+#        -v for verbose to print command
+#  * Add support for reading <file> from stdin in addition to specifying the file
+#  * Provide tools that automatically get all repos?
 
 my $cd = "1";
-
-# other options:
-#   -f for fake
-#   -v for verbose to print command
 
 my $num_args = $#ARGV + 1;
 if ($num_args < 2 or ($num_args == 3 and $ARGV[0] ne "--no-cd") or $num_args > 3) {
