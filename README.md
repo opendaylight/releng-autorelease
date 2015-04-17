@@ -13,6 +13,10 @@ There are two repo lists at the moment
 * `odl-repos.txt` which contains all current ODL repos.
 * `li-repos.txt` which contains all ODL repos that are currently
                  participating in the Lithium release.
+* `he-repos.txt` which contains all ODL repost that participated in
+                 the Helium release.
+* `h-repos.txt` which contains all ODL repost that participated in
+                the Hydrogen release.
 
 Note that `odl-repos.txt` has two lines commented out for projects
 that I believe are not currently updating their repos. They are still
@@ -20,6 +24,14 @@ technically currently projects in good standing.
 
 The fastest way to produce a list of all projects in OpenDaylight that
 I've found is:
+
+```
+ssh git.opendaylight.org -p 29418 gerrit ls-projects
+```
+
+That requires having an OpenDaylight account and having your public key
+set up on the current machine. A way that uses the REST API and a bit
+of grep-fu, but will work from any machine for any person is:
 
 ```
 curl https://git.opendaylight.org/gerrit/projects/?d | grep :.*{ | egrep -o [-a-z0-9/]+
@@ -58,6 +70,13 @@ like this:
 
 ```
 ./odlutils/for-all.pl odlutils/odl-repos.txt "grep --include=pom.xml -r org.opendaylight.yangtools:features-test ."
+```
+
+You can produce a list of patches between two releases of Helium with
+something like this:
+
+```
+./odlutils/for-all.pl odlutils/he-repos.txt "git log release/helium-sr1..release/helium-sr2 --pretty=oneline | cat"
 ```
 
 ### Making sure your cloned repos are up-to-date
