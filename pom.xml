@@ -21,6 +21,7 @@
   <name>autorelease</name> <!-- Used by Sonar to set project name -->
   
   <modules>
+    <!-- Waiting for M5 lithium
     <module>aaa</module>
     <module>alto</module>
     <module>bgpcep</module>
@@ -37,25 +38,33 @@
     <module>l2switch</module>
     <module>lacp</module>
     <module>lispflowmapping</module>
+    -->
     <!-- no code yet...
     <module>maple</module>
     -->
+    <!-- Waiting for M5 lithium
     <module>neutron</module>
     <module>nic</module>
+    -->
     <module>odlparent</module>
+    <!-- Waiting for M5 lithium
     <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
+    -->
     <!-- needs patch https://git.opendaylight.org/gerrit/17472/
     <module>packetcable</module>
     -->
+    <!-- Waiting for M5 lithium
     <module>persistence</module>
+    -->
     <!-- Unresponsive
     <module>plugin2oc</module>
     -->
     <!-- needs patch for dlux
     <module>reservation</module>
     -->
+    <!-- Waiting for M5 lithium
     <module>sdninterfaceapp</module>
     <module>sfc</module>
     <module>snbi</module>
@@ -70,6 +79,7 @@
     <module>vpnservice</module>
     <module>vtn</module>
     <module>yangtools</module>
+    -->
   </modules>
 
   <build>
