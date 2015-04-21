@@ -33,7 +33,7 @@
 [submodule "odlparent"]
 	path = odlparent
 	url = ../../odlparent
-	branch = stable/lithium
+	branch = master
 [submodule "openflowjava"]
 	path = openflowjava
 	url = ../../openflowjava
