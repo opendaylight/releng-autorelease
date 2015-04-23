@@ -78,8 +78,8 @@
     <module>usc</module>
     <module>vpnservice</module>
     <module>vtn</module>
-    <module>yangtools</module>
     -->
+    <module>yangtools</module>
   </modules>
 
   <build>

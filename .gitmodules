@@ -77,7 +77,7 @@
 [submodule "yangtools"]
 	path = yangtools
 	url = ../../yangtools
-	branch = master
+	branch = stable/lithium
 [submodule "alto"]
 	path = alto
 	url = ../../alto
