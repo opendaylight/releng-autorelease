@@ -9,7 +9,7 @@
 [submodule "controller"]
 	path = controller
 	url = ../../controller
-	branch = master
+	branch = stable/lithium
 [submodule "dlux"]
 	path = dlux
 	url = ../../dlux
