@@ -133,7 +133,7 @@
 [submodule "snmp"]
 	path = snmp
 	url = ../../snmp
-	branch = master
+	branch = stable/lithium
 [submodule "sxp"]
 	path = sxp
 	url = ../../sxp
