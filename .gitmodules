@@ -5,7 +5,7 @@
 [submodule "bgpcep"]
 	path = bgpcep
 	url = ../../bgpcep
-	branch = master
+	branch = stable/lithium
 [submodule "controller"]
 	path = controller
 	url = ../../controller
