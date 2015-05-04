@@ -37,7 +37,7 @@
 [submodule "openflowjava"]
 	path = openflowjava
 	url = ../../openflowjava
-	branch = master
+	branch = stable/lithium
 [submodule "openflowplugin"]
 	path = openflowplugin
 	url = ../../openflowplugin
