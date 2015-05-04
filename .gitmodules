@@ -49,7 +49,7 @@
 [submodule "sdninterfaceapp"]
 	path = sdninterfaceapp
 	url = ../../sdninterfaceapp
-	branch = master
+	branch = stable/lithium
 [submodule "sfc"]
 	path = sfc
 	url = ../../sfc
