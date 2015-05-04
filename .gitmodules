@@ -65,7 +65,7 @@
 [submodule "tcpmd5"]
 	path = tcpmd5
 	url = ../../tcpmd5
-	branch = master
+	branch = stable/lithium
 [submodule "ttp"]
 	path = ttp
 	url = ../../ttp
