@@ -77,8 +77,8 @@
     <module>sxp</module>
     -->
     <module>tcpmd5</module>
-    <!-- Waiting for M5 lithium
     <module>topoprocessing</module>
+    <!-- Waiting for M5 lithium
     <module>tsdr</module>
     <module>ttp</module>
     <module>usc</module>

@@ -145,7 +145,7 @@
 [submodule "topoprocessing"]
 	path = topoprocessing
 	url = ../../topoprocessing
-	branch = master
+	branch = stable/lithium
 [submodule "usc"]
 	path = usc
 	url = ../../usc
