@@ -24,7 +24,9 @@
     <module>aaa</module>
     <!-- Waiting for M5 lithium
     <module>alto</module>
+    -->
     <module>bgpcep</module>
+    <!-- Waiting for M5 lithium
     <module>capwap</module>
     <module>coretutorials</module>
     -->
@@ -73,7 +75,9 @@
     <module>snmp</module>
     <module>snmp4sdn</module>
     <module>sxp</module>
+    -->
     <module>tcpmd5</module>
+    <!-- Waiting for M5 lithium
     <module>topoprocessing</module>
     <module>tsdr</module>
     <module>ttp</module>
