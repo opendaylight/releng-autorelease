@@ -68,8 +68,8 @@
     <!-- needs patch for dlux
     <module>reservation</module>
     -->
-    <module>sdninterfaceapp</module>
     <!-- Waiting for M5 lithium
+    <module>sdninterfaceapp</module>
     <module>sfc</module>
     <module>snbi</module>
     -->
