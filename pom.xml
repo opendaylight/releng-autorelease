@@ -21,13 +21,15 @@
   <name>autorelease</name> <!-- Used by Sonar to set project name -->
   
   <modules>
-    <!-- Waiting for M5 lithium
     <module>aaa</module>
+    <!-- Waiting for M5 lithium
     <module>alto</module>
     <module>bgpcep</module>
     <module>capwap</module>
     <module>coretutorials</module>
+    -->
     <module>controller</module>
+    <!-- Waiting for M5 lithium
     <module>didm</module>
     <module>discovery</module>
     <module>dlux</module>
