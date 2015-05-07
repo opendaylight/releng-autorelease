@@ -51,8 +51,8 @@
     <module>nic</module>
     -->
     <module>odlparent</module>
-    <!-- Waiting for M5 lithium
     <module>openflowjava</module>
+    <!-- Waiting for M5 lithium
     <module>openflowplugin</module>
     <module>ovsdb</module>
     -->
