@@ -72,7 +72,9 @@
     <module>sdninterfaceapp</module>
     <module>sfc</module>
     <module>snbi</module>
+    -->
     <module>snmp</module>
+    <!-- Waiting for M5 lithium
     <module>snmp4sdn</module>
     <module>sxp</module>
     -->
