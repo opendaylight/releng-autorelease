@@ -46,8 +46,8 @@
     <!-- no code yet...
     <module>maple</module>
     -->
-    <!-- Waiting for M5 lithium
     <module>neutron</module>
+    <!-- Waiting for M5 lithium
     <module>nic</module>
     -->
     <module>odlparent</module>

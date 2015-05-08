@@ -117,7 +117,7 @@
 [submodule "neutron"]
 	path = neutron
 	url = ../../neutron
-	branch = master
+	branch = stable/lithium
 [submodule "packetcable"]
 	path = packetcable
 	url = ../../packetcable
