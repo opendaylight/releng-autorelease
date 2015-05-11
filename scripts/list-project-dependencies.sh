@@ -16,7 +16,7 @@ modules=`xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:module
 
 for module in $modules; do
     module_dependencies=""
-    for pom in `find $module -name pom.xml -not -path "*/src/*"`; do
+    for pom in `find $module -name pom.xml ! -path "*/src/*" ! -path "*/target/*"`; do
         dependencies=`xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 \
                                      -t \
                                      -m '//x:dependencies' \
