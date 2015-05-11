@@ -94,10 +94,6 @@
 	path = didm
 	url = ../../didm
 	branch = master
-[submodule "discovery"]
-	path = discovery
-	url = ../../discovery
-	branch = master
 [submodule "docs"]
 	path = docs
 	url = ../../docs

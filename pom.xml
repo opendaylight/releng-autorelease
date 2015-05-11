@@ -28,7 +28,6 @@
     <module>coretutorials</module>
     <module>controller</module>
     <module>didm</module>
-    <module>discovery</module>
     <module>dlux</module>
     <module>docs</module>
     <module>groupbasedpolicy</module>
