@@ -33,7 +33,6 @@
     <module>controller</module>
     <!-- Waiting for M5 lithium
     <module>didm</module>
-    <module>discovery</module>
     <module>dlux</module>
     <module>docs</module>
     <module>groupbasedpolicy</module>
