@@ -51,8 +51,8 @@
     -->
     <module>odlparent</module>
     <module>openflowjava</module>
-    <!-- Waiting for M5 lithium
     <module>openflowplugin</module>
+    <!-- Waiting for M5 lithium
     <module>ovsdb</module>
     -->
     <!-- needs patch https://git.opendaylight.org/gerrit/17472/
