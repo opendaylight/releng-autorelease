@@ -42,9 +42,6 @@
     <module>lacp</module>
     <module>lispflowmapping</module>
     -->
-    <!-- no code yet...
-    <module>maple</module>
-    -->
     <module>neutron</module>
     <!-- Waiting for M5 lithium
     <module>nic</module>
@@ -60,9 +57,6 @@
     -->
     <!-- Waiting for M5 lithium
     <module>persistence</module>
-    -->
-    <!-- Unresponsive
-    <module>plugin2oc</module>
     -->
     <!-- needs patch for dlux
     <module>reservation</module>
