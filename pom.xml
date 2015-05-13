@@ -40,7 +40,9 @@
     <module>groupbasedpolicy</module>
     <module>integration</module>
     <module>iotdm</module>
+    -->
     <module>l2switch</module>
+    <!-- Waiting for M5 lithium
     <module>lacp</module>
     <module>lispflowmapping</module>
     -->

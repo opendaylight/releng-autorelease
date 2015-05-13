@@ -25,7 +25,7 @@
 [submodule "l2switch"]
 	path = l2switch
 	url = ../../l2switch
-	branch = master
+	branch = stable/lithium
 [submodule "lispflowmapping"]
 	path = lispflowmapping
 	url = ../../lispflowmapping
