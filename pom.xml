@@ -33,7 +33,9 @@
     <module>controller</module>
     <!-- Waiting for M5 lithium
     <module>didm</module>
+    -->
     <module>dlux</module>
+    <!-- Waiting for M5 lithium
     <module>docs</module>
     <module>groupbasedpolicy</module>
     <module>integration</module>
