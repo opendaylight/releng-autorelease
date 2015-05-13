@@ -17,15 +17,18 @@ modules=`xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:module
 for module in $modules; do
     module_dependencies=""
     for pom in `find $module -name pom.xml ! -path "*/src/*" ! -path "*/target/*"`; do
+        # Find ODL projects that are dependencies of a module and list them
+        # in a sorted list. Also grep -v to remove invalid projects such as
+        # the "toaster" project from coretutorials.
         dependencies=`xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 \
                                      -t \
-                                     -m '//x:dependencies' \
-                                     -n -v "x:dependency/x:groupId" $pom | \
+                                     -m '//x:project/x:dependencies/x:dependency' \
+                                     -n -v "x:groupId" $pom | \
                       grep org.opendaylight | \
                       sed -e 's/org.opendaylight.//' \
                           -e 's/\..*$//' \
                           -e "s/$module//" | \
-                      sort | uniq`
+                      grep -v toaster | sort | uniq`
         module_dependencies=`echo $module_dependencies $dependencies | tr " " "\n" | sort | uniq`
     done
     module_dependencies=`echo $module_dependencies | tr " " ","`
