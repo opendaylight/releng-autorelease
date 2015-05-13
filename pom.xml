@@ -34,15 +34,15 @@
     <!-- Waiting for M5 lithium
     <module>didm</module>
     -->
-    <module>dlux</module>
     <!-- Waiting for M5 lithium
+    <module>dlux</module>
     <module>docs</module>
     <module>groupbasedpolicy</module>
     <module>integration</module>
     <module>iotdm</module>
     -->
-    <module>l2switch</module>
     <!-- Waiting for M5 lithium
+    <module>l2switch</module>
     <module>lacp</module>
     <module>lispflowmapping</module>
     -->
@@ -52,8 +52,8 @@
     -->
     <module>odlparent</module>
     <module>openflowjava</module>
-    <module>openflowplugin</module>
     <!-- Waiting for M5 lithium
+    <module>openflowplugin</module>
     <module>ovsdb</module>
     -->
     <!-- needs patch https://git.opendaylight.org/gerrit/17472/
@@ -65,8 +65,8 @@
     <!-- needs patch for dlux
     <module>reservation</module>
     -->
-    <module>sdninterfaceapp</module>
     <!-- Waiting for M5 lithium
+    <module>sdninterfaceapp</module>
     <module>sfc</module>
     <module>snbi</module>
     -->
@@ -76,8 +76,8 @@
     <module>sxp</module>
     -->
     <module>tcpmd5</module>
-    <module>topoprocessing</module>
     <!-- Waiting for M5 lithium
+    <module>topoprocessing</module>
     <module>tsdr</module>
     <module>ttp</module>
     <module>usc</module>
