@@ -105,7 +105,7 @@
 [submodule "lacp"]
 	path = lacp
 	url = ../../lacp
-	branch = master
+	branch = stable/lithium
 [submodule "nic"]
 	path = nic
 	url = ../../nic
