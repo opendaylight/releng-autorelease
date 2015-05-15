@@ -79,7 +79,9 @@
     <!-- Waiting for M5 lithium
     <module>topoprocessing</module>
     <module>tsdr</module>
+    -->
     <module>ttp</module>
+    <!-- Waiting for M5 lithium
     <module>usc</module>
     <module>vpnservice</module>
     <module>vtn</module>

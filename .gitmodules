@@ -69,7 +69,7 @@
 [submodule "ttp"]
 	path = ttp
 	url = ../../ttp
-	branch = master
+	branch = stable/lithium
 [submodule "vtn"]
 	path = vtn
 	url = ../../vtn
