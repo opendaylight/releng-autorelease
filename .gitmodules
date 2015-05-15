@@ -73,7 +73,7 @@
 [submodule "vtn"]
 	path = vtn
 	url = ../../vtn
-	branch = master
+	branch = stable/lithium
 [submodule "yangtools"]
 	path = yangtools
 	url = ../../yangtools
