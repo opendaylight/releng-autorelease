@@ -41,7 +41,7 @@
 [submodule "openflowplugin"]
 	path = openflowplugin
 	url = ../../openflowplugin
-	branch = stable/lithium
+	branch = master
 [submodule "ovsdb"]
 	path = ovsdb
 	url = ../../ovsdb
