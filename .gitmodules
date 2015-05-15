@@ -81,7 +81,7 @@
 [submodule "alto"]
 	path = alto
 	url = ../../alto
-	branch = master
+	branch = stable/lithium
 [submodule "capwap"]
 	path = capwap
 	url = ../../capwap
