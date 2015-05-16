@@ -101,7 +101,7 @@
 [submodule "iotdm"]
 	path = iotdm
 	url = ../../iotdm
-	branch = master
+	branch = stable/lithium
 [submodule "lacp"]
 	path = lacp
 	url = ../../lacp
