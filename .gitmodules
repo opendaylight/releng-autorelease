@@ -53,7 +53,7 @@
 [submodule "sfc"]
 	path = sfc
 	url = ../../sfc
-	branch = master
+	branch = stable/lithium
 [submodule "snbi"]
 	path = snbi
 	url = ../../snbi
