@@ -145,7 +145,7 @@
 [submodule "usc"]
 	path = usc
 	url = ../../usc
-	branch = master
+	branch = stable/lithium
 [submodule "vpnservice"]
 	path = vpnservice
 	url = ../../vpnservice
