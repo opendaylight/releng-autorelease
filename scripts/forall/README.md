@@ -62,7 +62,7 @@ For example, to clone all of the repos in Lithium, you would do
 something like:
 
 ```
-./odlutils/for-all.pl --no-cd odlutils/li-repos.txt "git clone https://git.opendaylight.org/gerrit/{}.git" 
+./odlutils/for-all.pl --no-cd odlutils/li-repos.txt "git clone https://git.opendaylight.org/gerrit/{f}.git" 
 ```
 
 An example of working with existing cloned repos would be something
@@ -85,7 +85,7 @@ Note that it's useful to make sure your repos are on the right branch
 and up-to-date before doing things. You can do that by running:
 
 ```
-./odlutils/for-all.pl odlutils/odl-repos.txt "git co master"
+./odlutils/for-all.pl odlutils/odl-repos.txt "git checkout master"
 ```
 
 and making sure the output from each line looks like `Already on
@@ -98,6 +98,29 @@ You should then make sure they are up-to-date with master by doing:
 ```
 
 and making sure that each line looks like `Already up-to-date.`
+
+### Checking out a remote branch
+
+Modern versions of git no longer allow you to check out remote branches
+easily when you have multiple remotes, which is common when using
+git-review like we do in OpenDaylight. To checkout a remote branch, use
+syntax like this:
+
+```
+git checkout -b <local-branch-name> <remote-branch-name>
+```
+
+For example:
+
+```
+git checkout -b stable/lithium remotes/origin/stable/lithium
+```
+
+Or in the context of this script something like:
+
+```
+./odlutils/for-all.pl odlutils/li-repos.txt "git checkout -b stable/lithium remotes/origin/stable/lithium"
+```
 
 #### Periodic cloned repo maintenance
 
