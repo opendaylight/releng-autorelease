@@ -30,7 +30,7 @@ if ($num_args == 3 && $ARGV[0] eq "--no-cd") {
 	$ARGV[1] = $ARGV[2];
 }
 
-open my $file, "<$ARGV[0]" or die "Couldn't open file ARGV[0], $!";
+open my $file, "<$ARGV[0]" or die "Couldn't open file $ARGV[0], $!";
 
 while(<$file>){
 	chomp;
