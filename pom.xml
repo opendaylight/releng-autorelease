@@ -34,15 +34,15 @@
     <!-- Waiting for M5 lithium
     <module>didm</module>
     -->
-    <!-- Waiting for M5 lithium
     <module>dlux</module>
+    <!-- Waiting for M5 lithium
     <module>docs</module>
     <module>groupbasedpolicy</module>
     <module>integration</module>
     <module>iotdm</module>
     -->
-    <!-- Waiting for M5 lithium
     <module>l2switch</module>
+    <!-- Waiting for M5 lithium
     <module>lacp</module>
     <module>lispflowmapping</module>
     -->
