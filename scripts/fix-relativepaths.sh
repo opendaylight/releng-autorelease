@@ -22,6 +22,7 @@ PARENT_MAP=("org.opendaylight.odlparent:odlparent:odlparent"
             "org.opendaylight.controller:commons.integrationtest:opendaylight/adsal/commons/integrationtest"
             "org.opendaylight.controller:sal-parent:opendaylight/md-sal"
             "org.opendaylight.controller:config-parent:opendaylight/config/config-parent"
+            "org.opendaylight.controller:config-plugin-parent:opendaylight/config/config-plugin-parent"
             "org.opendaylight.controller:karaf-parent:karaf/karaf-parent")
 
 # Find all project poms ignoring the /src/ paths (We don't want to scan code)
@@ -51,7 +52,7 @@ for pom in `find . -name pom.xml -not -path "*/src/*"`; do
 
         xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:parent' --if "x:artifactId=\"$artifactId\"" --if "x:groupId=\"$groupId\"" -o "Found $artifactId" "$pom"
         if [ 0 -eq $? ]; then
-            sed -i -e "s#<relativePath/>#<relativePath>$relativePath</relativePath>#" \
+            sed -i -e "s#<relativePath.*/>#<relativePath>$relativePath</relativePath>#" \
                    -e "s#<relativePath>.*</relativePath>#<relativePath>$relativePath</relativePath>#" \
                    "$pom"
         fi
