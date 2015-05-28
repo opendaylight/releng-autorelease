@@ -45,7 +45,7 @@
 [submodule "ovsdb"]
 	path = ovsdb
 	url = ../../ovsdb
-	branch = master
+	branch = stable/lithium
 [submodule "sdninterfaceapp"]
 	path = sdninterfaceapp
 	url = ../../sdninterfaceapp
