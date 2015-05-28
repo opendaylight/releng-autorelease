@@ -21,7 +21,7 @@
 [submodule "integration"]
 	path = integration
 	url = ../../integration
-	branch = master
+	branch = stable/lithium
 [submodule "l2switch"]
 	path = l2switch
 	url = ../../l2switch
