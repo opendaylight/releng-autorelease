@@ -25,10 +25,6 @@ PARENT_MAP=("org.opendaylight.odlparent:odlparent:odlparent"
             "org.opendaylight.controller:config-plugin-parent:opendaylight/config/config-plugin-parent"
             "org.opendaylight.controller:karaf-parent:karaf/karaf-parent")
 
-# HACK to fix missing <relativePath/> for projects
-sed -i 's#</parent>#  <relativePath/>\n </parent>#' reservation/pom.xml
-sed -i 's#</parent>#  <relativePath/>\n </parent>#' reservation/reservation-service/pom.xml
-
 # Find all project poms ignoring the /src/ paths (We don't want to scan code)
 for pom in `find . -name pom.xml -not -path "*/src/*"`; do
     echo -e "\nScanning $pom"
