@@ -17,6 +17,7 @@ iotdm
 l2switch
 lacp
 lispflowmapping
+nemo
 #net-virt-platform
 neutron
 nic

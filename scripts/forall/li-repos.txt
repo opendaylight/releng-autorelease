@@ -6,7 +6,6 @@ controller
 coretutorials
 defense4all
 didm
-discovery
 dlux
 docs
 groupbasedpolicy
@@ -24,7 +23,6 @@ opflex
 ovsdb
 packetcable
 persistence
-plugin2oc
 releng/autorelease
 reservation
 sdninterfaceapp
