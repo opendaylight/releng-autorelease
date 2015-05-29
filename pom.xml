@@ -22,70 +22,42 @@
   
   <modules>
     <module>aaa</module>
-    <!-- Waiting for M5 lithium
     <module>alto</module>
-    -->
     <module>bgpcep</module>
-    <!-- Waiting for M5 lithium
     <module>capwap</module>
     <module>coretutorials</module>
-    -->
     <module>controller</module>
-    <!-- Waiting for M5 lithium
     <module>didm</module>
-    -->
     <module>dlux</module>
-    <!-- Waiting for M5 lithium
     <module>docs</module>
     <module>groupbasedpolicy</module>
     <module>integration</module>
     <module>iotdm</module>
-    -->
     <module>l2switch</module>
-    <!-- Waiting for M5 lithium
     <module>lacp</module>
     <module>lispflowmapping</module>
-    -->
     <module>neutron</module>
-    <!-- Waiting for M5 lithium
     <module>nic</module>
-    -->
     <module>odlparent</module>
     <module>openflowjava</module>
     <module>openflowplugin</module>
-    <!-- Waiting for M5 lithium
     <module>ovsdb</module>
-    -->
-    <!-- needs patch https://git.opendaylight.org/gerrit/17472/
     <module>packetcable</module>
-    -->
-    <!-- Waiting for M5 lithium
     <module>persistence</module>
-    -->
-    <!-- needs patch for dlux
     <module>reservation</module>
-    -->
-    <!-- Waiting for M5 lithium
     <module>sdninterfaceapp</module>
     <module>sfc</module>
     <module>snbi</module>
-    -->
     <module>snmp</module>
-    <!-- Waiting for M5 lithium
     <module>snmp4sdn</module>
     <module>sxp</module>
-    -->
     <module>tcpmd5</module>
-    <!-- Waiting for M5 lithium
     <module>topoprocessing</module>
     <module>tsdr</module>
-    -->
     <module>ttp</module>
-    <!-- Waiting for M5 lithium
     <module>usc</module>
     <module>vpnservice</module>
     <module>vtn</module>
-    -->
     <module>yangtools</module>
   </modules>
 
