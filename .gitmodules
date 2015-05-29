@@ -133,7 +133,7 @@
 [submodule "sxp"]
 	path = sxp
 	url = ../../sxp
-	branch = master
+	branch = stable/lithium
 [submodule "tsdr"]
 	path = tsdr
 	url = ../../tsdr
