@@ -10,9 +10,23 @@
 # This script searches all projects that autorelease builds and outputs the
 # dependencies it detects for each project into a log file.
 
+USAGE="ARGS: [dot]\n\
+\n\
+dot - produces a dependencies.dot in graphviz dot format instead"
+
 LOG_FILE=dependencies.log
 
 modules=`xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:modules' -v '//x:module' pom.xml`
+
+if [[ "$2" != "" || "$1" != "" && "$1" != "dot" ]]; then
+	echo -e $USAGE;
+	exit;
+fi
+
+if [ "$1" == "dot" ]; then
+	LOG_FILE=dependencies.dot
+    echo "digraph G {" >> $LOG_FILE
+fi
 
 for module in $modules; do
     module_dependencies=""
@@ -41,7 +55,16 @@ for module in $modules; do
                                  grep -v toaster | sort | uniq`
         module_dependencies=`echo $module_dependencies $dependencies_parentpoms $dependencies | tr " " "\n" | sort | uniq`
     done
-    module_dependencies=`echo $module_dependencies | tr " " ","`
-    echo "$module:$module_dependencies" >> $LOG_FILE
+	if [ "$1" == "dot" ]; then
+        for dependency in `echo $module_dependencies | tr "\n" " "`; do
+            echo "$module -> $dependency" >> $LOG_FILE
+        done
+    else
+        module_dependencies=`echo $module_dependencies | tr " " ","`
+        echo "$module:$module_dependencies" >> $LOG_FILE
+    fi
 done
 
+if [ "$1" == "dot" ]; then
+    echo "}" >> $LOG_FILE
+fi
