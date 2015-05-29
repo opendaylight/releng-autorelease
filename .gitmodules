@@ -85,7 +85,7 @@
 [submodule "capwap"]
 	path = capwap
 	url = ../../capwap
-	branch = master
+	branch = stable/lithium
 [submodule "coretutorials"]
 	path = coretutorials
 	url = ../../coretutorials
