@@ -149,4 +149,4 @@
 [submodule "vpnservice"]
 	path = vpnservice
 	url = ../../vpnservice
-	branch = master
+	branch = stable/lithium
