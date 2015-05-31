@@ -137,7 +137,7 @@
 [submodule "tsdr"]
 	path = tsdr
 	url = ../../tsdr
-	branch = master
+	branch = stable/lithium
 [submodule "topoprocessing"]
 	path = topoprocessing
 	url = ../../topoprocessing
