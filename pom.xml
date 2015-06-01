@@ -22,9 +22,7 @@
   
   <modules>
     <module>aaa</module>
-    <!-- waiting for bug 3442
     <module>alto</module>
-    -->
     <module>bgpcep</module>
     <module>capwap</module>
     <module>coretutorials</module>
