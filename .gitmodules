@@ -117,7 +117,7 @@
 [submodule "packetcable"]
 	path = packetcable
 	url = ../../packetcable
-	branch = master
+	branch = stable/lithium
 [submodule "persistence"]
 	path = persistence
 	url = ../../persistence
