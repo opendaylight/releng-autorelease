@@ -17,7 +17,7 @@
 [submodule "groupbasedpolicy"]
 	path = groupbasedpolicy
 	url = ../../groupbasedpolicy
-	branch = master
+	branch = stable/lithium
 [submodule "integration"]
 	path = integration
 	url = ../../integration
