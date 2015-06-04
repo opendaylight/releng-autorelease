@@ -109,7 +109,7 @@
 [submodule "nic"]
 	path = nic
 	url = ../../nic
-	branch = master
+	branch = stable/lithium
 [submodule "neutron"]
 	path = neutron
 	url = ../../neutron
