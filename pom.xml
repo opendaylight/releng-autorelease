@@ -49,9 +49,7 @@
     <module>sfc</module>
     <module>snbi</module>
     <module>snmp</module>
-    <!-- Temporarily disable snmp4sdn
     <module>snmp4sdn</module>
-    -->
     <module>sxp</module>
     <module>tcpmd5</module>
     <module>topoprocessing</module>
