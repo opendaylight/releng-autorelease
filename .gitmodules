@@ -89,7 +89,7 @@
 [submodule "coretutorials"]
 	path = coretutorials
 	url = ../../coretutorials
-	branch = master
+	branch = stable/lithium
 [submodule "didm"]
 	path = didm
 	url = ../../didm
