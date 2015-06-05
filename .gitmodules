@@ -93,7 +93,7 @@
 [submodule "didm"]
 	path = didm
 	url = ../../didm
-	branch = master
+	branch = stable/lithium
 [submodule "docs"]
 	path = docs
 	url = ../../docs
