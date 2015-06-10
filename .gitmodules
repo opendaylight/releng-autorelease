@@ -125,7 +125,7 @@
 [submodule "reservation"]
 	path = reservation
 	url = ../../reservation
-	branch = master
+	branch = stable/lithium
 [submodule "snmp"]
 	path = snmp
 	url = ../../snmp
