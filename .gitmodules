@@ -57,7 +57,7 @@
 [submodule "snbi"]
 	path = snbi
 	url = ../../snbi
-	branch = master
+	branch = stable/lithium
 [submodule "snmp4sdn"]
 	path = snmp4sdn
 	url = ../../snmp4sdn
