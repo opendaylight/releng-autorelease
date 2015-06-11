@@ -61,7 +61,7 @@
 [submodule "snmp4sdn"]
 	path = snmp4sdn
 	url = ../../snmp4sdn
-	branch = master
+	branch = stable/lithium
 [submodule "tcpmd5"]
 	path = tcpmd5
 	url = ../../tcpmd5
