@@ -97,7 +97,7 @@
 [submodule "docs"]
 	path = docs
 	url = ../../docs
-	branch = master
+	branch = stable/lithium
 [submodule "iotdm"]
 	path = iotdm
 	url = ../../iotdm
