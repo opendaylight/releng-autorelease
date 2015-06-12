@@ -43,9 +43,7 @@
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>packetcable</module>
-    <!-- Temporarily disable persistence
     <module>persistence</module>
-    -->
     <module>reservation</module>
     <module>sdninterfaceapp</module>
     <module>sfc</module>
