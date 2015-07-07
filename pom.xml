@@ -25,7 +25,9 @@
     <module>alto</module>
     <module>bgpcep</module>
     <module>capwap</module>
+    <!-- Disable until patch merged: https://git.opendaylight.org/gerrit/23224
     <module>coretutorials</module>
+    -->
     <module>controller</module>
     <module>didm</module>
     <module>dlux</module>
