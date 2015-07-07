@@ -22,7 +22,9 @@
 
   <modules>
     <module>aaa</module>
+    <!-- Disable alto until Bug 3955 is resolved
     <module>alto</module>
+    -->
     <module>bgpcep</module>
     <module>capwap</module>
     <!-- Disable until patch merged: https://git.opendaylight.org/gerrit/23224
