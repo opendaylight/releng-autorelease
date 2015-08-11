@@ -25,9 +25,7 @@
     <module>alto</module>
     <module>bgpcep</module>
     <module>capwap</module>
-    <!-- Disable until patch merged: https://git.opendaylight.org/gerrit/23224
     <module>coretutorials</module>
-    -->
     <module>controller</module>
     <module>didm</module>
     <module>dlux</module>
@@ -44,13 +42,9 @@
     <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
-    <!-- needs patch https://git.opendaylight.org/gerrit/17472/
     <module>packetcable</module>
-    -->
     <module>persistence</module>
-    <!-- needs patch for dlux
     <module>reservation</module>
-    -->
     <module>sdninterfaceapp</module>
     <module>sfc</module>
     <module>snbi</module>
