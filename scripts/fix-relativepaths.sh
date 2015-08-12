@@ -50,12 +50,10 @@ for pom in `find . -name pom.xml -not -path "*/src/*"`; do
         projectShortName=${groupId##*.}  # Short name of a ODL project (repo name)
         relativePath="$basePath$projectShortName/$projectPath"  # Calculated relative path to parent pom
 
-        xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:parent' --if "x:artifactId=\"$artifactId\"" --if "x:groupId=\"$groupId\"" -o "Found $artifactId" "$pom"
-        if [ 0 -eq $? ]; then
-            sed -i -e "s#<relativePath.*/>#<relativePath>$relativePath</relativePath>#" \
-                   -e "s#<relativePath>.*</relativePath>#<relativePath>$relativePath</relativePath>#" \
-                   "$pom"
-        fi
+        xmlstarlet ed -P -N x=http://maven.apache.org/POM/4.0.0 \
+            -u "//x:parent[x:artifactId=\"$artifactId\" and x:groupId=\"$groupId\"]/x:relativePath" \
+            -v "$relativePath" "$pom" > "${pom}.new" && \
+        mv "${pom}.new" "${pom}"
     done
 done
 
