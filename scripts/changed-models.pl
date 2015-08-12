@@ -8,7 +8,7 @@ args: [--diff|--stat] <git-commit-tag-or-branch>
   By default, this will print what .yang files were added, deleted, or
   changed between the specified commit tag or branch and HEAD.
 
-  If you speficify --diff or --stat, it will also provide output of the
+  If you specify --diff or --stat, it will also provide output of the
   'git diff' or 'git diff --stat' command for files that changed,
   comparing the file in HEAD and in the specified commit tag or branch.
 
@@ -47,7 +47,7 @@ if ($? != 0) {
 }
 `git show $new_git >& /dev/null`;
 if ($? != 0) {
-    print "tag, commit or branch $new_git couldn't be found";
+    print "tag, commit or branch $new_git couldn't be found\n";
     exit;
 }
 
