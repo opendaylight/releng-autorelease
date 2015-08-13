@@ -1,0 +1,7 @@
+Code-Review+2: Thanh Ha <thanh.ha@linuxfoundation.org>
+Verified+1: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-by: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-at: Thu, 13 Aug 2015 00:05:16 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/25211
+Project: releng/autorelease
+Branch: refs/heads/stable/lithium
