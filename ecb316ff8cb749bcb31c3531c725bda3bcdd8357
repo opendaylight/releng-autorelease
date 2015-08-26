@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a79b1b5_47d60751",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-26T17:48:31Z",
+      "side": 1,
+      "message": "I think this README should actually go into the for-all.pl file as a comment at the top of the file.\n\nThe problem with keeping this README at the root of the repo is typically this README should be providing details about the repo itself so when someone looks at autorelease on github they may get confused that the README\u0027s describing a script instead.",
+      "revId": "ecb316ff8cb749bcb31c3531c725bda3bcdd8357",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
