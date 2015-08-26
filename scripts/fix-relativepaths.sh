@@ -21,6 +21,7 @@ PARENT_MAP=("org.opendaylight.odlparent:odlparent:odlparent"
             "org.opendaylight.controller:commons.opendaylight:opendaylight/commons/opendaylight"
             "org.opendaylight.controller:commons.integrationtest:opendaylight/adsal/commons/integrationtest"
             "org.opendaylight.controller:sal-parent:opendaylight/md-sal"
+            "org.opendaylight.controller:mdsal-it-parent:opendaylight/md-sal/mdsal-it-parent"
             "org.opendaylight.controller:config-parent:opendaylight/config/config-parent"
             "org.opendaylight.controller:config-plugin-parent:opendaylight/config/config-plugin-parent"
             "org.opendaylight.controller:karaf-parent:karaf/karaf-parent")
