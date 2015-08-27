@@ -150,3 +150,11 @@
 	path = vpnservice
 	url = ../../vpnservice
 	branch = master
+[submodule "netconf"]
+	path = netconf
+	url = ../../netconf
+	branch = master
+[submodule "mdsal"]
+	path = mdsal
+	url = ../../mdsal
+	branch = master
