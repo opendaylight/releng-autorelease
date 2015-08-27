@@ -36,6 +36,8 @@
     <module>l2switch</module>
     <module>lacp</module>
     <module>lispflowmapping</module>
+    <module>mdsal</module>
+    <module>netconf</module>
     <module>neutron</module>
     <module>nic</module>
     <module>odlparent</module>
