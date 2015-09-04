@@ -31,7 +31,6 @@
     <module>dlux</module>
     <module>docs</module>
     <module>groupbasedpolicy</module>
-    <module>integration</module>
     <module>iotdm</module>
     <module>l2switch</module>
     <module>lacp</module>

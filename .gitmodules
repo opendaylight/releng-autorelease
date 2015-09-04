@@ -18,10 +18,6 @@
 	path = groupbasedpolicy
 	url = ../../groupbasedpolicy
 	branch = master
-[submodule "integration"]
-	path = integration
-	url = ../../integration
-	branch = master
 [submodule "l2switch"]
 	path = l2switch
 	url = ../../l2switch
