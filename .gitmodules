@@ -157,3 +157,4 @@
 [submodule "integration/distribution"]
 	path = integration/distribution
 	url = ../../integration/distribution
+	branch = master
