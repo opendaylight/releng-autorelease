@@ -146,3 +146,7 @@
 	path = vpnservice
 	url = ../../vpnservice
 	branch = stable/lithium
+[submodule "integration/distribution"]
+	path = integration/distribution
+	url = https://git.opendaylight.org/gerrit/integration/distribution
+	branch = stable/lithium
