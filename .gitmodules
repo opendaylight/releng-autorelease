@@ -82,10 +82,6 @@
 	path = capwap
 	url = ../../capwap
 	branch = master
-[submodule "coretutorials"]
-	path = coretutorials
-	url = ../../coretutorials
-	branch = master
 [submodule "didm"]
 	path = didm
 	url = ../../didm
