@@ -154,3 +154,6 @@
 	path = mdsal
 	url = ../../mdsal
 	branch = master
+[submodule "integration/distribution"]
+	path = integration/distribution
+	url = ../../integration/distribution
