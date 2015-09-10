@@ -24,7 +24,9 @@ PARENT_MAP=("org.opendaylight.odlparent:odlparent:odlparent"
             "org.opendaylight.controller:mdsal-it-parent:opendaylight/md-sal/mdsal-it-parent"
             "org.opendaylight.controller:config-parent:opendaylight/config/config-parent"
             "org.opendaylight.controller:config-plugin-parent:opendaylight/config/config-plugin-parent"
-            "org.opendaylight.controller:karaf-parent:karaf/karaf-parent")
+            "org.opendaylight.controller:karaf-parent:karaf/karaf-parent"
+            # MD-SAL
+            "org.opendaylight.mdsal:binding-parent:binding/binding-parent")
 
 # Find all project poms ignoring the /src/ paths (We don't want to scan code)
 for pom in `find . -name pom.xml -not -path "*/src/*"`; do
