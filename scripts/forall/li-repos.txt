@@ -4,7 +4,6 @@ bgpcep
 capwap
 controller
 coretutorials
-defense4all
 didm
 dlux
 docs
