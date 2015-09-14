@@ -1,24 +1,46 @@
+#!/usr/bin/python
+# @License EPL-1.0 <http://spdx.org/licenses/EPL-1.0>
+##############################################################################
+# Copyright (c) 2015 The Linux Foundation.  All rights reserved.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Eclipse Public License v1.0 which accompanies this distribution,
+# and is available at http://www.eclipse.org/legal/epl-v10.html
+##############################################################################
+
 """This python script is used for parsing the various project directories
 for pom.xml files and creating a database of module dependencies.
-Location of the directory is taken as input.
+
+Usage: ./parser.py <directory> [mvn_bin] [mvn_global_settings_file]
+
+Args:
+    directory: Location of Maven project root.
+    mvn_bin:   Location of mvn binary. (default: mvn)
+    mvn_global_settings_file: Location of Maven global-settings file.
+        (default: None)
 
 @Author : Abhishek Mittal aka Darkdragon
 @Email  : abhishekmittaliiit@gmail.com
 """
 
-import sys
-import os
 import json
+import os
 import re
+import sys
 import xml.etree.ElementTree as ET
+
 from StringIO import StringIO
 
 
-def systemCallMvnEffectivePom(directoryLocation):
+def systemCallMvnEffectivePom(directory, mvn=None):
     """Calls the system function to generate effective-pom files"""
-    os.system('/opt/jenkins/tools/hudson.tasks.Maven_MavenInstallation/' +
-              'Maven_3.3.3/bin/mvn -gs $GSFILE -f ' + directoryLocation +
-              ' help:effective-pom -Doutput=epom.xml')
+    if not mvn:
+        mvn = Maven()
+
+    cmd = "%s -f %s help:effective-pom -Doutput=epom.xml" % (mvn.bin, directory)
+    if mvn.global_settings_file:
+        cmd += " -gs %s" % mvn.global_settings_file
+    os.system(cmd)
 
 
 def removeNameSpace(it):
@@ -201,7 +223,7 @@ def getPomName(dirName, filename):
         return root.text
 
 
-def recursePom(directoryName):
+def recursePom(directoryName, mvn):
     """Recurse over all pom files of the module in the autorelease"""
     recursePomInfo = []
     for dirName, subdirList, fileList in os.walk(directoryName):
@@ -210,7 +232,7 @@ def recursePom(directoryName):
         #   continue;
         for fname in fileList:
             if fname == 'pom.xml':
-                systemCallMvnEffectivePom(dirName)
+                systemCallMvnEffectivePom(dirName, mvn)
                 fname = 'epom.xml'
                 if not os.path.isfile(os.path.join(dirName, fname)):
                     continue
@@ -308,9 +330,25 @@ def extendModulesMappedToProjects(dependency, modulesMappedToProjects,
         modulesMappedToProjects[moduleName][dependencyProject].append((dependencyVersion, pomFile))
 
 
+class Maven:
+    """Class to store Maven execution parameters"""
+    def __init__(self):
+        self.bin = "mvn"
+        self.global_settings_file = None
+
+
 def main():
     DIR_LOC = sys.argv[1]
-    systemCallMvnEffectivePom(DIR_LOC)
+    mvn = Maven()
+
+    if sys.argv[2]:  # mvn_bin
+        mvn.bin = sys.argv[2]
+
+    if sys.argv[3]:  # mvn_global_settings_file
+        mvn.global_settings_file = sys.argv[3]
+
+    systemCallMvnEffectivePom(DIR_LOC, mvn)
+
     rootPomFile = "epom.xml"
     dependencies = {}
     dependencies['path'] = DIR_LOC + '/' + rootPomFile
@@ -327,7 +365,7 @@ def main():
         rootPomFile = "pom.xml"
         if not os.path.isfile(os.path.join(moduleDir, rootPomFile)):
             continue
-        systemCallMvnEffectivePom(moduleDir)
+        systemCallMvnEffectivePom(moduleDir, mvn)
         rootPomFile = "epom.xml"
         if not os.path.isfile(os.path.join(moduleDir, rootPomFile)):
             continue
@@ -338,7 +376,7 @@ def main():
         dependencies['moduleInfo'][module]['modules'] = getModuleNames(moduleDir, rootPomFile)
         dependencies['moduleInfo'][module]['dependencies'] = getDependencyNames(moduleDir, rootPomFile)
         dependencies['moduleInfo'][module]['parent'] = getParentNames(moduleDir, rootPomFile)
-        dependencies['moduleInfo'][module]["recursePomInfo"] = recursePom(moduleDir)
+        dependencies['moduleInfo'][module]["recursePomInfo"] = recursePom(moduleDir, mvn)
 
     dependencies['modules'] = actualModules
     projectMappedToAllModules = {}
