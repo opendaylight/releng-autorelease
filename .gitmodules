@@ -150,3 +150,7 @@
 	path = integration/distribution
 	url = ../../integration/distribution
 	branch = master
+[submodule "armoury"]
+	path = armoury
+	url = ../../armoury
+        branch = master
