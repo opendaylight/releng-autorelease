@@ -44,7 +44,6 @@
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>packetcable</module>
-    <module>persistence</module>
     <module>reservation</module>
     <module>sdninterfaceapp</module>
     <module>sfc</module>

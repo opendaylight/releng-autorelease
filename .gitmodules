@@ -110,10 +110,6 @@
 	path = packetcable
 	url = ../../packetcable
 	branch = master
-[submodule "persistence"]
-	path = persistence
-	url = ../../persistence
-	branch = master
 [submodule "reservation"]
 	path = reservation
 	url = ../../reservation
