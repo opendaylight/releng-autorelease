@@ -178,3 +178,7 @@
 	path = netide
 	url = ../../netide
         branch = master
+[submodule "of-config"]
+	path = of-config
+	url = ../../of-config
+	branch = master
