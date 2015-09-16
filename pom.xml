@@ -42,6 +42,7 @@
     <module>neutron</module>
     <module>nic</module>
     <module>odlparent</module>
+    <module>ofextensions/circuitsw</module>
     <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
