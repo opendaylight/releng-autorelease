@@ -11,6 +11,12 @@
         <menu name="releng/builder" inherit="top">
             <item name="Project Info" href="project-info.html" />
             <item name="Autorelease" href="autorelease.html" />
+
+        </menu>
+
+        <menu name="Dependency and Version Tools" inherit="top">
+            <item name="Info" href="/dnvtools/" />
+            <item name="DNV Tools" href="/dnvtools/dnvtool.html" />
         </menu>
     </body>
 
