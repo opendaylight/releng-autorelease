@@ -178,3 +178,7 @@
 	path = netide
 	url = ../../netide
         branch = master
+[submodule "yang-push"]
+	path = yang-push
+	url = ../../yang-push
+	branch = master
