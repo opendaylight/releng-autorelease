@@ -178,3 +178,7 @@
 	path = netide
 	url = ../../netide
         branch = master
+[submodule "next"]
+	path = next
+	url = ../../next
+        branch = master
