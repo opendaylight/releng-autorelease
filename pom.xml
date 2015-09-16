@@ -69,7 +69,9 @@
     <module>usecplugin</module>
     <module>vpnservice</module>
     <module>vtn</module>
+    <!-- Disable yang-push until they have buildable code
     <module>yang-push</module>
+    -->
     <module>yangtools</module>
   </modules>
 
