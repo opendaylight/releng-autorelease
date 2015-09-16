@@ -189,4 +189,8 @@
 [submodule "yang-push"]
 	path = yang-push
 	url = ../../yang-push
+    branch = master
+[submodule "usecplugin"]
+	path = usecplugin
+	url = ../../usecplugin
 	branch = master
