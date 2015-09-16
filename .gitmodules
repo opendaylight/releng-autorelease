@@ -154,3 +154,7 @@
 	path = armoury
 	url = ../../armoury
         branch = master
+[submodule "centinel"]
+	path = centinel
+	url = ../../centinel
+        branch = master
