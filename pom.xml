@@ -48,7 +48,9 @@
     <module>nic</module>
     <module>odlparent</module>
     <module>of-config</module>
+    <!-- Disable ofextensions/circuitsw until they have buildable code
     <module>ofextensions/circuitsw</module>
+    -->
     <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
