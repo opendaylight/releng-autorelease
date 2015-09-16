@@ -170,3 +170,7 @@
 	path = messaging4transport
 	url = ../../messaging4transport
         branch = master
+[submodule "nemo"]
+	path = nemo
+	url = ../../nemo
+        branch = master
