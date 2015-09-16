@@ -182,3 +182,7 @@
 	path = unimgr
 	url = ../../unimgr
 	branch = master
+[submodule "next"]
+	path = next
+	url = ../../next
+    branch = master
