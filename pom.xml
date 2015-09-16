@@ -42,6 +42,7 @@
     <module>messaging4transport</module>
     <module>nemo</module>
     <module>netconf</module>
+    <module>netide</module>
     <module>neutron</module>
     <module>nic</module>
     <module>odlparent</module>

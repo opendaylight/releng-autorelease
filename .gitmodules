@@ -174,3 +174,7 @@
 	path = nemo
 	url = ../../nemo
         branch = master
+[submodule "netide"]
+	path = netide
+	url = ../../netide
+        branch = master
