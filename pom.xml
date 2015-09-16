@@ -62,6 +62,7 @@
     <module>topoprocessing</module>
     <module>tsdr</module>
     <module>ttp</module>
+    <module>unimgr</module>
     <module>usc</module>
     <module>vpnservice</module>
     <module>vtn</module>

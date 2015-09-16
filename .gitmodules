@@ -178,3 +178,7 @@
 	path = netide
 	url = ../../netide
         branch = master
+[submodule "unimgr"]
+	path = unimgr
+	url = ../../unimgr
+	branch = master
