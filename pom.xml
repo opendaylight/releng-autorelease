@@ -44,7 +44,9 @@
     <module>netconf</module>
     <module>netide</module>
     <module>neutron</module>
+    <!-- Disable next until they have buildable code
     <module>next</module>
+    -->
     <module>nic</module>
     <module>odlparent</module>
     <module>of-config</module>
