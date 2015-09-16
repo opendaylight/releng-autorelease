@@ -31,7 +31,9 @@
     <module>didm</module>
     <module>dlux</module>
     <module>docs</module>
+    <!-- Diable faas until they have buildable code
     <module>faas</module>
+    -->
     <module>groupbasedpolicy</module>
     <module>integration/distribution</module>
     <module>iotdm</module>
