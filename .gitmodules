@@ -162,3 +162,7 @@
 	path = ofextensions/circuitsw
 	url = ../../ofextensions/circuitsw
         branch = master
+[submodule "faas"]
+	path = faas
+	url = ../../faas
+        branch = master

@@ -31,6 +31,7 @@
     <module>didm</module>
     <module>dlux</module>
     <module>docs</module>
+    <module>faas</module>
     <module>groupbasedpolicy</module>
     <module>integration/distribution</module>
     <module>iotdm</module>
