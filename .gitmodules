@@ -178,3 +178,7 @@
 	path = netide
 	url = ../../netide
         branch = master
+[submodule "usecplugin"]
+	path = usecplugin
+	url = ../../usecplugin
+	branch = master

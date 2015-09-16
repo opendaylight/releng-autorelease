@@ -63,6 +63,7 @@
     <module>tsdr</module>
     <module>ttp</module>
     <module>usc</module>
+    <module>usecplugin</module>
     <module>vpnservice</module>
     <module>vtn</module>
     <module>yangtools</module>
