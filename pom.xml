@@ -47,6 +47,7 @@
     <module>next</module>
     <module>nic</module>
     <module>odlparent</module>
+    <module>of-config</module>
     <module>ofextensions/circuitsw</module>
     <module>openflowjava</module>
     <module>openflowplugin</module>

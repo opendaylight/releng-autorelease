@@ -193,4 +193,8 @@
 [submodule "usecplugin"]
 	path = usecplugin
 	url = ../../usecplugin
+    branch = master
+[submodule "of-config"]
+	path = of-config
+	url = ../../of-config
 	branch = master
