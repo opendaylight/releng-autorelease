@@ -39,6 +39,7 @@
     <module>lacp</module>
     <module>lispflowmapping</module>
     <module>mdsal</module>
+    <module>messaging4transport</module>
     <module>netconf</module>
     <module>neutron</module>
     <module>nic</module>
