@@ -67,6 +67,7 @@
     <module>usc</module>
     <module>vpnservice</module>
     <module>vtn</module>
+    <module>yang-push</module>
     <module>yangtools</module>
   </modules>
 
