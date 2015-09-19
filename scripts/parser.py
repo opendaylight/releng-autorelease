@@ -12,13 +12,14 @@
 for pom.xml files and creating a database of module dependencies. It creates
 a json file containing the module database.
 
-Usage: ./parser.py <directory> <output_file> [mvn_bin] [mvn_global_settings]
+Usage: ./parser.py <directory> <output_file> [--mvn-bin] [--mvn-global-settings]
 
 Args:
     directory:  Location of Maven project root.
     output:     Location to create the output database file.
-    mvn_bin:    Location of mvn binary. (default: mvn)
-    mvn_global_settings: Location of Maven global-settings file.
+
+    --mvn-bin:    Location of mvn binary. (default: mvn)
+    --mvn-global-settings: Location of Maven global-settings file.
         (default: None)
 
 @Author : Abhishek Mittal aka Darkdragon
@@ -368,11 +369,11 @@ def main():
     mvn = Maven()
     if args.mvn_bin:  # mvn_bin
         mvn.bin = args.mvn_bin
-    if args.mvn_settings:  # mvn_global_settings
+    if args.mvn_global_settings:  # mvn_global_settings
         mvn.global_settings = args.mvn_global_settings
 
-    print("Maven Binary: " % mvn.bin)
-    print("Maven Global Settings: " % mvn.global_settings)
+    print("Maven Binary: %s" % mvn.bin)
+    print("Maven Global Settings: %s" % mvn.global_settings)
 
     systemCallMvnEffectivePom(DIR_LOC, mvn)
 

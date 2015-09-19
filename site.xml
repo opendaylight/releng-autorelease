@@ -101,6 +101,9 @@
   </scm>
 
   <properties>
+    <mvn.bin>/usr/bin/mvn</mvn.bin>
+    <mvn.global-settings>${user.home}/.m2/settings.xml</mvn.global-settings>
+
     <!-- Maven plugin versions -->
     <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
     <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
@@ -113,6 +116,32 @@
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.4.0</version>
+        <executions>
+          <execution>
+            <id>build-dependency-info</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>python</executable>
+              <arguments>
+                <argument>scripts/parser.py</argument>
+                <argument>.</argument>
+                <argument>src/site/resources/dependency-info.js</argument>
+                <argument>--mvn-bin</argument>
+                <argument>${mvn.bin}</argument>
+                <argument>--mvn-global-settings</argument>
+                <argument>${mvn.global-settings}</argument>
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-install-plugin</artifactId>
