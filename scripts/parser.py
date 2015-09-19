@@ -31,7 +31,10 @@ import re
 import sys
 import xml.etree.ElementTree as ET
 
-from StringIO import StringIO
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 
 
 def systemCallMvnEffectivePom(directory, mvn=None):
