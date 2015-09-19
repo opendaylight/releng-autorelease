@@ -25,6 +25,7 @@ Args:
 @Email  : abhishekmittaliiit@gmail.com
 """
 
+import argparse
 import json
 import os
 import re
@@ -343,15 +344,35 @@ class Maven:
 
 
 def main():
-    DIR_LOC = sys.argv[1]
-    output_file = sys.argv[2]
+    # Parse arguments
+    parser = argparse.ArgumentParser(
+        description='Generate json database for dnvtools rendering.')
+    parser.add_argument('directory', type=str,
+        help='The directory containing the root pom of the project you want '
+             'to generate json database for.')
+    parser.add_argument('output_file', type=str,
+        help='The path to the location you want to place the output json '
+             'database.')
+    parser.add_argument('--mvn-bin', type=str,
+        help='The path to the location of your mvn binary. '
+             '(default: /usr/bin/mvn)')
+    parser.add_argument('--mvn-global-settings', type=str,
+        help='The path to the location of your mvn global settings file. '
+             '(default: ~/.m2/settings.xml)')
+    args = parser.parse_args()
+
+    # Initialize
+    DIR_LOC = args.directory
+    output_file = args.output_file
+
     mvn = Maven()
+    if args.mvn_bin:  # mvn_bin
+        mvn.bin = args.mvn_bin
+    if args.mvn_settings:  # mvn_global_settings
+        mvn.global_settings = args.mvn_global_settings
 
-    if sys.argv[3]:  # mvn_bin
-        mvn.bin = sys.argv[3]
-
-    if sys.argv[4]:  # mvn_global_settings
-        mvn.global_settings = sys.argv[3]
+    print("Maven Binary: " % mvn.bin)
+    print("Maven Global Settings: " % mvn.global_settings)
 
     systemCallMvnEffectivePom(DIR_LOC, mvn)
 
