@@ -72,10 +72,7 @@
     <module>ttp</module>
     <module>unimgr</module>
     <module>usc</module>
-    <!-- Disable until patch is merged:
-         https://git.opendaylight.org/gerrit/27244
     <module>usecplugin</module>
-    -->
     <module>vpnservice</module>
     <module>vtn</module>
     <!-- Disable yang-push until they have buildable code
