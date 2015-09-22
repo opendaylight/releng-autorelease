@@ -39,9 +39,9 @@ for module in $modules; do
                                      -m '//x:project/x:dependencies/x:dependency' \
                                      -n -v "x:groupId" $pom | \
                       grep org.opendaylight | \
-                      sed -e 's/org.opendaylight.//' \
-                          -e 's/\..*$//' \
-                          -e "s/$module//" | \
+                      sed -e 's@org.opendaylight.@@' \
+                          -e 's@\..*$@@' \
+                          -e "s@$module@@" | \
                       grep -v toaster | sort | uniq`
         # Include parent poms as dependencies
         dependencies_parentpoms=`xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 \
@@ -49,9 +49,9 @@ for module in $modules; do
                                      -m '//x:project/x:parent' \
                                      -n -v "x:groupId" $pom | \
                                  grep org.opendaylight | \
-                                 sed -e 's/org.opendaylight.//' \
-                                     -e 's/\..*$//' \
-                                     -e "s/$module//" | \
+                                 sed -e 's@org.opendaylight.@@' \
+                                     -e 's@\..*$@@' \
+                                     -e "s@$module@@" | \
                                  grep -v toaster | sort | uniq`
         module_dependencies=`echo $module_dependencies $dependencies_parentpoms $dependencies | tr " " "\n" | sort | uniq`
     done
