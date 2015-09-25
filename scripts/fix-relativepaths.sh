@@ -25,6 +25,7 @@ PARENT_MAP=("org.opendaylight.odlparent:odlparent:odlparent"
             "org.opendaylight.controller:config-parent:opendaylight/config/config-parent"
             "org.opendaylight.controller:config-plugin-parent:opendaylight/config/config-plugin-parent"
             "org.opendaylight.controller:karaf-parent:karaf/karaf-parent"
+            "org.opendaylight.controller.archetypes:archetypes-parent:opendaylight/archetypes"
             # MD-SAL
             "org.opendaylight.mdsal:binding-parent:binding/binding-parent")
 
