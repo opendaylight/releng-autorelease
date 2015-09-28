@@ -8,26 +8,27 @@
 ##############################################################################
 
 # MAP of path to a parent pom from the perspective of hosting directory
-# starting from the repo root.
+# starting from the autorelease repo root.
 #
 # Format:  <groupId>:<artifactId>:<path>
-PARENT_MAP=("org.opendaylight.odlparent:odlparent:odlparent"
-            "org.opendaylight.odlparent:features-parent:features-parent"
-            "org.opendaylight.odlparent:bundle-parent:bundle-parent"
+PARENT_MAP=("org.opendaylight.odlparent:odlparent:odlparent/odlparent"
+            "org.opendaylight.odlparent:features-parent:odlparent/features-parent"
+            "org.opendaylight.odlparent:bundle-parent:odlparent/bundle-parent"
             # Yangtools
-            "org.opendaylight.yangtools:binding-parent:code-generator/binding-parent"
+            "org.opendaylight.yangtools:binding-parent:yangtools/code-generator/binding-parent"
             # Controller
-            "org.opendaylight.controller:releasepom:"
-            "org.opendaylight.controller:commons.opendaylight:opendaylight/commons/opendaylight"
-            "org.opendaylight.controller:commons.integrationtest:opendaylight/adsal/commons/integrationtest"
-            "org.opendaylight.controller:sal-parent:opendaylight/md-sal"
-            "org.opendaylight.controller:mdsal-it-parent:opendaylight/md-sal/mdsal-it-parent"
-            "org.opendaylight.controller:config-parent:opendaylight/config/config-parent"
-            "org.opendaylight.controller:config-plugin-parent:opendaylight/config/config-plugin-parent"
-            "org.opendaylight.controller:karaf-parent:karaf/karaf-parent"
-            "org.opendaylight.controller.archetypes:archetypes-parent:opendaylight/archetypes"
+            "org.opendaylight.controller:releasepom:controller"
+            "org.opendaylight.controller:commons.opendaylight:controller/opendaylight/commons/opendaylight"
+            "org.opendaylight.controller:commons.integrationtest:controller/opendaylight/adsal/commons/integrationtest"
+            "org.opendaylight.controller:sal-parent:controller/opendaylight/md-sal"
+            "org.opendaylight.controller:mdsal-it-parent:controller/opendaylight/md-sal/mdsal-it-parent"
+            "org.opendaylight.controller:config-parent:controller/opendaylight/config/config-parent"
+            "org.opendaylight.controller:config-plugin-parent:controller/opendaylight/config/config-plugin-parent"
+            "org.opendaylight.controller:karaf-parent:controller/karaf/karaf-parent"
+            # Controller - Workaround since script is not able to detect 'controller' group name for archetypes
+            "org.opendaylight.controller.archetypes:archetypes-parent:controller/opendaylight/archetypes"
             # MD-SAL
-            "org.opendaylight.mdsal:binding-parent:binding/binding-parent")
+            "org.opendaylight.mdsal:binding-parent:mdsal/binding/binding-parent")
 
 # Find all project poms ignoring the /src/ paths (We don't want to scan code)
 for pom in `find . -name pom.xml -not -path "*/src/*"`; do
@@ -51,8 +52,7 @@ for pom in `find . -name pom.xml -not -path "*/src/*"`; do
         artifactId=${map%%:*}  # Maven artifactId
         projectPath=${map#*:}  # Path to pom file from the perspective of hosting repo
 
-        projectShortName=${groupId##*.}  # Short name of a ODL project (repo name)
-        relativePath="$basePath$projectShortName/$projectPath"  # Calculated relative path to parent pom
+        relativePath="$basePath/$projectPath"  # Calculated relative path to parent pom
 
         # Update any existing relativePath values
         xmlstarlet ed -P -N x=http://maven.apache.org/POM/4.0.0 \
