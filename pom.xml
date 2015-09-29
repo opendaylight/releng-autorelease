@@ -28,10 +28,13 @@
     <module>capwap</module>
     <module>centinel</module>
     <module>controller</module>
+    <!-- Disable didm until patch is merged:
+         https://git.opendaylight.org/gerrit/26739/
     <module>didm</module>
+    -->
     <module>dlux</module>
     <module>docs</module>
-    <!-- Diable faas until they have buildable code
+    <!-- Disable faas until they have buildable code
     <module>faas</module>
     -->
     <module>groupbasedpolicy</module>
