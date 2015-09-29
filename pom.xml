@@ -22,7 +22,10 @@
 
   <modules>
     <module>aaa</module>
+    <!-- Disable alto until blocking bug resolved:
+         https://bugs.opendaylight.org/show_bug.cgi?id=4371
     <module>alto</module>
+    -->
     <module>armoury</module>
     <module>bgpcep</module>
     <module>capwap</module>
