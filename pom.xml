@@ -26,7 +26,10 @@
          https://bugs.opendaylight.org/show_bug.cgi?id=4371
     <module>alto</module>
     -->
+    <!-- Disable armoury until blocking bug resolved:
+         https://bugs.opendaylight.org/show_bug.cgi?id=4391
     <module>armoury</module>
+    -->
     <module>bgpcep</module>
     <module>capwap</module>
     <module>centinel</module>
