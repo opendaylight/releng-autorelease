@@ -12,6 +12,7 @@
 #
 # Format:  <groupId>:<artifactId>:<path>
 PARENT_MAP=("org.opendaylight.odlparent:odlparent:odlparent/odlparent"
+            "org.opendaylight.odlparent:odlparent-lite:odlparent/odlparent-lite"
             "org.opendaylight.odlparent:features-parent:odlparent/features-parent"
             "org.opendaylight.odlparent:bundle-parent:odlparent/bundle-parent"
             # Yangtools
