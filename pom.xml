@@ -54,10 +54,7 @@
     <!-- Disable next until they have buildable code
     <module>next</module>
     -->
-    <!-- Disable nic until blocking bug resolved:
-         https://bugs.opendaylight.org/show_bug.cgi?id=4393
     <module>nic</module>
-    -->
     <module>odlparent</module>
     <module>of-config</module>
     <!-- Disable ofextensions/circuitsw until they have buildable code
