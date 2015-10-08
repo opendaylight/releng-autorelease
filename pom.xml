@@ -76,10 +76,7 @@
     <module>sxp</module>
     <module>tcpmd5</module>
     <module>topoprocessing</module>
-    <!-- Disable tsdr until blocking bug resolved:
-         https://bugs.opendaylight.org/show_bug.cgi?id=4434
     <module>tsdr</module>
-    -->
     <module>ttp</module>
     <module>unimgr</module>
     <module>usc</module>
