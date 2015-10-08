@@ -51,7 +51,10 @@
     <!-- Disable next until they have buildable code
     <module>next</module>
     -->
+    <!-- Temporarily remove nic until vtn bug resolved:
+         https://bugs.opendaylight.org/show_bug.cgi?id=4426
     <module>nic</module>
+    -->
     <module>odlparent</module>
     <module>of-config</module>
     <!-- Disable ofextensions/circuitsw until they have buildable code
