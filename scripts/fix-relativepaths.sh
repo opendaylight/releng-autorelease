@@ -31,7 +31,7 @@ PARENT_MAP=("org.opendaylight.odlparent:odlparent:odlparent/odlparent"
             # MD-SAL
             "org.opendaylight.mdsal:binding-parent:mdsal/binding/binding-parent"
             # OpenFlowJava
-            "org.opendaylight.openflowjava:openflowjava-parent:openflowjava/parent/openflowjava-parent")
+            "org.opendaylight.openflowjava:openflowjava-parent:openflowjava/parent")
 
 # Find all project poms ignoring the /src/ paths (We don't want to scan code)
 for pom in `find . -name pom.xml -not -path "*/src/*"`; do
