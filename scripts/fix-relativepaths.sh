@@ -29,7 +29,9 @@ PARENT_MAP=("org.opendaylight.odlparent:odlparent:odlparent/odlparent"
             # Controller - Workaround since script is not able to detect 'controller' group name for archetypes
             "org.opendaylight.controller.archetypes:archetypes-parent:controller/opendaylight/archetypes"
             # MD-SAL
-            "org.opendaylight.mdsal:binding-parent:mdsal/binding/binding-parent")
+            "org.opendaylight.mdsal:binding-parent:mdsal/binding/binding-parent"
+            # OpenFlowJava
+            "org.opendaylight.openflowjava:openflowjava-parent:openflowjava/parent/openflowjava-parent")
 
 # Find all project poms ignoring the /src/ paths (We don't want to scan code)
 for pom in `find . -name pom.xml -not -path "*/src/*"`; do
