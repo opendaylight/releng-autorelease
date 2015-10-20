@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fad0f9df_2072087d",
+        "filename": "scripts/releasenotes/generate-release-notes.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-10-20T18:22:01Z",
+      "side": 1,
+      "message": "This looks hardcoded is the expectation that someone will need to modify this file with each release?",
+      "revId": "fe999323297532724e7aa0c50ddb94f302b6e61e",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
