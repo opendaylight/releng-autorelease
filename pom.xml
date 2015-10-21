@@ -28,9 +28,7 @@
     <module>capwap</module>
     <module>centinel</module>
     <module>controller</module>
-    <!-- Temporarily disable didm until snmp issue is resolved
     <module>didm</module>
-    -->
     <module>dlux</module>
     <module>docs</module>
     <!-- Disable faas until they have buildable code
