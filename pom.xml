@@ -68,10 +68,7 @@
     <module>sdninterfaceapp</module>
     <module>sfc</module>
     <module>snbi</module>
-    <!-- Disable snmp until blocking bug resolved:
-         https://bugs.opendaylight.org/show_bug.cgi?id=4396
     <module>snmp</module>
-    -->
     <module>snmp4sdn</module>
     <module>sxp</module>
     <module>tcpmd5</module>
