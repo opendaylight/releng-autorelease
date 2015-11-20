@@ -45,10 +45,7 @@
     <module>netide</module>
     <module>neutron</module>
     <module>next</module>
-    <!-- Temporarily remove nic until vtn bug resolved:
-         https://bugs.opendaylight.org/show_bug.cgi?id=4426
     <module>nic</module>
-    -->
     <module>odlparent</module>
     <module>of-config</module>
     <module>ofextensions/circuitsw</module>
