@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # @License EPL-1.0 <http://spdx.org/licenses/EPL-1.0>
 ##############################################################################
@@ -53,7 +53,7 @@ RELEASE_TAG=$2
 FILENAMES="pom.xml features.xml"
 
 
-if [ "$MODE" = "bump" ]
+if [ "$MODE" == "bump" ]
 then
     echo "Bumping versions..."
     for name in $FILENAMES
@@ -75,7 +75,7 @@ then
         find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)\.(\d+)-$RELEASE_TAG/\$1.\$2.@{[1+\$3]}-SNAPSHOT/g" {} +
         find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)-$RELEASE_TAG/\$1.\$2.1-SNAPSHOT/g" {} +
     done
-elif [ "$MODE" = "release" ]
+elif [ "$MODE" == "release" ]
 then
     for name in $FILENAMES
     do
