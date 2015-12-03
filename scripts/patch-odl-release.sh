@@ -39,7 +39,7 @@ scriptdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 # built the release. Basically ensuring that no new patches snuck into the
 # project during code freeze.
 CURRENT_HASH=`git rev-parse HEAD`
-EXPECTED_HASH=`grep $project $PATCH_DIR/taglist.log | awk '{ print $2 }'`
+EXPECTED_HASH=`grep "$project[[:space:]]" $PATCH_DIR/taglist.log | awk '{ print $2 }'`
 echo "Current Hash: $CURRENT_HASH"
 echo "Expected Hash: $EXPECTED_HASH"
 if [ "$CURRENT_HASH" != "$EXPECTED_HASH" ]
