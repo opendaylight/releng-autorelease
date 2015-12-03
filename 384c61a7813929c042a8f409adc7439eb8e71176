@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5aaae553_9fe23802",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-12-03T18:02:59Z",
+      "side": 1,
+      "message": "Can you explain what this patch does?\n\nPlease follow these commit message guidelines to help you write well formed commit messages:\n\nhttps://wiki.openstack.org/wiki/GitCommitMessages",
+      "revId": "384c61a7813929c042a8f409adc7439eb8e71176",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_1f1728ef",
+        "filename": "scripts/forall/count-models",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-12-03T18:02:59Z",
+      "side": 1,
+      "message": "Trailing whitespace.",
+      "revId": "384c61a7813929c042a8f409adc7439eb8e71176",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_5f1da00e",
+        "filename": "scripts/forall/count-models",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-12-03T18:02:59Z",
+      "side": 1,
+      "message": "Please try to avoid having really long lines in scripts. I\u0027d recommend using \"\\\" to split this off into multiple lines. Perhaps 1 line per command.",
+      "revId": "384c61a7813929c042a8f409adc7439eb8e71176",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_9f2b1830",
+        "filename": "scripts/forall/for-all.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-12-03T18:02:59Z",
+      "side": 1,
+      "message": "Please run flake8 against this file and make sure it passes flake8 checks.",
+      "revId": "384c61a7813929c042a8f409adc7439eb8e71176",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_3fe78414",
+        "filename": "scripts/forall/for-all.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-12-03T18:02:59Z",
+      "side": 1,
+      "message": "Would be nice to have something at the top of this file. Or even better a printout of the usage statement to describe what this file does.",
+      "revId": "384c61a7813929c042a8f409adc7439eb8e71176",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aaae553_bfba94df",
+        "filename": "scripts/forall/for-all.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-12-03T18:02:59Z",
+      "side": 1,
+      "message": "Up to you but I would highly suggest using argparse to manage your arguements rather than building your own argument parser. This module is available in py2 and py3\n\nhttps://docs.python.org/3/library/argparse.html",
+      "revId": "384c61a7813929c042a8f409adc7439eb8e71176",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
