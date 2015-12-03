@@ -16,7 +16,7 @@
 
   <groupId>org.opendaylight.releng.autorelease</groupId>
   <artifactId>autorelease-root</artifactId>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.3-Lithium-SR3</version>
   <packaging>pom</packaging>
   <name>autorelease</name> <!-- Used by Sonar to set project name -->
   
