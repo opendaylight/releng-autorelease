@@ -1,0 +1,3 @@
+autorelease/scripts/forall/for-all.py --pom autorelease --no-cd "git clone https://git.opendaylight.org/gerrit/{f}.git {}"
+autorelease/scripts/forall/for-all.py --pom autorelease "git checkout $1" 
+find . -name *.yang | grep "src/main" | grep -v test | grep -v samples | grep -v "__" | while read line; do pyang -f name $line; done | sort | uniq | grep -v ^ietf- | grep -v ^iana- | grep -v ^ieee- | grep -v SNMP | grep -v MIB | wc
