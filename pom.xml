@@ -58,7 +58,10 @@
     <module>sfc</module>
     <module>snbi</module>
     <module>snmp</module>
+    <!-- Disable until Bug 4720 is resolved.
+         https://bugs.opendaylight.org/show_bug.cgi?id=4720
     <module>snmp4sdn</module>
+    -->
     <module>sxp</module>
     <module>tcpmd5</module>
     <module>topoprocessing</module>
