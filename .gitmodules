@@ -78,10 +78,6 @@
 	path = alto
 	url = ../../alto
 	branch = master
-[submodule "capwap"]
-	path = capwap
-	url = ../../capwap
-	branch = master
 [submodule "didm"]
 	path = didm
 	url = ../../didm
