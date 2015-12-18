@@ -25,6 +25,7 @@
     <module>alto</module>
     <module>armoury</module>
     <module>bgpcep</module>
+    <module>capwap</module>
     <module>centinel</module>
     <module>controller</module>
     <module>didm</module>

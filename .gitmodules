@@ -194,3 +194,7 @@
 	path = of-config
 	url = ../../of-config
 	branch = master
+[submodule "capwap"]
+	path = capwap
+	url = ../../capwap
+    branch = master
