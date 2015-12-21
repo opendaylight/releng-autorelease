@@ -26,7 +26,10 @@
     <module>armoury</module>
     <module>bgpcep</module>
     <module>capwap</module>
+    <!-- Disable until bug 4824 is fixed.
+         https://bugs.opendaylight.org/show_bug.cgi?id=4824
     <module>centinel</module>
+    -->
     <module>controller</module>
     <module>didm</module>
     <module>dlux</module>
