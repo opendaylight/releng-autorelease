@@ -1,4 +1,4 @@
-# Contributing to releng/builder
+# Contributing to releng/autorelease
 
 Thank you for your interest in the OpenDaylight project. This is a project repo
 for one of many OpenDaylight projects [1].
@@ -23,7 +23,7 @@ discussions and planning. Details on how to communicate can be found on our
 wiki here [5].
 
 [1] <https://wiki.opendaylight.org/view/Project_list>
-[2] <https://git.opendaylight.org/gerrit/#/admin/projects/releng/builder>
+[2] <https://git.opendaylight.org/gerrit/#/admin/projects/releng/autorelease>
 [3] <https://wiki.opendaylight.org/view/Submit_a_Patch>
 [4] <https://bugs.opendaylight.org>
 [5] <https://wiki.opendaylight.org/view/Communication>
