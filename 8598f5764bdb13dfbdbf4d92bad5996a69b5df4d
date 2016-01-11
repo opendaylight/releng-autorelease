@@ -1,0 +1,8 @@
+Code-Review+1: Alexis de Talhouët <adetalhouet@inocybe.com>
+Code-Review+2: Thanh Ha <thanh.ha@linuxfoundation.org>
+Verified+1: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-by: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-at: Mon, 11 Jan 2016 21:44:07 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/32369
+Project: releng/autorelease
+Branch: refs/heads/master
