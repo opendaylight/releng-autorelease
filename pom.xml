@@ -23,7 +23,6 @@
   <modules>
     <module>aaa</module>
     <module>alto</module>
-    <module>armoury</module>
     <module>bgpcep</module>
     <module>capwap</module>
     <module>centinel</module>
