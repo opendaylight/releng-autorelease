@@ -1,0 +1,1 @@
+find . -name *.yang | grep "src/main" | grep -v test | grep -v samples | grep -v "__" | while read line; do pyang -f name $line 2>/dev/null; done | sort | uniq | grep -v ^ietf- | grep -v ^iana- | grep -v ^ieee- | grep -v SNMP | grep -v MIB | wc
