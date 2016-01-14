@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ba3841fe_032050f6",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-01-14T03:43:23Z",
+      "side": 1,
+      "message": "Please refer to this documentation on how to construct commit messages:\n\n https://wiki.openstack.org/wiki/GitCommitMessages",
+      "parentUuid": "ba3841fe_c325c80b",
+      "revId": "a4a9b1aa0c7ae7719e7a62b5617820edd7bb7fbf",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3841fe_830c6096",
         "filename": "scripts/forall/count-models.sh",
         "patchSetId": 1
