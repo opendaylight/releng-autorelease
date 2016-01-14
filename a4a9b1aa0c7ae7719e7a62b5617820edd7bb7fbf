@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "ba3841fe_830c6096",
+        "filename": "scripts/forall/count-models.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-01-14T03:39:24Z",
+      "side": 1,
+      "message": "Please explain what this script does via comment at the top and add a license header. ODL uses Eclipse Public License.\n\nLikewise for the other files.",
+      "revId": "a4a9b1aa0c7ae7719e7a62b5617820edd7bb7fbf",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3841fe_034970d0",
         "filename": "scripts/forall/count-models.sh",
         "patchSetId": 1
