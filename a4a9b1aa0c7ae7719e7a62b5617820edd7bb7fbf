@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba3841fe_034970d0",
+        "filename": "scripts/forall/count-models.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-01-14T03:38:26Z",
+      "side": 1,
+      "message": "Can you organize this for reability?\n\nfor example you can do\n\n find . -name *.yang | \\\n     grep \"src/main\" | \\\n     grep -v test | \\\n     ...",
+      "revId": "a4a9b1aa0c7ae7719e7a62b5617820edd7bb7fbf",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba3841fe_a33b6437",
+        "filename": "scripts/forall/for-all.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-01-14T03:38:26Z",
+      "side": 1,
+      "message": "Please make this pass flake8 test.",
+      "revId": "a4a9b1aa0c7ae7719e7a62b5617820edd7bb7fbf",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba3841fe_431258b5",
+        "filename": "scripts/forall/list-models.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-01-14T03:38:26Z",
+      "side": 1,
+      "message": "Please reorganize this for readability",
+      "revId": "a4a9b1aa0c7ae7719e7a62b5617820edd7bb7fbf",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
