@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "ba3841fe_c325c80b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-01-14T03:42:22Z",
+      "side": 1,
+      "message": "Commit messages should be written in Present-tense, imperative style. I\u0027d also would rather the commit message explain what is being added as well as how the new scripts work.\n\n\nFor example:\n\n Add script scripts to gather information about modules\n\n get-modules.sh:\n This script gets a list of modules in autorelease\n\n list-modules.sh:\n This script lists modules in autorelease\n ...\n\nPlease provide details that allows me to understand why I want to merge these patches.",
+      "revId": "a4a9b1aa0c7ae7719e7a62b5617820edd7bb7fbf",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3841fe_830c6096",
         "filename": "scripts/forall/count-models.sh",
         "patchSetId": 1
