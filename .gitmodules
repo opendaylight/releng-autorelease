@@ -1,196 +1,196 @@
 [submodule "aaa"]
 	path = aaa
 	url = ../../aaa
-	branch = master
+	branch = stable/beryllium
 [submodule "bgpcep"]
 	path = bgpcep
 	url = ../../bgpcep
-	branch = master
+	branch = stable/beryllium
 [submodule "controller"]
 	path = controller
 	url = ../../controller
-	branch = master
+	branch = stable/beryllium
 [submodule "dlux"]
 	path = dlux
 	url = ../../dlux
-	branch = master
+	branch = stable/beryllium
 [submodule "groupbasedpolicy"]
 	path = groupbasedpolicy
 	url = ../../groupbasedpolicy
-	branch = master
+	branch = stable/beryllium
 [submodule "l2switch"]
 	path = l2switch
 	url = ../../l2switch
-	branch = master
+	branch = stable/beryllium
 [submodule "lispflowmapping"]
 	path = lispflowmapping
 	url = ../../lispflowmapping
-	branch = master
+	branch = stable/beryllium
 [submodule "odlparent"]
 	path = odlparent
 	url = ../../odlparent
-	branch = master
+	branch = stable/beryllium
 [submodule "openflowjava"]
 	path = openflowjava
 	url = ../../openflowjava
-	branch = master
+	branch = stable/beryllium
 [submodule "openflowplugin"]
 	path = openflowplugin
 	url = ../../openflowplugin
-	branch = master
+	branch = stable/beryllium
 [submodule "ovsdb"]
 	path = ovsdb
 	url = ../../ovsdb
-	branch = master
+	branch = stable/beryllium
 [submodule "sdninterfaceapp"]
 	path = sdninterfaceapp
 	url = ../../sdninterfaceapp
-	branch = master
+	branch = stable/beryllium
 [submodule "sfc"]
 	path = sfc
 	url = ../../sfc
-	branch = master
+	branch = stable/beryllium
 [submodule "snbi"]
 	path = snbi
 	url = ../../snbi
-	branch = master
+	branch = stable/beryllium
 [submodule "snmp4sdn"]
 	path = snmp4sdn
 	url = ../../snmp4sdn
-	branch = master
+	branch = stable/beryllium
 [submodule "tcpmd5"]
 	path = tcpmd5
 	url = ../../tcpmd5
-	branch = master
+	branch = stable/beryllium
 [submodule "ttp"]
 	path = ttp
 	url = ../../ttp
-	branch = master
+	branch = stable/beryllium
 [submodule "vtn"]
 	path = vtn
 	url = ../../vtn
-	branch = master
+	branch = stable/beryllium
 [submodule "yangtools"]
 	path = yangtools
 	url = ../../yangtools
-	branch = master
+	branch = stable/beryllium
 [submodule "alto"]
 	path = alto
 	url = ../../alto
-	branch = master
+	branch = stable/beryllium
 [submodule "didm"]
 	path = didm
 	url = ../../didm
-	branch = master
+	branch = stable/beryllium
 [submodule "docs"]
 	path = docs
 	url = ../../docs
-	branch = master
+	branch = stable/beryllium
 [submodule "iotdm"]
 	path = iotdm
 	url = ../../iotdm
-	branch = master
+	branch = stable/beryllium
 [submodule "lacp"]
 	path = lacp
 	url = ../../lacp
-	branch = master
+	branch = stable/beryllium
 [submodule "nic"]
 	path = nic
 	url = ../../nic
-	branch = master
+	branch = stable/beryllium
 [submodule "neutron"]
 	path = neutron
 	url = ../../neutron
-	branch = master
+	branch = stable/beryllium
 [submodule "packetcable"]
 	path = packetcable
 	url = ../../packetcable
-	branch = master
+	branch = stable/beryllium
 [submodule "reservation"]
 	path = reservation
 	url = ../../reservation
-	branch = master
+	branch = stable/beryllium
 [submodule "snmp"]
 	path = snmp
 	url = ../../snmp
-	branch = master
+	branch = stable/beryllium
 [submodule "sxp"]
 	path = sxp
 	url = ../../sxp
-	branch = master
+	branch = stable/beryllium
 [submodule "tsdr"]
 	path = tsdr
 	url = ../../tsdr
-	branch = master
+	branch = stable/beryllium
 [submodule "topoprocessing"]
 	path = topoprocessing
 	url = ../../topoprocessing
-	branch = master
+	branch = stable/beryllium
 [submodule "usc"]
 	path = usc
 	url = ../../usc
-	branch = master
+	branch = stable/beryllium
 [submodule "vpnservice"]
 	path = vpnservice
 	url = ../../vpnservice
-	branch = master
+	branch = stable/beryllium
 [submodule "netconf"]
 	path = netconf
 	url = ../../netconf
-	branch = master
+	branch = stable/beryllium
 [submodule "mdsal"]
 	path = mdsal
 	url = ../../mdsal
-	branch = master
+	branch = stable/beryllium
 [submodule "integration/distribution"]
 	path = integration/distribution
 	url = ../../integration/distribution
-	branch = master
+	branch = stable/beryllium
 [submodule "centinel"]
 	path = centinel
 	url = ../../centinel
-        branch = master
+        branch = stable/beryllium
 [submodule "ofextensions/circuitsw"]
 	path = ofextensions/circuitsw
 	url = ../../ofextensions/circuitsw
-        branch = master
+        branch = stable/beryllium
 [submodule "faas"]
 	path = faas
 	url = ../../faas
-        branch = master
+        branch = stable/beryllium
 [submodule "messaging4transport"]
 	path = messaging4transport
 	url = ../../messaging4transport
-        branch = master
+        branch = stable/beryllium
 [submodule "nemo"]
 	path = nemo
 	url = ../../nemo
-        branch = master
+        branch = stable/beryllium
 [submodule "netide"]
 	path = netide
 	url = ../../netide
-        branch = master
+        branch = stable/beryllium
 [submodule "unimgr"]
 	path = unimgr
 	url = ../../unimgr
-	branch = master
+	branch = stable/beryllium
 [submodule "next"]
 	path = next
 	url = ../../next
-    branch = master
+    branch = stable/beryllium
 [submodule "yang-push"]
 	path = yang-push
 	url = ../../yang-push
-    branch = master
+    branch = stable/beryllium
 [submodule "usecplugin"]
 	path = usecplugin
 	url = ../../usecplugin
-    branch = master
+    branch = stable/beryllium
 [submodule "of-config"]
 	path = of-config
 	url = ../../of-config
-	branch = master
+	branch = stable/beryllium
 [submodule "capwap"]
 	path = capwap
 	url = ../../capwap
-    branch = master
+    branch = stable/beryllium
