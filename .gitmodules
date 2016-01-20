@@ -150,10 +150,6 @@
 	path = centinel
 	url = ../../centinel
         branch = stable/beryllium
-[submodule "ofextensions/circuitsw"]
-	path = ofextensions/circuitsw
-	url = ../../ofextensions/circuitsw
-        branch = stable/beryllium
 [submodule "faas"]
 	path = faas
 	url = ../../faas
