@@ -11,7 +11,7 @@
         <menu name="releng/builder" inherit="top">
             <item name="Project Info" href="project-info.html" />
             <item name="Autorelease" href="autorelease.html" />
-
+            <item name="Branch Cutting" href="branch-cutting.html" />
         </menu>
 
         <menu name="Dependency and Version Tools" inherit="top">
