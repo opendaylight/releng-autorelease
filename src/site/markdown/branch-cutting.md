@@ -16,6 +16,7 @@ M5 Offset 0
 M5 Offset 2
 
 JJB:
+
 - Remove pre-boron JJB jobs
   **(releng/builder committers)**
 - Change JJB stream:beryllium branch pointer from master -> stable/beryllium
@@ -24,6 +25,7 @@ JJB:
   **(releng/builder committers)**
 
 Process:
+
 - Disable Submit permission on master branch
   **(Helpdesk)**
 - Create stable/beryllium branches based on HEAD master
