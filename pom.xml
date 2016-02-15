@@ -51,7 +51,6 @@
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>packetcable</module>
-    <module>reservation</module>
     <module>sdninterfaceapp</module>
     <module>sfc</module>
     <module>snbi</module>

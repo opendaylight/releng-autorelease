@@ -106,10 +106,6 @@
 	path = packetcable
 	url = ../../packetcable
 	branch = stable/beryllium
-[submodule "reservation"]
-	path = reservation
-	url = ../../reservation
-	branch = stable/beryllium
 [submodule "snmp"]
 	path = snmp
 	url = ../../snmp
