@@ -12,7 +12,7 @@
             <item name="Project Info" href="project-info.html" />
             <item name="Autorelease" href="autorelease.html" />
             <item name="Branch Cutting" href="branch-cutting.html" />
-            <item name="Branch Cutting" href="releasing-opendaylight.html" />
+            <item name="Releasing OpenDaylight" href="releasing-opendaylight.html" />
         </menu>
 
         <menu name="Dependency and Version Tools" inherit="top">
