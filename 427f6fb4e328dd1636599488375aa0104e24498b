@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a3d3df0_6e332df6",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-03-09T17:36:05Z",
+      "side": 1,
+      "message": "\"find . -name pom.xml\" would be better than \"| grep pom.xml\" I think there\u0027s also some exclude rules you can add for the grep -v commands too but I don\u0027t know it off the top of my head.",
+      "revId": "427f6fb4e328dd1636599488375aa0104e24498b",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
