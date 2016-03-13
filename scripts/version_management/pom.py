@@ -9,6 +9,42 @@
 
 import xml.etree.ElementTree as ET
 
+class POMSystem(object):
+    def __init__(self,pomfilenames):
+        self.pomdict = dict()
+        self.parsedpoms = dict()
+        self.unresolvedpoms = pomfilenames
+        self.groupIdartifactId2poms = dict()
+        lastlen = len(self.unresolvedpoms) + 1
+        while len(self.unresolvedpoms) > 0:
+            if not (lastlen > len(self.unresolvedpoms)):
+                break
+            lastlen = len(self.unresolvedpoms)
+            for filename in self.unresolvedpoms:
+                pom = self.parsedpoms.get(filename)
+                if pom is None:
+                    pom = POM(filename, self.pomdict)
+                    self.parsedpoms[filename] = pom
+                else:
+                    pom.calculateEffectiveMavenCoordinates()
+                if (pom.resolved()):
+                    self.pomdict[str(pom)] = pom
+                    if(not self.groupIdartifactId2poms.get(pom.groupIdartifactId()) is None):
+                        existingpom = self.groupIdartifactId2poms.get(pom.groupIdartifactId())
+                        raise Exception("Existing pom %s filename %s exists in conflict with %s filename %s" % (str(existingpom), existingpom.filename,str(pom),pom.filename))
+                    self.groupIdartifactId2poms[pom.groupIdartifactId()]= pom
+                    self.unresolvedpoms.remove(filename)
+        if len(self.unresolvedpoms) > 0:
+            for item in self.unresolvedpoms:
+                pom = parsedpoms[item]
+                version = pom.effectiveMavenCoordinates.version
+                parent = pom.parentMavenCoordinates
+                print("Could not resolve pom: %s looking for %s in parent %s" % (item, version, parent))
+
+            raise Exception("Failure to resolve properties in all pom files")
+
+
+
 
 class MavenProperty(object):
     def __init__(self, pom, key, value):
@@ -42,6 +78,9 @@ class MavenCoordinates(object):
         else:
             return None
 
+    def groupIdartifactId(self):
+        return "%s:%s" % (self.groupId,self.artifactId)
+
     def __str__(self):
         return "%s:%s:%s" % (self.groupId, self.artifactId, self.version)
 
@@ -56,8 +95,8 @@ class POM(object):
         self.parent = self.root.find('./x:parent', self.namespaces)
         self.parentMavenCoordinates = MavenCoordinates(self.parent)
         self.mavenCoordinates = MavenCoordinates(self.root)
-        self.effectiveMavenCoordinates = self.calculateEffectiveMavenCoordinates()
         self.properties = self._findProperties()
+        self.effectiveMavenCoordinates = self.calculateEffectiveMavenCoordinates()
 
     def __str__(self):
         return str(self.effectiveMavenCoordinates)
@@ -74,10 +113,19 @@ class POM(object):
                 self.effectiveMavenCoordinates.groupId = self.parentMavenCoordinates.groupId
             else:
                 raise Exception("filename: %s is missing version." % (self.filename))
-        if ("${" in str(self.effectiveMavenCoordinates.version)):
+        if (not self.resolved()):
             self.effectiveMavenCoordinates.version = self.findPropertiesFromParent(
                 self.effectiveMavenCoordinates.version)
         return self.effectiveMavenCoordinates
+
+    def resolved(self):
+        if (not "${" in str(self.effectiveMavenCoordinates.version)):
+            return True
+        else:
+            return False
+
+    def groupIdartifactId(self):
+        return self.effectiveMavenCoordinates.groupIdartifactId()
 
     def _findProperties(self):
         match = "./x:properties"
