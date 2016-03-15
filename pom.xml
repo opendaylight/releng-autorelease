@@ -71,10 +71,7 @@
     <module>tsdr</module>
     <module>ttp</module>
     <module>unimgr</module>
-    <!-- Disable usc until bug 4964 resolved.
-         See: https://bugs.opendaylight.org/show_bug.cgi?id=4964
     <module>usc</module>
-    -->
     <module>usecplugin</module>
     <module>vpnservice</module>
     <module>vtn</module>
