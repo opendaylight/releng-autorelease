@@ -50,7 +50,7 @@ fi
 
 MODE=$1
 RELEASE_TAG=$2
-FILENAMES="pom.xml features.xml"
+FILENAMES="*.xml"
 
 
 if [ "$MODE" == "bump" ]
