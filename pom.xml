@@ -5,7 +5,7 @@
   are made available under the terms of the Eclipse Distribution License v1.0
   which accompanies this distribution, and is available at
   http://www.eclipse.org/org/documents/edl-v10.php
- 
+
   Contributors:
     Thanh Ha (The Linux Foundation) - initial implementation
 -->
@@ -20,58 +20,72 @@
   <packaging>pom</packaging>
   <name>autorelease</name> <!-- Used by Sonar to set project name -->
 
-  <modules>
-    <!-- Build docs first if possible -->
-    <module>docs</module>
+  <profiles>
+    <profile>
+      <id>offset0</id>
+      <modules>
+        <!-- Build docs first if possible -->
+        <module>docs</module>
 
-    <!-- Build OpenDaylight projects -->
-    <module>aaa</module>
-    <module>alto</module>
-    <module>bgpcep</module>
-    <module>capwap</module>
-    <module>centinel</module>
-    <module>controller</module>
-    <module>didm</module>
-    <module>dlux</module>
-    <module>faas</module>
-    <module>groupbasedpolicy</module>
-    <module>integration/distribution</module>
-    <module>iotdm</module>
-    <module>l2switch</module>
-    <module>lacp</module>
-    <module>lispflowmapping</module>
-    <module>mdsal</module>
-    <module>messaging4transport</module>
-    <module>nemo</module>
-    <module>netconf</module>
-    <module>netide</module>
-    <module>neutron</module>
-    <module>next</module>
-    <module>nic</module>
-    <module>odlparent</module>
-    <module>of-config</module>
-    <module>openflowjava</module>
-    <module>openflowplugin</module>
-    <module>ovsdb</module>
-    <module>packetcable</module>
-    <module>sdninterfaceapp</module>
-    <module>sfc</module>
-    <module>snbi</module>
-    <module>snmp</module>
-    <module>snmp4sdn</module>
-    <module>sxp</module>
-    <module>tcpmd5</module>
-    <module>topoprocessing</module>
-    <module>tsdr</module>
-    <module>ttp</module>
-    <module>unimgr</module>
-    <module>usc</module>
-    <module>usecplugin</module>
-    <module>vpnservice</module>
-    <module>vtn</module>
-    <module>yang-push</module>
-    <module>yangtools</module>
-  </modules>
+        <module>aaa</module>
+        <module>controller</module>
+        <module>mdsal</module>
+        <module>netconf</module>
+        <module>odlparent</module>
+        <module>yangtools</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>offset1</id>
+      <modules>
+        <module>bgpcep</module>
+        <module>dlux</module>
+        <module>l2switch</module>
+        <module>lispflowmapping</module>
+        <module>neutron</module>
+        <module>next</module>
+        <module>openflowjava</module>
+        <module>openflowplugin</module>
+        <module>snmp</module>
+        <module>snmp4sdn</module>
+        <module>sxp</module>
+        <module>tcpmd5</module>
+        <module>topoprocessing</module>
+        <module>usc</module>
+        <module>yang-push</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>offset2</id>
+      <modules>
+        <module>alto</module>
+        <module>capwap</module>
+        <module>centinel</module>
+        <module>didm</module>
+        <module>faas</module>
+        <module>groupbasedpolicy</module>
+        <module>integration/distribution</module>
+        <module>iotdm</module>
+        <module>lacp</module>
+        <module>messaging4transport</module>
+        <module>nemo</module>
+        <module>netide</module>
+        <module>nic</module>
+        <module>of-config</module>
+        <module>ovsdb</module>
+        <module>packetcable</module>
+        <module>sdninterfaceapp</module>
+        <module>sfc</module>
+        <module>snbi</module>
+        <module>tsdr</module>
+        <module>ttp</module>
+        <module>unimgr</module>
+        <module>usecplugin</module>
+        <module>vpnservice</module>
+        <module>vtn</module>
+      </modules>
+    </profile>
+  </profiles>
 
   <build>
     <plugins>
