@@ -16,7 +16,7 @@
 
   <groupId>org.opendaylight.releng.autorelease</groupId>
   <artifactId>autorelease-root</artifactId>
-  <version>1.1.1-SNAPSHOT</version>
+  <version>1.1.1-Beryllium-SR1</version>
   <packaging>pom</packaging>
   <name>autorelease</name> <!-- Used by Sonar to set project name -->
 
