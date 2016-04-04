@@ -106,6 +106,10 @@
 	path = reservation
 	url = ../../reservation
 	branch = master
+[submodule "snmp"]
+	path = snmp
+	url = ../../snmp
+	branch = master
 [submodule "sxp"]
 	path = sxp
 	url = ../../sxp
