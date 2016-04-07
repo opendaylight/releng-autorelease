@@ -202,3 +202,7 @@
 	path = atrium
 	url = ../../atrium
     branch = master
+[submodule "cardinal"]
+	path = cardinal
+	url = ../../cardinal
+	branch = master

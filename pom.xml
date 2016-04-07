@@ -32,6 +32,9 @@
     -->
     <module>bgpcep</module>
     <module>capwap</module>
+    <!-- Disable until they have buildable code
+    <module>cardinal</module>
+    -->
     <module>centinel</module>
     <module>controller</module>
     <module>didm</module>
