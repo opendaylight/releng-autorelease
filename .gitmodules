@@ -158,10 +158,6 @@
 	path = faas
 	url = ../../faas
         branch = master
-[submodule "messaging4transport"]
-	path = messaging4transport
-	url = ../../messaging4transport
-        branch = master
 [submodule "nemo"]
 	path = nemo
 	url = ../../nemo
