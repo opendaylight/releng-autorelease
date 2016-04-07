@@ -198,3 +198,7 @@
 	path = genius
 	url = ../../genius
     branch = master
+[submodule "atrium"]
+	path = atrium
+	url = ../../atrium
+    branch = master
