@@ -34,6 +34,9 @@
     <module>didm</module>
     <module>dlux</module>
     <module>faas</module>
+    <!-- Disable until they have buildable code
+    <module>genius</module>
+    -->
     <module>groupbasedpolicy</module>
     <module>integration/distribution</module>
     <module>iotdm</module>

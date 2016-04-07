@@ -194,3 +194,7 @@
 	path = capwap
 	url = ../../capwap
     branch = master
+[submodule "genius"]
+	path = genius
+	url = ../../genius
+    branch = master
