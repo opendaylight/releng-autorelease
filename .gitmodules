@@ -106,10 +106,6 @@
 	path = packetcable
 	url = ../../packetcable
 	branch = master
-[submodule "reservation"]
-	path = reservation
-	url = ../../reservation
-	branch = master
 [submodule "snmp"]
 	path = snmp
 	url = ../../snmp
