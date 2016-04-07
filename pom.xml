@@ -5,7 +5,7 @@
   are made available under the terms of the Eclipse Distribution License v1.0
   which accompanies this distribution, and is available at
   http://www.eclipse.org/org/documents/edl-v10.php
- 
+
   Contributors:
     Thanh Ha (The Linux Foundation) - initial implementation
 -->
@@ -49,11 +49,7 @@
     <module>netconf</module>
     <module>netide</module>
     <module>neutron</module>
-    <!-- Disable NeXt until they can be built with Maven
-         See: https://lists.opendaylight.org/pipermail/next-dev/2016-February/000051.html
-         See: https://lists.opendaylight.org/pipermail/release/2016-February/005713.html
     <module>next</module>
-    -->
     <module>nic</module>
     <module>odlparent</module>
     <module>of-config</module>
