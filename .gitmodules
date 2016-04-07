@@ -78,6 +78,10 @@
 	path = alto
 	url = ../../alto
 	branch = master
+[submodule "didm"]
+	path = didm
+	url = ../../didm
+	branch = master
 [submodule "docs"]
 	path = docs
 	url = ../../docs
