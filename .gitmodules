@@ -198,3 +198,7 @@
 	path = cardinal
 	url = ../../cardinal
 	branch = master
+[submodule "netvirt"]
+	path = netvirt
+	url = ../../netvirt
+	branch = master
