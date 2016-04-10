@@ -186,3 +186,8 @@
 	path = capwap
 	url = ../../capwap
     branch = stable/beryllium
+[submodule "netvirt"]
+	path = netvirt
+	url = ../../netvirt
+	branch = stable/beryllium
+
