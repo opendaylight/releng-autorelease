@@ -45,6 +45,7 @@
     <module>nemo</module>
     <module>netconf</module>
     <module>netide</module>
+    <module>netvirt</module>
     <module>neutron</module>
     <module>next</module>
     <module>nic</module>
