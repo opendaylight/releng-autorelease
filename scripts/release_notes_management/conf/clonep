@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# @License EPL-1.0 <http://spdx.org/licenses/EPL-1.0>
+##############################################################################
+# Copyright (c) 2016 Huawei, Inc and Others.
+#
+# All rights reserved. This program and the accompanying materials
+# are made available under the terms of the Eclipse Public License v1.0
+# which accompanies this distribution, and is available at
+# http://www.eclipse.org/legal/epl-v10.html
+##############################################################################
+
+##############################################################################
+# Define Defaults
+##############################################################################
+
+##############################################################################
+# Define Variables
+##############################################################################
+
+##############################################################################
+# Show Usage
+##############################################################################
+usage () {
+  echo "AutoNotes Clone Project Commend"
+  echo "usage: clonep projectId projectPath projectBranch projectRange"
+  echo "projectId:     The unique project identifier."
+  echo "projectPath:   The file path to the project."
+  echo "projectBranch: The branch to checkout."
+  echo "projectRange:  The revision range to log."
+}
+
+## Setup
+mkdir -p projects
+cd projects
+
+## Clone
+echo "Cloning ${2}"
+git clone https://git.opendaylight.org/gerrit/${2}.git
+
+## Checkout
+cd ${1}
+echo "Branching ${3}"
+git checkout -b ${3}
+
+## Log
+echo "Logging ${4}"
+echo "#####${2}" >> ../log.txt
+git log ${4} --pretty=oneline | cat >> ../log.txt
+
+## Cleanup
+echo "Completed ${2}"
