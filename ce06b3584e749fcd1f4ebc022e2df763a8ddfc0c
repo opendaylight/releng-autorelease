@@ -1,0 +1,265 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a494da4_eaeed7b3",
+        "filename": "scripts/release_notes_management/build.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "What company?",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_2a30bf55",
+        "filename": "scripts/release_notes_management/conf/clonep",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "What company?",
+      "range": {
+        "startLine": 5,
+        "startChar": 28,
+        "endLine": 5,
+        "endChar": 40
+      },
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_50ba1ae2",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/AutoNotes.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "Please fix tab/spaces in this file.",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_8a359348",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/AutoNotes.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "What company?",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_6a3ac737",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/model/Commit.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "What Company?",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_70b916e9",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/model/Project.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "What company?",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_90b4a2f3",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/model/Project.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "Trailing whitespace",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_30bf8ed2",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/model/Project.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "Trailing whitespace",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_d0cd8a88",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/service/CommitService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "Trailing whitespace",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_70b0f6f4",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/service/CommitService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "Am I misreading or does your example not match the template?\n\nIt looks like it goes:\n\ncommit_hash bug_id: bug commit_text,\ngerrit_url bug_url commit_text",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_d0946a46",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/service/GitService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "Trailing whitespace",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_f09b6670",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/service/PropertyService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "Please fix tab/spaces in this file.",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_0a4983d0",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/utils/CheckerUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "Fix tabs to 4 spaces.",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_aa3b2f37",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/utils/LogUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "You used 4 spaces in most of the other files so should cleanup this file to be 4 spaces too.",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a494da4_ca3e7b29",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/utils/LogUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-04-12T13:59:16Z",
+      "side": 1,
+      "message": "Trailing whitespace",
+      "revId": "ce06b3584e749fcd1f4ebc022e2df763a8ddfc0c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
