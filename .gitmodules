@@ -202,3 +202,7 @@
 	path = netvirt
 	url = ../../netvirt
 	branch = master
+[submodule "ocpplugin"]
+	path = ocpplugin
+	url = ../../ocpplugin
+	branch = master
