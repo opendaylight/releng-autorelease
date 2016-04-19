@@ -206,3 +206,7 @@
 	path = ocpplugin
 	url = ../../ocpplugin
 	branch = master
+[submodule "natapp"]
+	path = natapp
+	url = ../../natapp
+	branch = master

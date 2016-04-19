@@ -48,6 +48,9 @@
     <module>lacp</module>
     <module>lispflowmapping</module>
     <module>mdsal</module>
+    <!-- Disable until they have buildable code
+    <module>natapp</module>
+    -->
     <module>nemo</module>
     <module>netconf</module>
     <module>netide</module>
