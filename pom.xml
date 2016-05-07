@@ -45,6 +45,9 @@
     <module>faas</module>
     <module>genius</module>
     <module>groupbasedpolicy</module>
+    <!-- Disable until they have buildable code
+    <module>infrautils</module>
+    -->
     <module>integration/distribution</module>
     <module>iotdm</module>
     <module>l2switch</module>
