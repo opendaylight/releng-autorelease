@@ -32,9 +32,7 @@
     -->
     <module>bgpcep</module>
     <module>capwap</module>
-    <!-- Disable until they have buildable code
     <module>cardinal</module>
-    -->
     <module>centinel</module>
     <module>controller</module>
     <!-- Temporarily disable until Bug 5843 is resolved
