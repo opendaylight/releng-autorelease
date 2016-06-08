@@ -54,13 +54,17 @@ then
     exit 1
 fi
 
+
 #######################
 # Start apply patches #
 #######################
-git apply ${PATCH_DIR}/${project/\//-}.patch
-git commit -asm "Release $RELEASE_TAG"
+git fetch ${PATCH_DIR}/${project/\//-}.bundle
+git merge FETCH_HEAD
 git tag -asm "OpenDaylight $RELEASE_TAG release" release/${RELEASE_TAG,,}
 find . -name pom.xml | xargs grep SNAPSHOT
+
 $scriptdir/version.sh bump $RELEASE_TAG
 git commit -asm "Bumping versions by 0.0.1 for next dev cycle"
 find . -name pom.xml | xargs grep $RELEASE_TAG
+
+echo "Tagging and version bumping complete"
