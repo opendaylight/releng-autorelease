@@ -39,7 +39,13 @@ scriptdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 # built the release. Basically ensuring that no new patches snuck into the
 # project during code freeze.
 CURRENT_HASH=`git rev-parse HEAD`
-EXPECTED_HASH=`grep "$project[[:space:]]" $PATCH_DIR/taglist.log | awk '{ print $2 }'`
+EXPECTED_HASH=`grep "^${project} " $PATCH_DIR/taglist.log | awk '{ print $2 }'`
+if [ "$EXPECTED_HASH" == "" ]; then
+    parent_dir="$(dirname `pwd`)"
+    project="${parent_dir##*/}/$project"
+    EXPECTED_HASH=`grep "^${project} " $PATCH_DIR/taglist.log | awk '{ print $2 }'`
+fi
+
 echo "Current Hash: $CURRENT_HASH"
 echo "Expected Hash: $EXPECTED_HASH"
 if [ "$CURRENT_HASH" != "$EXPECTED_HASH" ]
@@ -51,12 +57,10 @@ fi
 #######################
 # Start apply patches #
 #######################
-
-git apply ${PATCH_DIR}/${project}.patch
+git apply ${PATCH_DIR}/${project/\//-}.patch
 git commit -asm "Release $RELEASE_TAG"
 git tag -asm "OpenDaylight $RELEASE_TAG release" release/${RELEASE_TAG,,}
 find . -name pom.xml | xargs grep SNAPSHOT
 $scriptdir/version.sh bump $RELEASE_TAG
 git commit -asm "Bumping versions by 0.0.1 for next dev cycle"
 find . -name pom.xml | xargs grep $RELEASE_TAG
-
