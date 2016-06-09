@@ -214,3 +214,7 @@
 	path = infrautils
 	url = ../../infrautils
 	branch = master
+[submodule "honeycomb/vbd"]
+	path = honeycomb/vbd
+	url = ../../honeycomb/vbd
+	branch = master
