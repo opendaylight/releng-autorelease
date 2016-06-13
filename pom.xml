@@ -35,10 +35,7 @@
     <module>cardinal</module>
     <module>centinel</module>
     <module>controller</module>
-    <!-- Temporarily disable until Bug 5843 is resolved
-         https://bugs.opendaylight.org/show_bug.cgi?id=5843
     <module>didm</module>
-    -->
     <module>dlux</module>
     <!-- Disable until they have buildable code
     <module>eman</module>
