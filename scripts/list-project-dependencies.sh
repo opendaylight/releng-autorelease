@@ -28,6 +28,8 @@ if [ "$1" == "dot" ]; then
     echo "digraph G {" >> $LOG_FILE
 fi
 
+rm -f $LOG_FILE
+
 for module in $modules; do
     module_dependencies=""
     for pom in `find $module -name pom.xml ! -path "*/src/*" ! -path "*/target/*"`; do
