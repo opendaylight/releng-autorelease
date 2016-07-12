@@ -73,7 +73,6 @@
     <module>snmp</module>
     <module>snmp4sdn</module>
     <module>sxp</module>
-    <module>tcpmd5</module>
     <module>topoprocessing</module>
     <module>tsdr</module>
     <module>ttp</module>
