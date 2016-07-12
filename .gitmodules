@@ -146,10 +146,6 @@
 	path = centinel
 	url = ../../centinel
         branch = master
-[submodule "ofextensions/circuitsw"]
-	path = ofextensions/circuitsw
-	url = ../../ofextensions/circuitsw
-        branch = master
 [submodule "faas"]
 	path = faas
 	url = ../../faas

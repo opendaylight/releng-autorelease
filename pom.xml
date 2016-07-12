@@ -62,7 +62,6 @@
     <module>ocpplugin</module>
     <module>odlparent</module>
     <module>of-config</module>
-    <module>ofextensions/circuitsw</module>
     <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
