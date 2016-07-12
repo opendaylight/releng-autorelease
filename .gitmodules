@@ -58,10 +58,6 @@
 	path = snmp4sdn
 	url = ../../snmp4sdn
 	branch = master
-[submodule "tcpmd5"]
-	path = tcpmd5
-	url = ../../tcpmd5
-	branch = master
 [submodule "ttp"]
 	path = ttp
 	url = ../../ttp

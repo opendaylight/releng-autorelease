@@ -66,13 +66,14 @@
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>packetcable</module>
+    <!-- depends on tcpmd5 which is not participating in Boron
     <module>sdninterfaceapp</module>
+    -->
     <module>sfc</module>
     <module>snbi</module>
     <module>snmp</module>
     <module>snmp4sdn</module>
     <module>sxp</module>
-    <module>tcpmd5</module>
     <module>topoprocessing</module>
     <module>tsdr</module>
     <module>ttp</module>
