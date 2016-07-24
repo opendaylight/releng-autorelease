@@ -27,9 +27,7 @@
     <!-- Build OpenDaylight projects -->
     <module>aaa</module>
     <module>alto</module>
-    <!-- Disable until they have buildable code
     <module>atrium</module>
-    -->
     <module>bgpcep</module>
     <module>capwap</module>
     <module>cardinal</module>
