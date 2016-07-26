@@ -64,9 +64,7 @@
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>packetcable</module>
-    <!-- depends on tcpmd5 which is not participating in Boron
     <module>sdninterfaceapp</module>
-    -->
     <module>sfc</module>
     <module>snbi</module>
     <module>snmp</module>
