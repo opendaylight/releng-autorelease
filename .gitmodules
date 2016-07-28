@@ -26,10 +26,6 @@
 	path = lispflowmapping
 	url = ../../lispflowmapping
 	branch = master
-[submodule "odlparent"]
-	path = odlparent
-	url = ../../odlparent
-	branch = master
 [submodule "openflowjava"]
 	path = openflowjava
 	url = ../../openflowjava
