@@ -35,7 +35,9 @@
     <module>controller</module>
     <module>didm</module>
     <module>dlux</module>
+    <!-- Disable until eman depends on Boron artifacts
     <module>eman</module>
+    -->
     <module>faas</module>
     <module>genius</module>
     <module>groupbasedpolicy</module>
