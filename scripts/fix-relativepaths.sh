@@ -19,6 +19,7 @@ fix_relative_paths() {
         "org.opendaylight.odlparent:features-parent:odlparent/features-parent"
         "org.opendaylight.odlparent:bundle-parent:odlparent/bundle-parent"
         "org.opendaylight.odlparent:karaf-parent:odlparent/karaf/karaf-parent"
+        "org.opendaylight.odlparent:opendaylight-karaf-empty:odlparent/karaf/opendaylight-karaf-empty"
         # Yangtools
         "org.opendaylight.yangtools:binding-parent:yangtools/code-generator/binding-parent"
         # Controller
