@@ -1,216 +1,216 @@
 [submodule "aaa"]
 	path = aaa
 	url = ../../aaa
-	branch = master
+	branch = stable/boron
 [submodule "bgpcep"]
 	path = bgpcep
 	url = ../../bgpcep
-	branch = master
+	branch = stable/boron
 [submodule "controller"]
 	path = controller
 	url = ../../controller
-	branch = master
+	branch = stable/boron
 [submodule "dlux"]
 	path = dlux
 	url = ../../dlux
-	branch = master
+	branch = stable/boron
 [submodule "groupbasedpolicy"]
 	path = groupbasedpolicy
 	url = ../../groupbasedpolicy
-	branch = master
+	branch = stable/boron
 [submodule "l2switch"]
 	path = l2switch
 	url = ../../l2switch
-	branch = master
+	branch = stable/boron
 [submodule "lispflowmapping"]
 	path = lispflowmapping
 	url = ../../lispflowmapping
-	branch = master
+	branch = stable/boron
 [submodule "openflowjava"]
 	path = openflowjava
 	url = ../../openflowjava
-	branch = master
+	branch = stable/boron
 [submodule "openflowplugin"]
 	path = openflowplugin
 	url = ../../openflowplugin
-	branch = master
+	branch = stable/boron
 [submodule "ovsdb"]
 	path = ovsdb
 	url = ../../ovsdb
-	branch = master
+	branch = stable/boron
 [submodule "sdninterfaceapp"]
 	path = sdninterfaceapp
 	url = ../../sdninterfaceapp
-	branch = master
+	branch = stable/boron
 [submodule "sfc"]
 	path = sfc
 	url = ../../sfc
-	branch = master
+	branch = stable/boron
 [submodule "snbi"]
 	path = snbi
 	url = ../../snbi
-	branch = master
+	branch = stable/boron
 [submodule "snmp4sdn"]
 	path = snmp4sdn
 	url = ../../snmp4sdn
-	branch = master
+	branch = stable/boron
 [submodule "ttp"]
 	path = ttp
 	url = ../../ttp
-	branch = master
+	branch = stable/boron
 [submodule "vtn"]
 	path = vtn
 	url = ../../vtn
-	branch = master
+	branch = stable/boron
 [submodule "yangtools"]
 	path = yangtools
 	url = ../../yangtools
-	branch = master
+	branch = stable/boron
 [submodule "alto"]
 	path = alto
 	url = ../../alto
-	branch = master
+	branch = stable/boron
 [submodule "didm"]
 	path = didm
 	url = ../../didm
-	branch = master
+	branch = stable/boron
 [submodule "docs"]
 	path = docs
 	url = ../../docs
-	branch = master
+	branch = stable/boron
 [submodule "iotdm"]
 	path = iotdm
 	url = ../../iotdm
-	branch = master
+	branch = stable/boron
 [submodule "lacp"]
 	path = lacp
 	url = ../../lacp
-	branch = master
+	branch = stable/boron
 [submodule "nic"]
 	path = nic
 	url = ../../nic
-	branch = master
+	branch = stable/boron
 [submodule "neutron"]
 	path = neutron
 	url = ../../neutron
-	branch = master
+	branch = stable/boron
 [submodule "packetcable"]
 	path = packetcable
 	url = ../../packetcable
-	branch = master
+	branch = stable/boron
 [submodule "snmp"]
 	path = snmp
 	url = ../../snmp
-	branch = master
+	branch = stable/boron
 [submodule "sxp"]
 	path = sxp
 	url = ../../sxp
-	branch = master
+	branch = stable/boron
 [submodule "tsdr"]
 	path = tsdr
 	url = ../../tsdr
-	branch = master
+	branch = stable/boron
 [submodule "topoprocessing"]
 	path = topoprocessing
 	url = ../../topoprocessing
-	branch = master
+	branch = stable/boron
 [submodule "usc"]
 	path = usc
 	url = ../../usc
-	branch = master
+	branch = stable/boron
 [submodule "vpnservice"]
 	path = vpnservice
 	url = ../../vpnservice
-	branch = master
+	branch = stable/boron
 [submodule "netconf"]
 	path = netconf
 	url = ../../netconf
-	branch = master
+	branch = stable/boron
 [submodule "mdsal"]
 	path = mdsal
 	url = ../../mdsal
-	branch = master
+	branch = stable/boron
 [submodule "integration/distribution"]
 	path = integration/distribution
 	url = ../../integration/distribution
-	branch = master
+	branch = stable/boron
 [submodule "centinel"]
 	path = centinel
 	url = ../../centinel
-        branch = master
+        branch = stable/boron
 [submodule "faas"]
 	path = faas
 	url = ../../faas
-        branch = master
+        branch = stable/boron
 [submodule "nemo"]
 	path = nemo
 	url = ../../nemo
-        branch = master
+        branch = stable/boron
 [submodule "netide"]
 	path = netide
 	url = ../../netide
-        branch = master
+        branch = stable/boron
 [submodule "unimgr"]
 	path = unimgr
 	url = ../../unimgr
-	branch = master
+	branch = stable/boron
 [submodule "next"]
 	path = next
 	url = ../../next
-    branch = master
+    branch = stable/boron
 [submodule "yang-push"]
 	path = yang-push
 	url = ../../yang-push
-    branch = master
+    branch = stable/boron
 [submodule "usecplugin"]
 	path = usecplugin
 	url = ../../usecplugin
-    branch = master
+    branch = stable/boron
 [submodule "of-config"]
 	path = of-config
 	url = ../../of-config
-	branch = master
+	branch = stable/boron
 [submodule "capwap"]
 	path = capwap
 	url = ../../capwap
-    branch = master
+    branch = stable/boron
 [submodule "genius"]
 	path = genius
 	url = ../../genius
-    branch = master
+    branch = stable/boron
 [submodule "atrium"]
 	path = atrium
 	url = ../../atrium
-    branch = master
+    branch = stable/boron
 [submodule "cardinal"]
 	path = cardinal
 	url = ../../cardinal
-	branch = master
+	branch = stable/boron
 [submodule "netvirt"]
 	path = netvirt
 	url = ../../netvirt
-	branch = master
+	branch = stable/boron
 [submodule "ocpplugin"]
 	path = ocpplugin
 	url = ../../ocpplugin
-	branch = master
+	branch = stable/boron
 [submodule "natapp"]
 	path = natapp
 	url = ../../natapp
-	branch = master
+	branch = stable/boron
 [submodule "infrautils"]
 	path = infrautils
 	url = ../../infrautils
-	branch = master
+	branch = stable/boron
 [submodule "honeycomb/vbd"]
 	path = honeycomb/vbd
 	url = ../../honeycomb/vbd
-	branch = master
+	branch = stable/boron
 [submodule "eman"]
 	path = eman
 	url = ../../eman
-	branch = master
+	branch = stable/boron
 [submodule "odlparent"]
 	path = odlparent
 	url = ../../odlparent
-	branch = master
+	branch = stable/boron
