@@ -58,23 +58,29 @@ then
     echo "Bumping versions..."
     for name in $FILENAMES
     do
-        # Do the -SNAPSHOT conversion first so that we don't double bump versions
-        # Changes x.y.z-SNAPSHOT to x.(y+1).0-SNAPSHOT in pom.xml files (if z is missing treat as 0)
-        find . -type f -name "$name" -exec perl -i -pe "s/([^\d.]\d+)\.(\d+)\.(\d+)-SNAPSHOT/\$1.@{[1+\$2]}.0-SNAPSHOT/g" {} +
-        find . -type f -name "$name" -exec perl -i -pe "s/([^\d.]\d+)\.(\d+)-SNAPSHOT/\$1.@{[1+\$2]}.0-SNAPSHOT/g" {} +
+        # Notes:
+        #   * bump date-based versions first to avoid date-only versions from being caught as x.y.z,
+        #   * this assumes that a normal x.y.z version can't match YYYY.MM.DD, which is probably true
+        #   * bump -SNAPSHOT versions first so that we don't double bump versions
 
         # Changes YYYY.MM.DD.y.z-SNAPSHOT to YYYY.MM.DD.(y+1).0-SNAPSHOT in pom.xml files (if y or z is missing treat as 0)
         find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)\.(\d+)-SNAPSHOT/\$1.@{[1+\$2]}.0-SNAPSHOT/g" {} +
         find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)-SNAPSHOT/\$1.@{[1+\$2]}.0-SNAPSHOT/g" {} +
         find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)-SNAPSHOT/\$1.1.0-SNAPSHOT/g" {} +
 
+        # Changes YYYY.MM.DD.y.z-Helium to YYMMDD.y.(z+1)-SNAPSHOT in pom.xml files (if y or z is missing treat as 0)
+        find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)\.(\d+)-$RELEASE_TAG/\$1.\$2.@{[1+\$3]}-SNAPSHOT/g" {} +
+        find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)-$RELEASE_TAG/\$1.\$2.1-SNAPSHOT/g" {} +
+        find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)-$RELEASE_TAG/\$1.0.1-SNAPSHOT/g" {} +
+
+        # Changes x.y.z-SNAPSHOT to x.(y+1).0-SNAPSHOT in pom.xml files (if z is missing treat as 0)
+        find . -type f -name "$name" -exec perl -i -pe "s/([^\d.]\d+)\.(\d+)\.(\d+)-SNAPSHOT/\$1.@{[1+\$2]}.0-SNAPSHOT/g" {} +
+        find . -type f -name "$name" -exec perl -i -pe "s/([^\d.]\d+)\.(\d+)-SNAPSHOT/\$1.@{[1+\$2]}.0-SNAPSHOT/g" {} +
+
         # Changes x.y.z-Helium to x.y.(z+1)-SNAPSHOT in pom.xml files (if z is missing treat as 0)
         find . -type f -name "$name" -exec perl -i -pe "s/([^\d.]\d+)\.(\d+)\.(\d+)-$RELEASE_TAG/\$1.\$2.@{[1+\$3]}-SNAPSHOT/g" {} +
         find . -type f -name "$name" -exec perl -i -pe "s/([^\d.]\d+)\.(\d+)-$RELEASE_TAG/\$1.\$2.1-SNAPSHOT/g" {} +
 
-        # Changes YYYY.MM.DD.y.z-Helium to YYMMDD.y.(z+1)-SNAPSHOT in pom.xml files (if z is missing treat as 0)
-        find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)\.(\d+)-$RELEASE_TAG/\$1.\$2.@{[1+\$3]}-SNAPSHOT/g" {} +
-        find . -type f -name "$name" -exec perl -i -pe "s/(\d\d\d\d\.\d\d\.\d\d)\.(\d+)-$RELEASE_TAG/\$1.\$2.1-SNAPSHOT/g" {} +
     done
 elif [ "$MODE" == "release" ]
 then
