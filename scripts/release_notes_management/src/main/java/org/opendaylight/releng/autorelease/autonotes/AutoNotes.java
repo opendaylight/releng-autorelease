@@ -14,6 +14,7 @@ import org.opendaylight.releng.autorelease.autonotes.service.GitService;
 import org.opendaylight.releng.autorelease.autonotes.service.ProjectService;
 import org.opendaylight.releng.autorelease.autonotes.service.PropertyService;
 import org.opendaylight.releng.autorelease.autonotes.service.ReleaseService;
+import org.opendaylight.releng.autorelease.autonotes.service.RstService;
 import org.opendaylight.releng.autorelease.autonotes.service.ServiceController;
 import org.opendaylight.releng.autorelease.autonotes.service.WikiService;
 import org.opendaylight.releng.autorelease.autonotes.utils.LogUtils;
@@ -69,6 +70,11 @@ public class AutoNotes implements ServiceController {
     private AdocService adocService;
 
     /**
+     * The RST service.
+     */
+    private RstService rstService;
+
+    /**
      * Constructs the AutoNotes Application
      * @param args configuration parameters
      */
@@ -81,6 +87,7 @@ public class AutoNotes implements ServiceController {
         this.releaseService = new ReleaseService(this);
         this.wikiService = new WikiService(this);
         this.adocService = new AdocService(this);
+        this.rstService = new RstService(this);
     }
 
     @Override
@@ -123,6 +130,11 @@ public class AutoNotes implements ServiceController {
         return adocService;
     }
 
+    @Override
+    public RstService getRstService() {
+        return rstService;
+    }
+
     /**
      * Generates the OpenDaylight release notes.
      * @return exit status
@@ -135,6 +147,7 @@ public class AutoNotes implements ServiceController {
         this.releaseService.execute();
         this.wikiService.execute();
         this.adocService.execute();
+        this.rstService.execute();
         return 0;
     }
 
