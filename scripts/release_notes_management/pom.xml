@@ -14,6 +14,7 @@
     <junit.version>4.11</junit.version>
     <json.version>20090211</json.version>
     <commonsio.version>2.4</commonsio.version>
+    <commonslang.version>3.4</commonslang.version>
   </properties>
   <dependencies>
     <dependency>
@@ -37,6 +38,11 @@
       <artifactId>commons-io</artifactId>
       <version>${commonsio.version}</version>
     </dependency>
+  <dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>${commonslang.version}</version>
+  </dependency>
   </dependencies>
   <build>
     <finalName>autonotes</finalName>
