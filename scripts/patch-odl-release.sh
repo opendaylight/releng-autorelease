@@ -31,6 +31,7 @@ fi
 
 PATCH_DIR=$1
 RELEASE_TAG=$2
+STABLE_BRANCH="stable/$( cut -d '-' -f1 <<< ${RELEASE_TAG,,})"
 
 project=${PWD##*/}
 scriptdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
@@ -38,13 +39,15 @@ scriptdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 # Validate that we're patching at the same commit level as when autorelease
 # built the release. Basically ensuring that no new patches snuck into the
 # project during code freeze.
-CURRENT_HASH=`git rev-parse HEAD`
 EXPECTED_HASH=`grep "^${project} " $PATCH_DIR/taglist.log | awk '{ print $2 }'`
 if [ "$EXPECTED_HASH" == "" ]; then
     parent_dir="$(dirname `pwd`)"
     project="${parent_dir##*/}/$project"
     EXPECTED_HASH=`grep "^${project} " $PATCH_DIR/taglist.log | awk '{ print $2 }'`
 fi
+
+git checkout "$EXPECTED_HASH"
+CURRENT_HASH=`git rev-parse HEAD`
 
 echo "Current Hash: $CURRENT_HASH"
 echo "Expected Hash: $EXPECTED_HASH"
@@ -63,6 +66,9 @@ git merge FETCH_HEAD
 git tag -asm "OpenDaylight $RELEASE_TAG release" release/${RELEASE_TAG,,}
 find . -name pom.xml | xargs grep SNAPSHOT
 
+git checkout ${STABLE_BRANCH}
+# Release and then Bump so that the version.sh script creates the right patches
+$scriptdir/version.sh release $RELEASE_TAG
 $scriptdir/version.sh bump $RELEASE_TAG
 git commit -asm "Bumping versions by 0.0.1 for next dev cycle"
 find . -name pom.xml | xargs grep $RELEASE_TAG
