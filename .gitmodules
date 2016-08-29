@@ -118,10 +118,6 @@
 	path = usc
 	url = ../../usc
 	branch = stable/boron
-[submodule "vpnservice"]
-	path = vpnservice
-	url = ../../vpnservice
-	branch = stable/boron
 [submodule "netconf"]
 	path = netconf
 	url = ../../netconf
