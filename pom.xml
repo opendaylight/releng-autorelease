@@ -74,7 +74,6 @@
     <module>unimgr</module>
     <module>usc</module>
     <module>usecplugin</module>
-    <module>vpnservice</module>
     <module>vtn</module>
     <module>yang-push</module>
     <module>yangtools</module>
