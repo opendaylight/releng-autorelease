@@ -33,6 +33,23 @@
       "revId": "d113aa8d5cf989f5fd442b15f55b69835ad4d89a",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a6b29fe_e384aa5f",
+        "filename": "scripts/determine-merge-order.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2016-08-31T22:31:54Z",
+      "side": 1,
+      "message": "Dangling whitespace",
+      "revId": "d113aa8d5cf989f5fd442b15f55b69835ad4d89a",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
     }
   ]
 }
