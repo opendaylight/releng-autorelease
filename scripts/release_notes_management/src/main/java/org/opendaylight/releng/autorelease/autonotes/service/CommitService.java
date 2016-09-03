@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.opendaylight.releng.autorelease.autonotes.model.Commit;
@@ -143,7 +145,9 @@ public class CommitService implements Service {
     }
 
     private String getBugExtractedCommitText(String commitText) {
-        return commitText.replaceAll(this.controller.getPropertyService().getProperties().getProperty(BUG_REGEX), this.controller.getPropertyService().getProperties().getProperty(BUG_TAG));
+        Pattern pattern = Pattern.compile(this.controller.getPropertyService().getProperties().getProperty(BUG_REGEX));
+        Matcher replacer = pattern.matcher(commitText);
+        return replacer.replaceAll(this.controller.getPropertyService().getProperties().getProperty(BUG_TAG) + "$2");
     }
 
     public Map<String, List<Commit>> getCommits() {
