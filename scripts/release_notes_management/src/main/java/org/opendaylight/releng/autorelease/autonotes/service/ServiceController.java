@@ -61,4 +61,10 @@ public interface ServiceController {
      */
     public AdocService getAdocService();
 
+    /**
+     * Returns RST service.
+     * @return RST service.
+     */
+    public RstService getRstService();
+
 }
