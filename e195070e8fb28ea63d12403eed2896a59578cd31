@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "7a6b29fe_2d3325ac",
+        "filename": "scripts/determine-merge-order.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-09-04T00:42:35Z",
+      "side": 1,
+      "message": "Can we list the dependencies this script requires in the docstring somewhere?",
+      "revId": "e195070e8fb28ea63d12403eed2896a59578cd31",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a6b29fe_cdfa71bc",
         "filename": "scripts/determine-merge-order.py",
         "patchSetId": 3
@@ -53,6 +70,29 @@
       "writtenOn": "2016-09-04T00:33:16Z",
       "side": 1,
       "message": "@Author and @Email are not valid docstring keywords (you\u0027re thinking Javadoc which isn\u0027t parsed in Python). Personally I\u0027m not a fan of putting this detail in here anyway considering Git solves this and provides more accurate data via the \"git blame\" command.\n\nsee:\n\nhttps://www.python.org/dev/peps/pep-0257/\nhttps://www.python.org/dev/peps/pep-0008/",
+      "revId": "e195070e8fb28ea63d12403eed2896a59578cd31",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a6b29fe_4d2e6144",
+        "filename": "scripts/determine-merge-order.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-09-04T00:42:35Z",
+      "side": 1,
+      "message": "A cleaner way is to turn your code below into a function eg.\n\n def determine_merge_order(input_file\u003d\u0027dependencies.log\u0027, output_file\u003d\u0027merge-order.log\u0027):",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 26
+      },
       "revId": "e195070e8fb28ea63d12403eed2896a59578cd31",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
