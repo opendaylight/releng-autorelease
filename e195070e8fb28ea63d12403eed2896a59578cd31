@@ -36,6 +36,23 @@
     },
     {
       "key": {
+        "uuid": "7a6b29fe_6d299d36",
+        "filename": "scripts/determine-merge-order.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-09-04T00:44:52Z",
+      "side": 1,
+      "message": "If you want the user to be able to run the script as described here using ./script.py we need a shabang declaration at the top. Something like:\n\n #!/usr/bin/env python",
+      "revId": "e195070e8fb28ea63d12403eed2896a59578cd31",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a6b29fe_6d123d0a",
         "filename": "scripts/determine-merge-order.py",
         "patchSetId": 3
