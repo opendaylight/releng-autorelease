@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a6b29fe_cdfa71bc",
+        "filename": "scripts/determine-merge-order.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-09-04T00:33:16Z",
+      "side": 1,
+      "message": "Typically the first one liner in a docstring should be a short  summary of the class/script/function.\n\nFollowed by a blank line and then detailed description.",
+      "revId": "e195070e8fb28ea63d12403eed2896a59578cd31",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a6b29fe_6d123d0a",
+        "filename": "scripts/determine-merge-order.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-09-04T00:33:16Z",
+      "side": 1,
+      "message": "space between : and d.",
+      "range": {
+        "startLine": 22,
+        "startChar": 47,
+        "endLine": 22,
+        "endChar": 49
+      },
+      "revId": "e195070e8fb28ea63d12403eed2896a59578cd31",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a6b29fe_8d0d19eb",
+        "filename": "scripts/determine-merge-order.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-09-04T00:33:16Z",
+      "side": 1,
+      "message": "@Author and @Email are not valid docstring keywords (you\u0027re thinking Javadoc which isn\u0027t parsed in Python). Personally I\u0027m not a fan of putting this detail in here anyway considering Git solves this and provides more accurate data via the \"git blame\" command.\n\nsee:\n\nhttps://www.python.org/dev/peps/pep-0257/\nhttps://www.python.org/dev/peps/pep-0008/",
+      "revId": "e195070e8fb28ea63d12403eed2896a59578cd31",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
