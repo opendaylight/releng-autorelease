@@ -1,0 +1,7 @@
+Code-Review+2: Thanh Ha <thanh.ha@linuxfoundation.org>
+Verified+1: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-by: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-at: Thu, 15 Sep 2016 22:28:45 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/45651
+Project: releng/autorelease
+Branch: refs/heads/stable/boron
