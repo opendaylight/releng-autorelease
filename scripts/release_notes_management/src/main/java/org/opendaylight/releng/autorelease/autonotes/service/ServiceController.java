@@ -67,4 +67,10 @@ public interface ServiceController {
      */
     public RstService getRstService();
 
+    /**
+     * Returns note service.
+     * @return note service.
+     */
+    public NoteService getNoteService();
+
 }
