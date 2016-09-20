@@ -39,6 +39,11 @@ public class Project implements Comparable<Project> {
     private boolean active;
 
     /**
+     * The project release notes.
+     */
+    private String note;
+
+    /**
      * Constructs a project object.
      */
     public Project() {
@@ -47,6 +52,7 @@ public class Project implements Comparable<Project> {
         this.longpath = "";
         this.name = "";
         this.active = false;
+        this.note = "";
     }
 
     /**
@@ -119,6 +125,20 @@ public class Project implements Comparable<Project> {
         this.active = active;
     }
 
+    /**
+     * @return the note
+     */
+    public String getNote() {
+        return note;
+    }
+
+    /**
+     * @param note the note to set
+     */
+    public void setNote(String note) {
+        this.note = note;
+    }
+
     @Override
     public int compareTo(Project p) {
         if (p != null) {
@@ -131,7 +151,7 @@ public class Project implements Comparable<Project> {
 
     @Override
     public String toString() {
-        return "{ id : " + id + ", name : " + name + ", active : " + active + " }";
+        return "{ id : " + id + ", name : " + name + ", active : " + active + ", note : " + note + " }";
     }
 
 }

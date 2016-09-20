@@ -15,6 +15,11 @@ import java.util.List;
 public class Release {
 
     /**
+     * List of all active in release.
+     */
+    private List<ReleaseProject> activeProjects;
+
+	/**
      * List of active projects with at last one commit.
      */
     private List<ReleaseProject> changedProjects;
@@ -28,8 +33,23 @@ public class Release {
      * Constructs a release object.
      */
     public Release() {
+        this.activeProjects = null;
         this.changedProjects = null;
         this.unchangedProjects = null;
+    }
+
+    /**
+     * @return the activeProjects
+     */
+    public List<ReleaseProject> getActiveProjects() {
+        return activeProjects;
+    }
+
+    /**
+     * @param activeProjects the activeProjects to set
+     */
+    public void setActiveProjects(List<ReleaseProject> activeProjects) {
+        this.activeProjects = activeProjects;
     }
 
     /**

@@ -46,6 +46,7 @@ public class ReleaseService implements Service {
      */
     public void execute() {
         LogUtils.step("Start loading release");
+        this.release.setActiveProjects(new ArrayList<ReleaseProject>());
         this.release.setChangedProjects(new ArrayList<ReleaseProject>());
         this.release.setUnchangedProjects(new ArrayList<ReleaseProject>());
         Map<String, List<Commit>> original = this.controller.getCommitService().getCommits();
@@ -54,6 +55,7 @@ public class ReleaseService implements Service {
             ReleaseProject releaseProject = new ReleaseProject();
             releaseProject.setCommits(commits.get(project.getId()));
             releaseProject.setProject(project);
+            this.release.getActiveProjects().add(releaseProject);
             if (releaseProject.getCommits().size() > 0) {
                 this.release.getChangedProjects().add(releaseProject);
                 LogUtils.step("Add Changed Project: " + project.toString());
