@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a6b29fe_83001303",
+        "filename": "scripts/release_notes_management/src/main/java/org/opendaylight/releng/autorelease/autonotes/service/NoteService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-09-20T20:37:49Z",
+      "side": 1,
+      "message": "trailing whitespace",
+      "range": {
+        "startLine": 59,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 12
+      },
+      "revId": "4619118b6d38d0924a645d725eb475a04803cdbc",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
