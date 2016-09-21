@@ -36,6 +36,11 @@ public class ProjectService {
     public static final String ALL_PROJECT_LIST = "org.opendaylight.releng.autorelease.autonotes.governance.projects";
 
     /**
+     * Configuration property for all notes
+     */
+    public static final String ALL_RELEASE_NOTES = "org.opendaylight.releng.autorelease.autonotes.governance.notes";
+
+    /**
      * Configuration property for active project
      */
     public static final String ACTIVE_PROJECT_LIST = "org.opendaylight.releng.autorelease.autonotes.projects.list";
@@ -65,6 +70,7 @@ public class ProjectService {
     public void execute() {
         LogUtils.step("Start loading projects");
         loadGovernance();
+        loadNotes();
         loadStates();
         for (Entry<String, Project> entry : this.projects.entrySet()) {
             if (entry != null && entry.getKey() != null && entry.getValue() != null) {
@@ -110,6 +116,35 @@ public class ProjectService {
             }
         }
         LogUtils.step("Completed loading project goveranance");
+    }
+
+    /**
+     * Load all project release notes
+     */
+    private void loadNotes() {
+        LogUtils.step("Start loading project notes");
+        InputStream input = null;
+        try {
+            input = new URL(this.controller.getPropertyService().getProperties().getProperty(ALL_RELEASE_NOTES)).openStream();
+            String projectsString = IOUtils.toString(input);
+            LogUtils.log(projectsString);
+            JSONObject projectsJSON = new JSONObject(projectsString);
+            for (String projectId : JSONObject.getNames(projectsJSON)) {
+                Project project = this.projects.get(projectId);
+                project.setNote(projectsJSON.getString(projectId));
+            }
+        } catch (Exception e) {
+            LogUtils.log(e);
+        } finally {
+            if (input != null) {
+                try {
+                    IOUtils.closeQuietly(input);
+                } catch (Exception e) {
+                    LogUtils.log(e);
+                }
+            }
+        }
+        LogUtils.step("Completed loading project notes");
     }
 
     /**
