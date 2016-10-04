@@ -24,7 +24,6 @@
     <module>odlparent</module>
     <module>yangtools</module>
 
-    <module>controller/opendaylight/commons/checkstyle</module>
     <module>controller/opendaylight/config/config-artifacts</module>
     <module>controller/opendaylight/config/yang-test-plugin</module>
     <module>controller/opendaylight/md-sal/mdsal-artifacts</module>
