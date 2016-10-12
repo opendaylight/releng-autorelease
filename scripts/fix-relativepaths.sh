@@ -17,6 +17,8 @@ fix_relative_paths() {
         "org.opendaylight.odlparent:odlparent:odlparent/odlparent"
         "org.opendaylight.odlparent:odlparent-lite:odlparent/odlparent-lite"
         "org.opendaylight.odlparent:features-parent:odlparent/features-parent"
+        "org.opendaylight.odlparent:single-feature-parent:odlparent/single-feature-parent"
+        "org.opendaylight.odlparent:feature-repo-parent:odlparent/feature-repo-parent"
         "org.opendaylight.odlparent:bundle-parent:odlparent/bundle-parent"
         "org.opendaylight.odlparent:karaf-parent:odlparent/karaf/karaf-parent"
         "org.opendaylight.odlparent:opendaylight-karaf-empty:odlparent/karaf/opendaylight-karaf-empty"
