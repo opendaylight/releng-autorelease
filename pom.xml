@@ -21,9 +21,6 @@
   <name>autorelease</name> <!-- Used by Sonar to set project name -->
 
   <modules>
-    <!-- Build docs first if possible -->
-    <module>docs</module>
-
     <!-- Build OpenDaylight projects -->
     <module>aaa</module>
     <module>alto</module>
