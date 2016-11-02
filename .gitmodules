@@ -74,10 +74,6 @@
 	path = didm
 	url = ../../didm
 	branch = master
-[submodule "docs"]
-	path = docs
-	url = ../../docs
-	branch = master
 [submodule "iotdm"]
 	path = iotdm
 	url = ../../iotdm
