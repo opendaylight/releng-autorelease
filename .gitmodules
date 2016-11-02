@@ -1,207 +1,207 @@
 [submodule "aaa"]
 	path = aaa
 	url = ../../aaa
-	branch = master
+	branch = .
 [submodule "bgpcep"]
 	path = bgpcep
 	url = ../../bgpcep
-	branch = master
+	branch = .
 [submodule "controller"]
 	path = controller
 	url = ../../controller
-	branch = master
+	branch = .
 [submodule "dlux"]
 	path = dlux
 	url = ../../dlux
-	branch = master
+	branch = .
 [submodule "groupbasedpolicy"]
 	path = groupbasedpolicy
 	url = ../../groupbasedpolicy
-	branch = master
+	branch = .
 [submodule "l2switch"]
 	path = l2switch
 	url = ../../l2switch
-	branch = master
+	branch = .
 [submodule "lispflowmapping"]
 	path = lispflowmapping
 	url = ../../lispflowmapping
-	branch = master
+	branch = .
 [submodule "openflowjava"]
 	path = openflowjava
 	url = ../../openflowjava
-	branch = master
+	branch = .
 [submodule "openflowplugin"]
 	path = openflowplugin
 	url = ../../openflowplugin
-	branch = master
+	branch = .
 [submodule "ovsdb"]
 	path = ovsdb
 	url = ../../ovsdb
-	branch = master
+	branch = .
 [submodule "sdninterfaceapp"]
 	path = sdninterfaceapp
 	url = ../../sdninterfaceapp
-	branch = master
+	branch = .
 [submodule "sfc"]
 	path = sfc
 	url = ../../sfc
-	branch = master
+	branch = .
 [submodule "snbi"]
 	path = snbi
 	url = ../../snbi
-	branch = master
+	branch = .
 [submodule "snmp4sdn"]
 	path = snmp4sdn
 	url = ../../snmp4sdn
-	branch = master
+	branch = .
 [submodule "ttp"]
 	path = ttp
 	url = ../../ttp
-	branch = master
+	branch = .
 [submodule "vtn"]
 	path = vtn
 	url = ../../vtn
-	branch = master
+	branch = .
 [submodule "yangtools"]
 	path = yangtools
 	url = ../../yangtools
-	branch = master
+	branch = .
 [submodule "alto"]
 	path = alto
 	url = ../../alto
-	branch = master
+	branch = .
 [submodule "didm"]
 	path = didm
 	url = ../../didm
-	branch = master
+	branch = .
 [submodule "iotdm"]
 	path = iotdm
 	url = ../../iotdm
-	branch = master
+	branch = .
 [submodule "lacp"]
 	path = lacp
 	url = ../../lacp
-	branch = master
+	branch = .
 [submodule "nic"]
 	path = nic
 	url = ../../nic
-	branch = master
+	branch = .
 [submodule "neutron"]
 	path = neutron
 	url = ../../neutron
-	branch = master
+	branch = .
 [submodule "packetcable"]
 	path = packetcable
 	url = ../../packetcable
-	branch = master
+	branch = .
 [submodule "snmp"]
 	path = snmp
 	url = ../../snmp
-	branch = master
+	branch = .
 [submodule "sxp"]
 	path = sxp
 	url = ../../sxp
-	branch = master
+	branch = .
 [submodule "tsdr"]
 	path = tsdr
 	url = ../../tsdr
-	branch = master
+	branch = .
 [submodule "topoprocessing"]
 	path = topoprocessing
 	url = ../../topoprocessing
-	branch = master
+	branch = .
 [submodule "usc"]
 	path = usc
 	url = ../../usc
-	branch = master
+	branch = .
 [submodule "netconf"]
 	path = netconf
 	url = ../../netconf
-	branch = master
+	branch = .
 [submodule "mdsal"]
 	path = mdsal
 	url = ../../mdsal
-	branch = master
+	branch = .
 [submodule "integration/distribution"]
 	path = integration/distribution
 	url = ../../integration/distribution
-	branch = master
+	branch = .
 [submodule "centinel"]
 	path = centinel
 	url = ../../centinel
-        branch = master
+        branch = .
 [submodule "faas"]
 	path = faas
 	url = ../../faas
-        branch = master
+        branch = .
 [submodule "nemo"]
 	path = nemo
 	url = ../../nemo
-        branch = master
+        branch = .
 [submodule "netide"]
 	path = netide
 	url = ../../netide
-        branch = master
+        branch = .
 [submodule "unimgr"]
 	path = unimgr
 	url = ../../unimgr
-	branch = master
+	branch = .
 [submodule "next"]
 	path = next
 	url = ../../next
-    branch = master
+    branch = .
 [submodule "yang-push"]
 	path = yang-push
 	url = ../../yang-push
-    branch = master
+    branch = .
 [submodule "usecplugin"]
 	path = usecplugin
 	url = ../../usecplugin
-    branch = master
+    branch = .
 [submodule "of-config"]
 	path = of-config
 	url = ../../of-config
-	branch = master
+	branch = .
 [submodule "capwap"]
 	path = capwap
 	url = ../../capwap
-    branch = master
+    branch = .
 [submodule "genius"]
 	path = genius
 	url = ../../genius
-    branch = master
+    branch = .
 [submodule "atrium"]
 	path = atrium
 	url = ../../atrium
-    branch = master
+    branch = .
 [submodule "cardinal"]
 	path = cardinal
 	url = ../../cardinal
-	branch = master
+	branch = .
 [submodule "netvirt"]
 	path = netvirt
 	url = ../../netvirt
-	branch = master
+	branch = .
 [submodule "ocpplugin"]
 	path = ocpplugin
 	url = ../../ocpplugin
-	branch = master
+	branch = .
 [submodule "natapp"]
 	path = natapp
 	url = ../../natapp
-	branch = master
+	branch = .
 [submodule "infrautils"]
 	path = infrautils
 	url = ../../infrautils
-	branch = master
+	branch = .
 [submodule "honeycomb/vbd"]
 	path = honeycomb/vbd
 	url = ../../honeycomb/vbd
-	branch = master
+	branch = .
 [submodule "eman"]
 	path = eman
 	url = ../../eman
-	branch = master
+	branch = .
 [submodule "odlparent"]
 	path = odlparent
 	url = ../../odlparent
