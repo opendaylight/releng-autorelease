@@ -209,4 +209,4 @@
 [submodule "odlparent"]
 	path = odlparent
 	url = ../../odlparent
-	branch = master
+	branch = .
