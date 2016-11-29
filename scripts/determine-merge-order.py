@@ -58,7 +58,11 @@ def determine_merge_order(input_file='dependencies.log',
                 G.add_edges_from(tups)
 
     # traverse the graph to compute order
-    deps_order = nx.topological_sort(G)
+    try:
+        deps_order = nx.topological_sort(G)
+    except nx.exception.NetworkXUnfeasible as exc:
+        print("Cycle basis:", repr(nx.cycle_basis(G)))
+        raise exc
 
     try:
         with open(output_file, 'w+') as whandle:
