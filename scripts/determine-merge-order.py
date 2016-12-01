@@ -25,6 +25,7 @@ Usage: ./determine-merge-order.py
 
 """
 
+from __future__ import print_function
 import re
 import sys
 import networkx as nx
@@ -35,7 +36,7 @@ def determine_merge_order(input_file='dependencies.log',
         with open(input_file, 'r') as rhandle:
             raw = rhandle.read()
     except IOError:
-        print("Error on opening file: {0}".format(input_file))
+        print("Error on opening file:", input_file)
         sys.exit(1)
 
     regex_node = re.compile(r':')
@@ -63,9 +64,7 @@ def determine_merge_order(input_file='dependencies.log',
     except nx.exception.NetworkXUnfeasible as exc:
         print("Cycles:")
         for cycle in nx.simple_cycles(G):
-            for node in cycle:
-                print(node)
-            print
+            print(*cycle)
         raise exc
 
     try:
@@ -75,7 +74,7 @@ def determine_merge_order(input_file='dependencies.log',
                     continue
                 whandle.write(d + "\n")
     except IOError:
-        print("Error on opening file: {0}".format(output_file))
+        print("Error on opening file:", output_file)
         sys.exit(1)
 
     rhandle.close()
