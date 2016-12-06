@@ -206,3 +206,7 @@
 	path = odlparent
 	url = ../../odlparent
 	branch = .
+[submodule "dluxapps"]
+	path = dluxapps
+	url = ../../dluxapps
+	branch = .
