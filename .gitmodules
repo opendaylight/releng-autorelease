@@ -14,6 +14,10 @@
 	path = dlux
 	url = ../../dlux
 	branch = .
+[submodule "dluxapps"]
+	path = dluxapps
+	url = ../../dluxapps
+	branch = master
 [submodule "groupbasedpolicy"]
 	path = groupbasedpolicy
 	url = ../../groupbasedpolicy
