@@ -210,3 +210,6 @@
 	path = dluxapps
 	url = ../../dluxapps
 	branch = .
+[submodule "bier"]
+	path = bier
+	url = ../../bier
