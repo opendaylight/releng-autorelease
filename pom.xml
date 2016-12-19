@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Copyright (c) 2014 The Linux Foundation and others.
   All rights reserved. This program and the accompanying materials
@@ -26,6 +26,7 @@
     <module>alto</module>
     <module>atrium</module>
     <module>bgpcep</module>
+    <module>bier</module>
     <module>capwap</module>
     <!-- Disable cardinal until Bug 7357 is resolved:
          https://bugs.opendaylight.org/show_bug.cgi?id=7357
