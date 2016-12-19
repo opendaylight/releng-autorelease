@@ -27,10 +27,7 @@
     <module>atrium</module>
     <module>bgpcep</module>
     <module>capwap</module>
-    <!-- Disable cardinal until Bug 7357 is resolved:
-         https://bugs.opendaylight.org/show_bug.cgi?id=7357
     <module>cardinal</module>
-    -->
     <module>centinel</module>
     <module>controller</module>
     <module>didm</module>
