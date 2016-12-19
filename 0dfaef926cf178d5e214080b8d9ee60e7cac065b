@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a622d24_165688d2",
+        "filename": ".gitmodules",
+        "patchSetId": 2
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2016-12-19T14:38:51Z",
+      "side": 1,
+      "message": "We need to add branch \u003d . otherwise it won\u0027t track the branch. I\u0027ll fix that.",
+      "revId": "0dfaef926cf178d5e214080b8d9ee60e7cac065b",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
