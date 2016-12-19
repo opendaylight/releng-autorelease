@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a622d24_f0bf94a8",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2016-12-19T08:47:02Z",
+      "side": 1,
+      "message": "typo: special char introduced",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 1
+      },
+      "revId": "76ac14ec4eaf7452c32aea03e3888fb5de946858",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
