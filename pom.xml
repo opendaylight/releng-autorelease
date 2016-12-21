@@ -61,10 +61,7 @@
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>packetcable</module>
-    <!-- Disable sdninterfaceapp until patch is merged:
-         https://git.opendaylight.org/gerrit/49446
     <module>sdninterfaceapp</module>
-    -->
     <module>sfc</module>
     <module>snbi</module>
     <module>snmp</module>
