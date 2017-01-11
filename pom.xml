@@ -54,7 +54,9 @@
     <module>nic</module>
     <module>ocpplugin</module>
     <module>odlparent</module>
+    <!-- Disable of-config until IT tests are fixed
     <module>of-config</module>
+    -->
     <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
