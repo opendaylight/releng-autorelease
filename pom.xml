@@ -70,7 +70,6 @@
     <module>unimgr</module>
     <module>usc</module>
     <module>vtn</module>
-    <module>yang-push</module>
     <module>yangtools</module>
   </modules>
 
