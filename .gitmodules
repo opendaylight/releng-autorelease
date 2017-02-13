@@ -150,10 +150,6 @@
 	path = next
 	url = ../../next
     branch = .
-[submodule "yang-push"]
-	path = yang-push
-	url = ../../yang-push
-    branch = .
 [submodule "usecplugin"]
 	path = usecplugin
 	url = ../../usecplugin
