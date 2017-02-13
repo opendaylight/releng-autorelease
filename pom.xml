@@ -24,7 +24,6 @@
     <!-- Build OpenDaylight projects -->
     <module>aaa</module>
     <module>alto</module>
-    <module>atrium</module>
     <module>bgpcep</module>
     <module>bier</module>
     <module>capwap</module>

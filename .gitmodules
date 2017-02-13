@@ -170,10 +170,6 @@
 	path = genius
 	url = ../../genius
     branch = .
-[submodule "atrium"]
-	path = atrium
-	url = ../../atrium
-    branch = .
 [submodule "cardinal"]
 	path = cardinal
 	url = ../../cardinal
