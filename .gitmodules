@@ -154,10 +154,6 @@
 	path = yang-push
 	url = ../../yang-push
     branch = .
-[submodule "usecplugin"]
-	path = usecplugin
-	url = ../../usecplugin
-    branch = .
 [submodule "of-config"]
 	path = of-config
 	url = ../../of-config
