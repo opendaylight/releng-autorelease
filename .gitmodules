@@ -142,10 +142,6 @@
 	path = next
 	url = ../../next
     branch = .
-[submodule "yang-push"]
-	path = yang-push
-	url = ../../yang-push
-    branch = .
 [submodule "of-config"]
 	path = of-config
 	url = ../../of-config
