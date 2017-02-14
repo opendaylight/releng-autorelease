@@ -126,10 +126,6 @@
 	path = integration/distribution
 	url = ../../integration/distribution
 	branch = .
-[submodule "centinel"]
-	path = centinel
-	url = ../../centinel
-        branch = .
 [submodule "faas"]
 	path = faas
 	url = ../../faas
