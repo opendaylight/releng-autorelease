@@ -78,6 +78,10 @@
 	path = iotdm
 	url = ../../iotdm
 	branch = .
+[submodule "lacp"]
+	path = lacp
+	url = ../../lacp
+	branch = .
 [submodule "nic"]
 	path = nic
 	url = ../../nic
