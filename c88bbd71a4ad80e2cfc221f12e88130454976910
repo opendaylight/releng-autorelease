@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fafc7978_eaa4604c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 2264
+      },
+      "writtenOn": "2017-02-28T20:56:13Z",
+      "side": 1,
+      "message": "from an email Tim sent:\n\n\"The features we use are odl-netconf-connector-all,odl-vbd,odl-groupbasedpolicy-neutron-vpp-mapper,odl-restconf, odl-netvirt-openstack, sfc-translator, odl-netvirt-ui\"",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 36
+      },
+      "revId": "c88bbd71a4ad80e2cfc221f12e88130454976910",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
