@@ -198,3 +198,7 @@
 	path = bier
 	url = ../../bier
 	branch = .
+[submodule "federation"]
+	path = federation
+	url = ../../federation
+	branch = .
