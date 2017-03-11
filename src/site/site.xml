@@ -14,11 +14,6 @@
             <item name="Branch Cutting" href="branch-cutting.html" />
             <item name="Releasing OpenDaylight" href="releasing-opendaylight.html" />
         </menu>
-
-        <menu name="Dependency and Version Tools" inherit="top">
-            <item name="Info" href="/dnvtools/" />
-            <item name="DNV Tools" href="/dnvtools/dnvtool.html" />
-        </menu>
     </body>
 
     <skin>
