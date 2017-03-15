@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fafc7978_e338add6",
+        "filename": "pom-opnfv.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 2046
+      },
+      "writtenOn": "2017-03-15T09:31:45Z",
+      "side": 1,
+      "message": "This root pom requires more projects to be built.\nPoint to an appropriate sub-pom.",
+      "range": {
+        "startLine": 31,
+        "startChar": 12,
+        "endLine": 31,
+        "endChar": 36
+      },
+      "revId": "655bcf0407f7a457492e3734a239d38ac2622816",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
