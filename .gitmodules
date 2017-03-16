@@ -170,10 +170,6 @@
 	path = ocpplugin
 	url = ../../ocpplugin
 	branch = .
-[submodule "natapp"]
-	path = natapp
-	url = ../../natapp
-	branch = .
 [submodule "infrautils"]
 	path = infrautils
 	url = ../../infrautils

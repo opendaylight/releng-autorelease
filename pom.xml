@@ -45,7 +45,6 @@
     <module>lacp</module>
     <module>lispflowmapping</module>
     <module>mdsal</module>
-    <module>natapp</module>
     <module>nemo</module>
     <module>netconf</module>
     <module>netide</module>
