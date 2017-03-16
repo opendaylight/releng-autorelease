@@ -62,7 +62,6 @@
     <module>packetcable</module>
     <module>sdninterfaceapp</module>
     <module>sfc</module>
-    <module>snbi</module>
     <module>snmp</module>
     <module>snmp4sdn</module>
     <module>sxp</module>
