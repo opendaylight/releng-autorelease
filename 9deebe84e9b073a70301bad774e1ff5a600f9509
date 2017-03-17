@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fafc7978_91191a25",
+        "filename": "pom-opnfv.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 2046
+      },
+      "writtenOn": "2017-03-17T14:57:58Z",
+      "side": 1,
+      "message": "Well, building features is fine, but it would be better to have a \u003cmodule\u003e which build both features and karaf (both for 3 and 4 currently). That is for int/dist change [0], but the combined \u003cmodule\u003e name will not look like this.\n\n[0] https://git.opendaylight.org/gerrit/51984",
+      "range": {
+        "startLine": 31,
+        "startChar": 37,
+        "endLine": 31,
+        "endChar": 58
+      },
+      "revId": "9deebe84e9b073a70301bad774e1ff5a600f9509",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
