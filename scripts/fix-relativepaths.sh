@@ -46,7 +46,7 @@ fix_relative_paths() {
     )
 
     pom=$1
-    echo -e "\nScanning $pom"
+    echo "Scanning $pom"
     pomPath=`dirname $pom`
     count=`echo $pomPath | awk -F'/' '{ print NF-1 }'`
 
