@@ -1,4 +1,28 @@
 {
   "pushCert": "certificate version 0.1\npusher F566C9B1 1491237526 -0700\npushee ssh://git.opendaylight.org:29418/releng/autorelease.git\nnonce 1491237526-B515B06CFF93AD1DE9E01C961E57730B9E831334\n\n0000000000000000000000000000000000000000 5f2fcb2759f0310b9bbf2883ffe3e5991590fc4c refs/publish/master\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v2\n\niQIcBAABCAAGBQJY4nqWAAoJEF3VDEv1Zsmxyf8P/iex+FAS0yrtNvqybc7I6MBa\nNe3AMypeT3W/Jhb074cNBHIAEhfJ1T6a3GlKKF+7BVXme4wvjiRqkQ9iBMgdEFpQ\ndN/O+OjMPtWInHFFU/91ILa4l9D32eJLOCLhVOx9qt00qrX2ijSDuRO+a6XBfeoT\nCfnRHFKH8jcYUtqzcrb5ivXrPVg0osx5W88Kd/6hTBOlO8OrnZtBX3f0juYCT3Jk\n2yHIm264WecTtetM0kADUBYusTntdXIGDKaJ5ihrnyeBMD10bk2BIorpswi5cLNf\nj1PkdPVifeBgxonvJ4jPEk6DFqYyfNnqcQbP8joe+2G9lXVwEGHg10P7zeF+bWPr\nAWzi+ESIfSfZIK9Az07maoOJHhJnyCnnONVq5lqtJJR6+01P8EclkhMi+b6fBrW+\nCtlePQ8E7T39/Qw3OPPo8+OgKfbqTMmTatZns0+BBH5TlBGZvBhVktBgOuO7fuRw\nsvUp6yMvwtcXPYIEfbYdpOoHCGNSv+M/jp6IyYhT1+D8Y+76+m82tRFGIpNT+7S4\nShlS36KTL6+MT1QVaGsyKo9l2+RBSjz0JK4fNbg/IE/Is88wnInGz8fqs/ikKyJy\nQKwnWlfuiedBaEO/9Mf+tRrfhce+SepArbC18io82ohZ5d2upEY61h8/x/MzgHDL\nviPVZOdyFDSUj9cItwR4\n\u003dY/KW\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [
+    {
+      "key": {
+        "uuid": "da01753e_bdc08a7d",
+        "filename": "scripts/release-calendar/carbon-release.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2264
+      },
+      "writtenOn": "2017-04-03T18:44:09Z",
+      "side": 1,
+      "message": "do you care about tabs v spaces?",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 1
+      },
+      "revId": "5f2fcb2759f0310b9bbf2883ffe3e5991590fc4c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
 }
