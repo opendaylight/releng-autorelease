@@ -1,0 +1,40 @@
+#!/bin/bash
+##############################################################################
+# Copyright (c) 2017 The Linux Foundation.  All rights reserved.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Eclipse Public License v1.0 which accompanies this distribution,
+# and is available at http://www.eclipse.org/legal/epl-v10.html
+##############################################################################
+
+i=0
+while [[ $(tr -d "\r\n" < test.log | wc -c) -gt 0 ]];
+do
+    echo "loop $i"
+    ((i++))
+    # shellcheck disable=SC2013
+    for item in $(cat test.log);
+    do
+        project=$(echo "$item" | cut -f1 -d:)
+        dependencies=$(echo "$item" | cut -f2 -d:)
+
+        if [[ $dependencies == "" ]]; then
+            echo "Building $project"
+            #docker run -it --rm --name $project -v "$PWD":/tmp/build -w /tmp/build -v /tmp/m2repo:/tmp/m2repo -v /home/user/.m2/settings.xml:/tmp/settings.xml maven:3.3.9-jdk-8 mvn clean install -s /tmp/settings.xml
+            sed -i "\|^$project:|d" test.log
+            sed -i "s|\b$project\b||" test.log
+        fi
+
+        if [[ $project == "integration/distribution" ]] && [[ "$dependencies" == "integration" ]]; then
+            echo "Building $project"
+            sed -i "\|^$project:|d" test.log
+            #docker run -it --rm --name $project -v "$PWD":/tmp/build -w /tmp/build -v /tmp/m2repo:/tmp/m2repo -v /home/user/.m2/settings.xml:/tmp/settings.xml maven:3.3.9-jdk-8 mvn clean install -s /tmp/settings.xml
+        fi
+    done
+
+    # Clear up extra commas
+    sed -i 's/:,/:/; s/,$//; s/,,*/,/' test.log
+    sleep 3
+done
+
+echo "Parallel build complete."
