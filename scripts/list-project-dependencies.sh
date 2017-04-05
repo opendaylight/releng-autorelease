@@ -16,11 +16,11 @@ dot - produces a dependencies.dot in graphviz dot format instead"
 
 LOG_FILE=dependencies.log
 
-modules=`xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:modules' -v '//x:module' pom.xml`
+modules=$(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:modules' -v '//x:module' pom.xml)
 
 if [[ "$2" != "" || "$1" != "" && "$1" != "dot" ]]; then
-    echo -e $USAGE;
-    exit;
+    echo -e "$USAGE"
+    exit
 fi
 
 if [ "$1" == "dot" ]; then
@@ -32,38 +32,40 @@ rm -f $LOG_FILE
 
 for module in $modules; do
     module_dependencies=""
-    for pom in `find $module -name pom.xml ! -path "*/src/*" ! -path "*/target/*"`; do
+    # shellcheck disable=SC2044
+    for pom in $(find "$module" -name pom.xml ! -path "*/src/*" ! -path "*/target/*"); do
         # Find ODL projects that are dependencies of a module and list them
         # in a sorted list. Also grep -v to remove invalid projects such as
         # the "toaster" project from coretutorials.
-        dependencies=`xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 \
-                                     -t \
-                                     -m '//x:project/x:dependencies/x:dependency' \
-                                     -n -v "x:groupId" $pom | \
-                      grep org.opendaylight | \
-                      sed -e 's@org.opendaylight.@@' \
-                          -e 's@\..*$@@' \
-                          -e "s@$module@@" | \
-                      grep -v toaster | sort | uniq`
+        dependencies=$(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 \
+                                      -t \
+                                      -m '//x:project/x:dependencies/x:dependency' \
+                                      -n -v "x:groupId" "$pom" | \
+                       grep org.opendaylight | \
+                       sed -e 's@org.opendaylight.@@' \
+                           -e 's@\..*$@@' \
+                           -e "s@$module@@" | \
+                       grep -v toaster | sort | uniq)
         # Include parent poms as dependencies
-        dependencies_parentpoms=`xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 \
-                                     -t \
-                                     -m '//x:project/x:parent' \
-                                     -n -v "x:groupId" $pom | \
-                                 grep org.opendaylight | \
-                                 sed -e 's@org.opendaylight.@@' \
-                                     -e 's@\..*$@@' \
-                                     -e "s@$module@@" | \
-                                 grep -v toaster | sort | uniq`
-        module_dependencies=`echo $module_dependencies $dependencies_parentpoms $dependencies | tr " " "\n" | sort | uniq`
+        dependencies_parentpoms=$(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 \
+                                      -t \
+                                      -m '//x:project/x:parent' \
+                                      -n -v "x:groupId" "$pom" | \
+                                  grep org.opendaylight | \
+                                  sed -e 's@org.opendaylight.@@' \
+                                      -e 's@\..*$@@' \
+                                      -e "s@$module@@" | \
+                                  grep -v toaster | sort | uniq)
+        module_dependencies=$(echo "$module_dependencies" "$dependencies_parentpoms" "$dependencies" | tr " " "\n" | sort | uniq)
     done
     if [ "$1" == "dot" ]; then
-        for dependency in `echo $module_dependencies | tr "\n" " "`; do
+        for dependency in $(echo "$module_dependencies" | tr "\n" " "); do
             echo "$module -> $dependency" >> $LOG_FILE
         done
     else
-        module_dependencies=`echo $module_dependencies | tr " " ","`
+        module_dependencies=$(echo "$module_dependencies" | tr "\n" ",")
         echo "$module:$module_dependencies" >> $LOG_FILE
+        sed -i 's/,$//' $LOG_FILE
     fi
 done
 
