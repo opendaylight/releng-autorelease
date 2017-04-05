@@ -42,9 +42,7 @@ for module in $modules; do
                                       -m '//x:project/x:dependencies/x:dependency' \
                                       -n -v "x:groupId" "$pom" | \
                        grep org.opendaylight | \
-                       sed -e 's@org.opendaylight.@@' \
-                           -e 's@\..*$@@' \
-                           -e "s@$module@@" | \
+                       sed -e 's@org.opendaylight.@@' | \
                        grep -v toaster | sort | uniq)
         # Include parent poms as dependencies
         dependencies_parentpoms=$(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 \
@@ -52,12 +50,21 @@ for module in $modules; do
                                       -m '//x:project/x:parent' \
                                       -n -v "x:groupId" "$pom" | \
                                   grep org.opendaylight | \
-                                  sed -e 's@org.opendaylight.@@' \
-                                      -e 's@\..*$@@' \
-                                      -e "s@$module@@" | \
+                                  sed -e 's@org.opendaylight.@@' | \
                                   grep -v toaster | sort | uniq)
         module_dependencies=$(echo "$module_dependencies" "$dependencies_parentpoms" "$dependencies" | tr " " "\n" | sort | uniq)
     done
+
+    module_dependencies="${module_dependencies//\./\/}"
+    for search_module in $module_dependencies; do
+        if [[ $search_module =~ .*/.* ]]; then
+            if [[ ! $modules =~ .*$search_module.* ]]; then
+                module_dependencies=$(echo $module_dependencies | tr ' ' '\n' | sed -e "s@$search_module.*@@" | sort | uniq)
+            fi
+        fi
+    done
+    module_dependencies=$(echo $module_dependencies | tr ' ' '\n' | sed -e "s@$module@@" | sort | uniq)
+
     if [ "$1" == "dot" ]; then
         for dependency in $(echo "$module_dependencies" | tr "\n" " "); do
             echo "$module -> $dependency" >> $LOG_FILE
@@ -65,7 +72,7 @@ for module in $modules; do
     else
         module_dependencies=$(echo "$module_dependencies" | tr "\n" ",")
         echo "$module:$module_dependencies" >> $LOG_FILE
-        sed -i 's/,$//' $LOG_FILE
+        sed -i 's/,$//; s/:,/:/' $LOG_FILE
     fi
 done
 
