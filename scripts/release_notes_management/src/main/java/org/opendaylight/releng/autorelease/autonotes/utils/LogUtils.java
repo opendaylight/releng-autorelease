@@ -10,7 +10,7 @@ package org.opendaylight.releng.autorelease.autonotes.utils;
 public class LogUtils {
 
     public static final boolean DEBUG = true;
-    public static final boolean EXIT = true;
+    public static final boolean EXIT = false;
 
     public static final void log(Object o) {
         if (DEBUG) {
