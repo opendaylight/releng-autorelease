@@ -62,10 +62,6 @@
 	path = alto
 	url = ../../alto
 	branch = .
-[submodule "didm"]
-	path = didm
-	url = ../../didm
-	branch = .
 [submodule "neutron"]
 	path = neutron
 	url = ../../neutron
