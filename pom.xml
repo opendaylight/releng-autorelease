@@ -29,7 +29,6 @@
     <module>capwap</module>
     <module>cardinal</module>
     <module>controller</module>
-    <module>didm</module>
     <module>dlux</module>
     <module>dluxapps</module>
     <module>eman</module>

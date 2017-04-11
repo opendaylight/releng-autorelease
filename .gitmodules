@@ -66,10 +66,6 @@
 	path = alto
 	url = ../../alto
 	branch = .
-[submodule "didm"]
-	path = didm
-	url = ../../didm
-	branch = .
 [submodule "iotdm"]
 	path = iotdm
 	url = ../../iotdm
