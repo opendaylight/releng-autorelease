@@ -70,10 +70,6 @@
 	path = didm
 	url = ../../didm
 	branch = .
-[submodule "iotdm"]
-	path = iotdm
-	url = ../../iotdm
-	branch = .
 [submodule "lacp"]
 	path = lacp
 	url = ../../lacp
@@ -97,10 +93,6 @@
 [submodule "sxp"]
 	path = sxp
 	url = ../../sxp
-	branch = .
-[submodule "tsdr"]
-	path = tsdr
-	url = ../../tsdr
 	branch = .
 [submodule "topoprocessing"]
 	path = topoprocessing
