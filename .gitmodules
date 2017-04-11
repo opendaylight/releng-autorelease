@@ -146,10 +146,6 @@
 	path = of-config
 	url = ../../of-config
 	branch = .
-[submodule "capwap"]
-	path = capwap
-	url = ../../capwap
-    branch = .
 [submodule "genius"]
 	path = genius
 	url = ../../genius
