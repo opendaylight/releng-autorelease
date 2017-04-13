@@ -70,10 +70,6 @@
 	path = lacp
 	url = ../../lacp
 	branch = .
-[submodule "nic"]
-	path = nic
-	url = ../../nic
-	branch = .
 [submodule "neutron"]
 	path = neutron
 	url = ../../neutron
