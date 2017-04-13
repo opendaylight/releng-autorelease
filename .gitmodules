@@ -66,10 +66,6 @@
 	path = didm
 	url = ../../didm
 	branch = .
-[submodule "lacp"]
-	path = lacp
-	url = ../../lacp
-	branch = .
 [submodule "neutron"]
 	path = neutron
 	url = ../../neutron
