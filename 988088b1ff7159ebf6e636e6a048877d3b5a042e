@@ -16,6 +16,24 @@
       "revId": "988088b1ff7159ebf6e636e6a048877d3b5a042e",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da01753e_4fcb691e",
+        "filename": "build-with-docker",
+        "patchSetId": 5
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-04-13T19:20:18Z",
+      "side": 1,
+      "message": "Yep that\u0027s the eventual plan. This was mostly a quick hack to see if it works (and surprisingly it did!). Just have some other container things to figure out as not all projects currently pass their build when inside of a docker container.",
+      "parentUuid": "da01753e_2f77053c",
+      "revId": "988088b1ff7159ebf6e636e6a048877d3b5a042e",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
     }
   ]
 }
