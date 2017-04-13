@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da01753e_2f77053c",
+        "filename": "build-with-docker",
+        "patchSetId": 5
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 5867
+      },
+      "writtenOn": "2017-04-13T18:23:14Z",
+      "side": 1,
+      "message": "instead of -v /home/zxiiro/.m2/settings.xml:/root/.m2/settings.xml you could just get it into the Docker image from https://raw.githubusercontent.com/opendaylight/odlparent/master/settings.xml (or the equivalent URL on git.opendaylight.org) ?",
+      "revId": "988088b1ff7159ebf6e636e6a048877d3b5a042e",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
