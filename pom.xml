@@ -25,7 +25,10 @@
     <module>aaa</module>
     <module>alto</module>
     <module>bgpcep</module>
+    <!-- Temporarily remove bier from autorelease until they pass Karaf4
+         https://lists.opendaylight.org/pipermail/release/2017-April/010064.html
     <module>bier</module>
+    -->
     <module>cardinal</module>
     <module>controller</module>
     <module>didm</module>
