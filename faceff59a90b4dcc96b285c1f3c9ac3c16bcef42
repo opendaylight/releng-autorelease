@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da01753e_35a63354",
+        "filename": "snmp4sdn/.none",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-04-16T23:50:43Z",
+      "side": 1,
+      "message": "The directory snmp4sdn is not actually a directory in Git. Nor is it a file. We have to actually run \"git submodule add \u003cgit-url\u003e\" in order to produce a valid submodule.",
+      "revId": "faceff59a90b4dcc96b285c1f3c9ac3c16bcef42",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
