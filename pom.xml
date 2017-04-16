@@ -60,6 +60,7 @@
     <module>sdninterfaceapp</module>
     <module>sfc</module>
     <module>snmp</module>
+    <module>snmp4sdn<module>
     <module>sxp</module>
     <module>topoprocessing</module>
     <module>tsdr</module>
