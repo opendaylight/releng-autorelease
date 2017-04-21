@@ -55,7 +55,7 @@ for module in $modules; do
         module_dependencies=$(echo "$module_dependencies" "$dependencies_parentpoms" "$dependencies" | tr " " "\n" | sort | uniq)
     done
 
-    module_dependencies="${module_dependencies//\./\/}"
+    module_dependencies=$(echo "$module_dependencies" | sed 's#\.#/#g')
     for search_module in $module_dependencies; do
         if [[ $search_module =~ .*/.* ]]; then
             if [[ ! $modules =~ .*$search_module.* ]]; then
