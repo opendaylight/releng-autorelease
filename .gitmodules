@@ -146,10 +146,6 @@
 	path = honeycomb/vbd
 	url = ../../honeycomb/vbd
 	branch = .
-[submodule "eman"]
-	path = eman
-	url = ../../eman
-	branch = .
 [submodule "odlparent"]
 	path = odlparent
 	url = ../../odlparent
