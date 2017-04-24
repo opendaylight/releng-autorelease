@@ -25,7 +25,9 @@
     <module>aaa</module>
     <module>alto</module>
     <module>bgpcep</module>
+    <!-- temporarily remove BIER for sporadic karaf4 SingleFeatureTest failures
     <module>bier</module>
+    -->
     <module>controller</module>
     <module>dlux</module>
     <module>dluxapps</module>
