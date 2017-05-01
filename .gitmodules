@@ -166,3 +166,7 @@
 	path = iotdm
 	url = ../../iotdm
 	branch = .
+[submodule "nic"]
+	path = nic
+	url = ../../nic
+	branch = .

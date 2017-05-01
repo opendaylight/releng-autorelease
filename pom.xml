@@ -46,6 +46,7 @@
     <module>netvirt</module>
     <module>neutron</module>
     <module>next</module>
+    <module>nic</module>
     <module>ocpplugin</module>
     <module>odlparent</module>
     <module>of-config</module>
