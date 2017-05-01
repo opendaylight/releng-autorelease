@@ -162,7 +162,3 @@
 	path = federation
 	url = ../../federation
 	branch = .
-[submodule "iotdm"]
-	path = iotdm
-	url = ../../iotdm
-	branch = .

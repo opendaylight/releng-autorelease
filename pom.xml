@@ -36,7 +36,6 @@
     <module>honeycomb/vbd</module>
     <module>infrautils</module>
     <module>integration/distribution</module>
-    <module>iotdm</module>
     <module>l2switch</module>
     <module>lispflowmapping</module>
     <module>mdsal</module>
