@@ -166,3 +166,7 @@
 	path = nic
 	url = ../../nic
 	branch = .
+[submodule "eman"]
+	path = eman
+	url = ../../eman
+	branch = .
