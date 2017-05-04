@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba068154_8231dc0d",
+        "filename": "iotdm",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2046
+      },
+      "writtenOn": "2017-05-04T11:26:46Z",
+      "side": 0,
+      "message": "Deleting this submodule makes iotdm-validate-autorelease-carbon fail, so Iotdm has to comment that job out in order to make progress, and then put the job back when added back to autorelease.\nIt would be better to replace the submodule with an empty directory. Or at least I think that is the reason why Bier did not need to comment-out anything when they have been removed.",
+      "revId": "0ff6b3032fffdc2e7732ee03e746862fd0375650",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
