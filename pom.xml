@@ -38,6 +38,7 @@
     <module>infrautils</module>
     <module>integration/distribution</module>
     <module>l2switch</module>
+    <module>lacp</module>
     <module>lispflowmapping</module>
     <module>mdsal</module>
     <module>nemo</module>
