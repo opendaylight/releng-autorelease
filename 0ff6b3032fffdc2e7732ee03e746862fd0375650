@@ -16,6 +16,24 @@
       "revId": "0ff6b3032fffdc2e7732ee03e746862fd0375650",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba068154_b7ab7888",
+        "filename": "iotdm",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 48
+      },
+      "writtenOn": "2017-05-05T14:20:13Z",
+      "side": 0,
+      "message": "Git doesn\u0027t allow for empty directories. I don\u0027t know what the right strategy for handling the validate-autorelease-carbon jobs should be. It seems like we now have 3 different project that need to be updated whenever a project is added/removed from a release:\n\n* autorelease\n* distribution\n* jjb\n\nThat seems like we\u0027re going the wrong direction from 2. Ideally, we would have it all stem from autorelease, but I\u0027m not sure how to accomplish that.",
+      "parentUuid": "ba068154_8231dc0d",
+      "revId": "0ff6b3032fffdc2e7732ee03e746862fd0375650",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
     }
   ]
 }
