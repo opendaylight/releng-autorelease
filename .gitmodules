@@ -82,6 +82,10 @@
 	path = sxp
 	url = ../../sxp
 	branch = .
+[submodule "tsdr"]
+	path = tsdr
+	url = ../../tsdr
+	branch = .
 [submodule "topoprocessing"]
 	path = topoprocessing
 	url = ../../topoprocessing
