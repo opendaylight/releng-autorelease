@@ -90,6 +90,10 @@
 	path = topoprocessing
 	url = ../../topoprocessing
 	branch = .
+[submodule "tsdr"]
+	path = tsdr
+	url = ../../tsdr
+	branch = .
 [submodule "usc"]
 	path = usc
 	url = ../../usc
