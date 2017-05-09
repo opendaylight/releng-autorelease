@@ -46,10 +46,6 @@
 	path = sfc
 	url = ../../sfc
 	branch = .
-[submodule "snmp4sdn"]
-	path = snmp4sdn
-	url = ../../snmp4sdn
-	branch = .
 [submodule "ttp"]
 	path = ttp
 	url = ../../ttp
