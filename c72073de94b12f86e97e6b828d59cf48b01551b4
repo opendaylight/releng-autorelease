@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba068154_8c4e23c0",
+        "filename": "tsdr/README",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-05-09T11:18:31Z",
+      "side": 1,
+      "message": "This is not a proper submodule. The tsdr directory is a special directory it cannot be created manually. It needs to be created via the \"submodule add\" command.",
+      "revId": "c72073de94b12f86e97e6b828d59cf48b01551b4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
