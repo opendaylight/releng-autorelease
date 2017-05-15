@@ -138,6 +138,10 @@
 	path = genius
 	url = ../../genius
     branch = .
+[submodule "cardinal"]
+	path = cardinal
+	url = ../../cardinal
+	branch = .
 [submodule "netvirt"]
 	path = netvirt
 	url = ../../netvirt
