@@ -66,6 +66,10 @@
 	path = alto
 	url = ../../alto
 	branch = .
+[submodule "lacp"]
+	path = lacp
+	url = ../../lacp
+	branch = .
 [submodule "didm"]
 	path = didm
 	url = ../../didm
