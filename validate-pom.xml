@@ -51,6 +51,12 @@
           <skip>true</skip>
         </configuration>
       </plugin>
+      <plugin>
+        <!-- https://bugs.opendaylight.org/show_bug.cgi?id=8483 -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>3.0.1</version>
+      </plugin>
     </plugins>
   </build>
 </project>
