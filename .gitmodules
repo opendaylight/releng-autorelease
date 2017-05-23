@@ -130,10 +130,6 @@
 	path = netide
 	url = ../../netide
         branch = .
-[submodule "unimgr"]
-	path = unimgr
-	url = ../../unimgr
-	branch = .
 [submodule "next"]
 	path = next
 	url = ../../next
