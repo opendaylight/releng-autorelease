@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3afa9182_3ec80774",
+        "filename": "scripts/find-artifact-versions.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 48
+      },
+      "writtenOn": "2017-06-01T17:57:41Z",
+      "side": 1,
+      "message": "Some generic comment about what this does would be nice.",
+      "revId": "ab4ea40169dbe6aa3e600e814f18fea125dbff9f",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afa9182_decaa36d",
+        "filename": "scripts/find-artifact-versions.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 48
+      },
+      "writtenOn": "2017-06-01T17:57:41Z",
+      "side": 1,
+      "message": "It would be good to add a comment here to explain what this does.",
+      "revId": "ab4ea40169dbe6aa3e600e814f18fea125dbff9f",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
