@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3afa9182_5434c7dd",
+        "filename": "scripts/find-artifact-versions.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-06-05T20:04:41Z",
+      "side": 1,
+      "message": "To a file but I can make it print to both.",
+      "parentUuid": "3afa9182_be999770",
+      "range": {
+        "startLine": 10,
+        "startChar": 63,
+        "endLine": 10,
+        "endChar": 77
+      },
+      "revId": "ab4ea40169dbe6aa3e600e814f18fea125dbff9f",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3afa9182_3ec80774",
         "filename": "scripts/find-artifact-versions.sh",
         "patchSetId": 3
