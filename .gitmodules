@@ -2,183 +2,23 @@
 	path = aaa
 	url = ../../aaa
 	branch = .
-[submodule "bgpcep"]
-	path = bgpcep
-	url = ../../bgpcep
-	branch = .
 [submodule "controller"]
 	path = controller
 	url = ../../controller
-	branch = .
-[submodule "dlux"]
-	path = dlux
-	url = ../../dlux
-	branch = .
-[submodule "groupbasedpolicy"]
-	path = groupbasedpolicy
-	url = ../../groupbasedpolicy
-	branch = .
-[submodule "l2switch"]
-	path = l2switch
-	url = ../../l2switch
-	branch = .
-[submodule "lispflowmapping"]
-	path = lispflowmapping
-	url = ../../lispflowmapping
-	branch = .
-[submodule "openflowjava"]
-	path = openflowjava
-	url = ../../openflowjava
-	branch = .
-[submodule "openflowplugin"]
-	path = openflowplugin
-	url = ../../openflowplugin
-	branch = .
-[submodule "ovsdb"]
-	path = ovsdb
-	url = ../../ovsdb
-	branch = .
-[submodule "sdninterfaceapp"]
-	path = sdninterfaceapp
-	url = ../../sdninterfaceapp
-	branch = .
-[submodule "sfc"]
-	path = sfc
-	url = ../../sfc
-	branch = .
-[submodule "ttp"]
-	path = ttp
-	url = ../../ttp
-	branch = .
-[submodule "vtn"]
-	path = vtn
-	url = ../../vtn
 	branch = .
 [submodule "yangtools"]
 	path = yangtools
 	url = ../../yangtools
 	branch = .
-[submodule "alto"]
-	path = alto
-	url = ../../alto
-	branch = .
-[submodule "didm"]
-	path = didm
-	url = ../../didm
-	branch = .
-[submodule "iotdm"]
-	path = iotdm
-	url = ../../iotdm
-	branch = .
-[submodule "lacp"]
-	path = lacp
-	url = ../../lacp
-	branch = .
-[submodule "nic"]
-	path = nic
-	url = ../../nic
-	branch = .
-[submodule "neutron"]
-	path = neutron
-	url = ../../neutron
-	branch = .
-[submodule "packetcable"]
-	path = packetcable
-	url = ../../packetcable
-	branch = .
-[submodule "snmp"]
-	path = snmp
-	url = ../../snmp
-	branch = .
-[submodule "sxp"]
-	path = sxp
-	url = ../../sxp
-	branch = .
-[submodule "tsdr"]
-	path = tsdr
-	url = ../../tsdr
-	branch = .
-[submodule "topoprocessing"]
-	path = topoprocessing
-	url = ../../topoprocessing
-	branch = .
-[submodule "usc"]
-	path = usc
-	url = ../../usc
-	branch = .
 [submodule "netconf"]
 	path = netconf
 	url = ../../netconf
-	branch = .
-[submodule "mdsal"]
-	path = mdsal
-	url = ../../mdsal
-	branch = .
-[submodule "integration/distribution"]
-	path = integration/distribution
-	url = ../../integration/distribution
-	branch = .
-[submodule "faas"]
-	path = faas
-	url = ../../faas
-        branch = .
-[submodule "nemo"]
-	path = nemo
-	url = ../../nemo
-        branch = .
-[submodule "netide"]
-	path = netide
-	url = ../../netide
-        branch = .
-[submodule "next"]
-	path = next
-	url = ../../next
-    branch = .
-[submodule "of-config"]
-	path = of-config
-	url = ../../of-config
-	branch = .
-[submodule "genius"]
-	path = genius
-	url = ../../genius
-    branch = .
-[submodule "cardinal"]
-	path = cardinal
-	url = ../../cardinal
-	branch = .
-[submodule "netvirt"]
-	path = netvirt
-	url = ../../netvirt
-	branch = .
-[submodule "ocpplugin"]
-	path = ocpplugin
-	url = ../../ocpplugin
-	branch = .
-[submodule "infrautils"]
-	path = infrautils
-	url = ../../infrautils
-	branch = .
-[submodule "honeycomb/vbd"]
-	path = honeycomb/vbd
-	url = ../../honeycomb/vbd
-	branch = .
-[submodule "eman"]
-	path = eman
-	url = ../../eman
 	branch = .
 [submodule "odlparent"]
 	path = odlparent
 	url = ../../odlparent
 	branch = .
-[submodule "dluxapps"]
-	path = dluxapps
-	url = ../../dluxapps
-	branch = .
-[submodule "bier"]
-	path = bier
-	url = ../../bier
-	branch = .
-[submodule "federation"]
-	path = federation
-	url = ../../federation
+[submodule "mdsal"]
+	path = mdsal
+	url = ../../mdsal
 	branch = .

@@ -23,50 +23,10 @@
   <modules>
     <!-- Build OpenDaylight projects -->
     <module>aaa</module>
-    <module>alto</module>
-    <module>bgpcep</module>
-    <module>bier</module>
-    <module>cardinal</module>
     <module>controller</module>
-    <module>didm</module>
-    <module>dlux</module>
-    <module>dluxapps</module>
-    <module>eman</module>
-    <module>faas</module>
-    <module>federation</module>
-    <module>genius</module>
-    <module>groupbasedpolicy</module>
-    <module>honeycomb/vbd</module>
-    <module>infrautils</module>
-    <module>integration/distribution</module>
-    <module>iotdm</module>
-    <module>l2switch</module>
-    <module>lacp</module>
-    <module>lispflowmapping</module>
     <module>mdsal</module>
-    <module>nemo</module>
     <module>netconf</module>
-    <module>netide</module>
-    <module>netvirt</module>
-    <module>neutron</module>
-    <module>next</module>
-    <module>nic</module>
-    <module>ocpplugin</module>
     <module>odlparent</module>
-    <module>of-config</module>
-    <module>openflowjava</module>
-    <module>openflowplugin</module>
-    <module>ovsdb</module>
-    <module>packetcable</module>
-    <module>sdninterfaceapp</module>
-    <module>sfc</module>
-    <module>snmp</module>
-    <module>sxp</module>
-    <module>topoprocessing</module>
-    <module>tsdr</module>
-    <module>ttp</module>
-    <module>usc</module>
-    <module>vtn</module>
     <module>yangtools</module>
   </modules>
 
