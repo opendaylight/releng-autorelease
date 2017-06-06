@@ -22,3 +22,7 @@
 	path = mdsal
 	url = ../../mdsal
 	branch = .
+[submodule "infrautils"]
+	path = infrautils
+	url = ../../infrautils
+	branch = .
