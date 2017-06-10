@@ -22,7 +22,6 @@
 
   <modules>
     <!-- TODO: Make sure every module listed here contains a reminder to keep this list updated. -->
-    <module>odlparent</module>
     <module>yangtools</module>
 
     <module>controller/opendaylight/config/config-artifacts</module>
