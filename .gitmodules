@@ -14,10 +14,6 @@
 	path = netconf
 	url = ../../netconf
 	branch = .
-[submodule "odlparent"]
-	path = odlparent
-	url = ../../odlparent
-	branch = .
 [submodule "mdsal"]
 	path = mdsal
 	url = ../../mdsal

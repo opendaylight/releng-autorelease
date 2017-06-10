@@ -26,7 +26,6 @@
     <module>controller</module>
     <module>mdsal</module>
     <module>netconf</module>
-    <module>odlparent</module>
     <module>yangtools</module>
   </modules>
 
