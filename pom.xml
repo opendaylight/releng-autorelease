@@ -25,6 +25,7 @@
     <module>aaa</module>
     <module>controller</module>
     <module>infrautils</module>
+    <module>integration/distribution</module>
     <module>mdsal</module>
     <module>netconf</module>
     <module>yangtools</module>
