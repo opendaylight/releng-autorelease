@@ -26,3 +26,7 @@
 	path = integration/distribution
 	url = ../../integration/distribution
 	branch = .
+[submodule "ttp"]
+	path = ttp
+	url = ../ttp
+	branch = .
