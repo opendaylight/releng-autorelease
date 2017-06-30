@@ -41,6 +41,7 @@
     <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
+    <module>packetcable</module>
     <module>sxp</module>
     <module>topoprocessing</module>
     <module>ttp</module>
