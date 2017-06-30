@@ -28,6 +28,7 @@
     <module>integration/distribution</module>
     <module>mdsal</module>
     <module>netconf</module>
+    <module>packetcable</module>
     <module>ttp</module>
     <module>yangtools</module>
   </modules>
