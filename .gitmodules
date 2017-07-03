@@ -30,3 +30,8 @@
 	path = ttp
 	url = ../ttp
 	branch = .
+[submodule "daexim"]
+	path = daexim
+	url = ../../daexim
+	branch = .
+

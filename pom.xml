@@ -30,6 +30,7 @@
     <module>netconf</module>
     <module>ttp</module>
     <module>yangtools</module>
+    <module>daexim</module>
   </modules>
 
   <build>
