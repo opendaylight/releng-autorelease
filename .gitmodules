@@ -28,7 +28,7 @@
 	branch = .
 [submodule "ttp"]
 	path = ttp
-	url = ../ttp
+	url = ../../ttp
 	branch = .
 [submodule "daexim"]
 	path = daexim
