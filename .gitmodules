@@ -58,3 +58,12 @@
 	path = yangtools
 	url = ../../yangtools
 	branch = .
+[submodule "openflowjava"]
+	path = openflowjava
+	url = ../../openflowjava
+[submodule "neutron"]
+	path = neutron
+	url = ../../neutron
+[submodule "netvirt"]
+	path = netvirt
+	url = ../../netvirt

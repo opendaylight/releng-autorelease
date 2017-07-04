@@ -31,6 +31,9 @@
     <module>integration/distribution</module>
     <module>mdsal</module>
     <module>netconf</module>
+    <module>netvirt</module>
+    <module>neutron</module>
+    <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>sxp</module>
