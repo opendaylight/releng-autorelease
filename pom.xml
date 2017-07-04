@@ -23,6 +23,7 @@
   <modules>
     <!-- Build OpenDaylight projects -->
     <module>aaa</module>
+    <module>bgpcep</module>
     <module>controller</module>
     <module>infrautils</module>
     <module>integration/distribution</module>
