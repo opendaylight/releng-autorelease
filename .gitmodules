@@ -2,6 +2,10 @@
 	path = aaa
 	url = ../../aaa
 	branch = .
+[submodule "bgpcep"]
+	path = bgpcep
+	url = ../../bgpcep
+	branch = .
 [submodule "controller"]
 	path = controller
 	url = ../../controller
