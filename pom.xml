@@ -30,7 +30,9 @@
     <module>dluxapps</module>
     <module>genius</module>
     <module>infrautils</module>
+    <!-- Temporarily disable int/dist
     <module>integration/distribution</module>
+    -->
     <module>mdsal</module>
     <module>netconf</module>
     <module>netvirt</module>
