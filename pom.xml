@@ -26,6 +26,8 @@
     <module>bgpcep</module>
     <module>controller</module>
     <module>daexim</module>
+    <module>dlux</module>
+    <module>dluxapps</module>
     <module>genius</module>
     <module>infrautils</module>
     <module>integration/distribution</module>
