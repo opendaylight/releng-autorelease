@@ -10,17 +10,13 @@
 	path = controller
 	url = ../../controller
 	branch = .
-[submodule "yangtools"]
-	path = yangtools
-	url = ../../yangtools
+[submodule "daexim"]
+	path = daexim
+	url = ../../daexim
 	branch = .
-[submodule "netconf"]
-	path = netconf
-	url = ../../netconf
-	branch = .
-[submodule "mdsal"]
-	path = mdsal
-	url = ../../mdsal
+[submodule "genius"]
+	path = genius
+	url = ../../genius
 	branch = .
 [submodule "infrautils"]
 	path = infrautils
@@ -30,11 +26,35 @@
 	path = integration/distribution
 	url = ../../integration/distribution
 	branch = .
+[submodule "mdsal"]
+	path = mdsal
+	url = ../../mdsal
+	branch = .
+[submodule "netconf"]
+	path = netconf
+	url = ../../netconf
+	branch = .
+[submodule "openflowplugin"]
+	path = openflowplugin
+	url = ../../openflowplugin
+	branch = .
+[submodule "ovsdb"]
+	path = ovsdb
+	url = ../../ovsdb
+	branch = .
+[submodule "sxp"]
+	path = sxp
+	url = ../../sxp
+	branch = .
+[submodule "topoprocessing"]
+	path = topoprocessing
+	url = ../../topoprocessing
+	branch = .
 [submodule "ttp"]
 	path = ttp
 	url = ../../ttp
 	branch = .
-[submodule "daexim"]
-	path = daexim
-	url = ../../daexim
+[submodule "yangtools"]
+	path = yangtools
+	url = ../../yangtools
 	branch = .

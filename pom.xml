@@ -26,10 +26,15 @@
     <module>bgpcep</module>
     <module>controller</module>
     <module>daexim</module>
+    <module>genius</module>
     <module>infrautils</module>
     <module>integration/distribution</module>
     <module>mdsal</module>
     <module>netconf</module>
+    <module>openflowplugin</module>
+    <module>ovsdb</module>
+    <module>sxp</module>
+    <module>topoprocessing</module>
     <module>ttp</module>
     <module>yangtools</module>
   </modules>
