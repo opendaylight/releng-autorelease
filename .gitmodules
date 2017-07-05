@@ -10,6 +10,10 @@
 	path = controller
 	url = ../../controller
 	branch = .
+[submodule "coe"]
+	path = coe
+	url = ../../coe
+	branch = .
 [submodule "daexim"]
 	path = daexim
 	url = ../../daexim

@@ -25,6 +25,7 @@
     <module>aaa</module>
     <module>bgpcep</module>
     <module>controller</module>
+    <module>coe</module>
     <module>daexim</module>
     <module>dlux</module>
     <module>dluxapps</module>
