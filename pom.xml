@@ -42,6 +42,7 @@
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>packetcable</module>
+    <module>sfc</module>
     <module>sxp</module>
     <module>topoprocessing</module>
     <module>ttp</module>
