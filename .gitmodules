@@ -70,6 +70,10 @@
 	path = packetcable
 	url = ../../packetcable
 	branch = .
+[submodule "sfc"]
+	path = sfc
+	url = ../sfc
+	branch = .
 [submodule "sxp"]
 	path = sxp
 	url = ../../sxp
