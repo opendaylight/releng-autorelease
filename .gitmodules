@@ -66,10 +66,6 @@
 	path = ovsdb
 	url = ../../ovsdb
 	branch = .
-[submodule "packetcable"]
-	path = packetcable
-	url = ../../packetcable
-	branch = .
 [submodule "sfc"]
 	path = sfc
 	url = ../../sfc
