@@ -74,6 +74,10 @@
 	path = sfc
 	url = ../../sfc
 	branch = .
+[submodule "snmp"]
+	path = snmp
+	url = ../../snmp
+	branch = .
 [submodule "sxp"]
 	path = sxp
 	url = ../../sxp

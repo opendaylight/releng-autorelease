@@ -43,6 +43,7 @@
     <module>ovsdb</module>
     <module>packetcable</module>
     <module>sfc</module>
+    <module>snmp</module>
     <module>sxp</module>
     <module>topoprocessing</module>
     <module>ttp</module>
