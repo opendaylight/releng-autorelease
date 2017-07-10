@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da2a55be_79e4450d",
+        "filename": "snmp",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-07-10T19:31:16Z",
+      "side": 1,
+      "message": "This is not a real file. It\u0027s a virtual file managed by git. To create the proper file we need to run `git submodule add`",
+      "revId": "4890961ab76471425710062f2d4cc97c6dbd7068",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
