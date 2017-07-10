@@ -36,13 +36,17 @@
     -->
     <module>mdsal</module>
     <module>netconf</module>
+    <!-- Temporarily disable until autorelease is stable
     <module>netvirt</module>
+    -->
     <module>neutron</module>
     <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>packetcable</module>
+    <!-- Temporarily disable until autorelease is stable
     <module>sfc</module>
+    -->
     <module>sxp</module>
     <module>topoprocessing</module>
     <module>ttp</module>
