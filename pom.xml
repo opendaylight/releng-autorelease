@@ -47,6 +47,7 @@
     <!-- Temporarily disable until autorelease is stable
     <module>sfc</module>
     -->
+    <module>snmp</module>
     <module>sxp</module>
     <module>topoprocessing</module>
     <module>ttp</module>
