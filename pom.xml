@@ -47,6 +47,7 @@
     <!-- Temporarily disable until autorelease is stable
     <module>sfc</module>
     -->
+    <module>snmp</module>
     <module>sxp</module>
     <module>topoprocessing</module>
     <!-- Temporarily disable ttp until they merge https://git.opendaylight.org/gerrit/60316
