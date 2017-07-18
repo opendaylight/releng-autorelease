@@ -30,6 +30,7 @@
     <module>dlux</module>
     <module>dluxapps</module>
     <module>genius</module>
+    <module>honeycomb/vbd</module>
     <module>infrautils</module>
     <!-- Temporarily disable int/dist
     <module>integration/distribution</module>
