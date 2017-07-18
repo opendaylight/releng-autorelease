@@ -45,9 +45,7 @@
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>packetcable</module>
-    <!-- Temporarily disable until autorelease is stable
     <module>sfc</module>
-    -->
     <module>snmp</module>
     <module>sxp</module>
     <module>topoprocessing</module>
