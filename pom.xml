@@ -34,6 +34,7 @@
     <!-- Temporarily disable int/dist
     <module>integration/distribution</module>
     -->
+    <module>lispflowmapping</module>
     <module>mdsal</module>
     <module>netconf</module>
     <!-- Temporarily disable until autorelease is stable
