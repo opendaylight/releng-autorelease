@@ -30,6 +30,10 @@
 	path = genius
 	url = ../../genius
 	branch = .
+[submodule "honeycomb/vbd"]
+	path = honeycomb/vbd
+	url = ../../honeycomb/vbd
+	branch = .
 [submodule "infrautils"]
 	path = infrautils
 	url = ../../infrautils
