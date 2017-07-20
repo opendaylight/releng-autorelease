@@ -32,9 +32,7 @@
     <module>genius</module>
     <module>honeycomb/vbd</module>
     <module>infrautils</module>
-    <!-- Temporarily disable int/dist
     <module>integration/distribution</module>
-    -->
     <module>lispflowmapping</module>
     <module>mdsal</module>
     <module>netconf</module>
@@ -48,9 +46,7 @@
     <module>snmp</module>
     <module>sxp</module>
     <module>topoprocessing</module>
-    <!-- Temporarily disable ttp until they merge https://git.opendaylight.org/gerrit/60316
     <module>ttp</module>
-    -->
     <module>yangtools</module>
   </modules>
 
