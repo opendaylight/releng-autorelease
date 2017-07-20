@@ -38,9 +38,7 @@
     <module>lispflowmapping</module>
     <module>mdsal</module>
     <module>netconf</module>
-    <!-- Temporarily disable until autorelease is stable
     <module>netvirt</module>
-    -->
     <module>neutron</module>
     <module>openflowjava</module>
     <module>openflowplugin</module>
