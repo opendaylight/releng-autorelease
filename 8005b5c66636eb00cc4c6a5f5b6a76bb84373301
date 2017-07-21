@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "da2a55be_1235f7d9",
+        "filename": ".gitmodules",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-07-21T14:19:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da2a55be_920a871f",
+      "revId": "8005b5c66636eb00cc4c6a5f5b6a76bb84373301",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da2a55be_3203db0e",
         "filename": "pom.xml",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2017-07-21T14:16:44Z",
       "side": 1,
       "message": "Still needs to be changed to groupbasedpolicy and moved above honeycomb to keep ordering.",
+      "revId": "8005b5c66636eb00cc4c6a5f5b6a76bb84373301",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da2a55be_f22f8386",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-07-21T14:19:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da2a55be_3203db0e",
       "revId": "8005b5c66636eb00cc4c6a5f5b6a76bb84373301",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
