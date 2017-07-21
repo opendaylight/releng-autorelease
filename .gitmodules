@@ -30,6 +30,10 @@
 	path = genius
 	url = ../../genius
 	branch = .
+[submodule "groupbasedpolicy"]
+	path = groupbasedpolicy
+	url = ../../groupbasedpolicy
+	branch = .
 [submodule "honeycomb/vbd"]
 	path = honeycomb/vbd
 	url = ../../honeycomb/vbd

@@ -30,6 +30,7 @@
     <module>dlux</module>
     <module>dluxapps</module>
     <module>genius</module>
+    <module>groupbasedpolicy</module>
     <module>honeycomb/vbd</module>
     <module>infrautils</module>
     <module>integration/distribution</module>
