@@ -48,6 +48,7 @@
     <module>sxp</module>
     <module>topoprocessing</module>
     <module>ttp</module>
+    <module>vtn</module>
     <module>yangtools</module>
   </modules>
 
