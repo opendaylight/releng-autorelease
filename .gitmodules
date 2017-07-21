@@ -34,6 +34,10 @@
 	path = honeycomb/vbd
 	url = ../../honeycomb/vbd
 	branch = .
+[submodule "groupbasedpolicy"]
+	path = groupbasedpolicy
+	url = ../../groupbasedpolicy
+	branch = .
 [submodule "infrautils"]
 	path = infrautils
 	url = ../../infrautils
