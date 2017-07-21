@@ -34,6 +34,10 @@
 	path = honeycomb/vbd
 	url = ../../honeycomb/vbd
 	branch = .
+[submodule "groupbasedpolicy"]
+	path = groupbasedpolicy
+	url = https://git.opendaylight.org/gerrit/groupbasedpolicy
+	branch = .
 [submodule "infrautils"]
 	path = infrautils
 	url = ../../infrautils
