@@ -110,3 +110,7 @@
 	path = yangtools
 	url = ../../yangtools
 	branch = .
+[submodule "bier"]
+	path = bier
+	url = ../../bier
+	branch = .
