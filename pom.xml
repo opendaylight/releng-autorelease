@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Copyright (c) 2014 The Linux Foundation and others.
   All rights reserved. This program and the accompanying materials
@@ -24,6 +24,7 @@
     <!-- Build OpenDaylight projects -->
     <module>aaa</module>
     <module>bgpcep</module>
+    <module>bier</module>
     <module>controller</module>
     <module>coe</module>
     <module>daexim</module>
