@@ -24,6 +24,7 @@
     <!-- Build OpenDaylight projects -->
     <module>aaa</module>
     <module>bgpcep</module>
+    <module>bier</module>
     <module>controller</module>
     <module>coe</module>
     <module>daexim</module>
