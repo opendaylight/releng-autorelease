@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da2a55be_6c972a91",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-07-26T14:05:48Z",
+      "side": 1,
+      "message": "Should be alphabetically added. I\u0027ll fix it.",
+      "revId": "6687ea799e6bb5a0cc92221f8fbbfcd11bc347e9",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
