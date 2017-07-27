@@ -70,6 +70,10 @@
 	path = neutron
 	url = ../../neutron
 	branch = .
+[submodule "ocpplugin"]
+	path = ocpplugin
+	url = ../../ocpplugin
+	branch = .
 [submodule "openflowjava"]
 	path = openflowjava
 	url = ../../openflowjava
