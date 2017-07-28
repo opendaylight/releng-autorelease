@@ -98,6 +98,10 @@
 	path = snmp
 	url = ../../snmp
 	branch = .
+[submodule "snmp4sdn"]
+	path = snmp4sdn
+	url = ../../snmp4sdn
+	branch = .
 [submodule "sxp"]
 	path = sxp
 	url = ../../sxp
