@@ -118,6 +118,10 @@
 	path = ttp
 	url = ../../ttp
 	branch = .
+[submodule "unimgr"]
+	path = unimgr
+	url = ../../unimgr
+	branch = .
 [submodule "vtn"]
 	path = vtn
 	url = ../../vtn

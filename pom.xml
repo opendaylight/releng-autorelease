@@ -52,6 +52,7 @@
     <module>sxp</module>
     <module>topoprocessing</module>
     <module>ttp</module>
+    <module>unimgr</module>
     <module>vtn</module>
     <module>yangtools</module>
   </modules>
