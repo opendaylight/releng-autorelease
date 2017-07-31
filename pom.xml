@@ -43,7 +43,6 @@
     <module>netvirt</module>
     <module>neutron</module>
     <module>ocpplugin</module>
-    <module>openflowjava</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>packetcable</module>

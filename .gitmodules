@@ -82,10 +82,6 @@
 	path = ocpplugin
 	url = ../../ocpplugin
 	branch = .
-[submodule "openflowjava"]
-	path = openflowjava
-	url = ../../openflowjava
-	branch = .
 [submodule "openflowplugin"]
 	path = openflowplugin
 	url = ../../openflowplugin
