@@ -12,6 +12,8 @@
 
 set -eu -o pipefail
 
+VERSION_FILE="$(pwd)/versions.csv"
+
 print_gav() {
     # Prints the Group, Artifact ID, and Version (GAV) of a Maven artifact to a file versions.csv
     #
@@ -22,12 +24,13 @@ print_gav() {
     #
     #     POM_XML : The path to a pom.xml file to parse for GAV information.
 
-    file=$1
+    version_file=$1
+    pom_file=$2
 
     artifact_id=$(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 \
       -t -m '/x:project' \
       -v "/x:project/x:artifactId" \
-      $file)
+      $pom_file)
 
     group_id=$(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 \
         -t -m '/x:project' \
@@ -36,7 +39,7 @@ print_gav() {
         --elif "/x:project/x:parent/x:groupId" \
         -v "/x:project/x:parent/x:groupId" \
         --else -o "" \
-        $file)
+        $pom_file)
 
     version=$(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 \
         -t -m '/x:project' \
@@ -45,12 +48,22 @@ print_gav() {
         --elif "/x:project/x:parent/x:version" \
         -v "/x:project/x:parent/x:version" \
         --else -o "" \
-        $file)
+        $pom_file)
 
-    echo "$group_id,$artifact_id,$version" | tee -a versions.csv
+    echo "$group_id,$artifact_id,$version" | tee -a "$version_file"
 }
 
 # Finds all pom.xml files in a directory and then spawns a bash shell to run
 # the print_gav function to parse GAV information from pom file.
-export -f print_gav
-find . -name pom.xml -exec bash -c 'print_gav "$0"' {} \;
+poms=($(find . -name pom.xml -not -path "./scripts/*" -not -path "*/src/*"))
+
+if hash parallel 2>/dev/null; then
+    export -f print_gav
+    parallel --jobs 200% --halt now,fail=1 "print_gav $VERSION_FILE {}" ::: ${poms[*]}
+else
+    for pom in "${poms[@]}"; do
+        print_gav "$VERSION_FILE" "$pom"
+    done
+fi
+
+sort -o "$VERSION_FILE" "$VERSION_FILE"
