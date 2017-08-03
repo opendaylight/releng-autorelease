@@ -23,6 +23,7 @@
   <modules>
     <!-- Build OpenDaylight projects -->
     <module>aaa</module>
+    <module>alto</module>
     <module>bgpcep</module>
     <module>bier</module>
     <module>cardinal</module>
