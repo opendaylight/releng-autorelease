@@ -1,0 +1,28 @@
+[all]
+ignore = .git/**,
+    .tox/**
+
+[all.Documentation]
+bears = WriteGoodLintBear
+files = *.md, *.markdown
+allow_so_beginning = False
+allow_there_is = False
+allow_cliche_phrases = False
+
+[all.GitCommit]
+bears = GitCommitBear
+ignore_length_regex = Signed-off-by,
+    Also-by,
+    Co-authored-by,
+    http://,
+    https://
+
+[all.ShellCheck]
+bears = ShellCheckBear,
+    SpaceConsistencyBear
+files = scripts/**.sh
+ignore = scripts/release-notes-generator.sh
+shell = bash
+indent_size = 4
+use_spaces = yeah
+

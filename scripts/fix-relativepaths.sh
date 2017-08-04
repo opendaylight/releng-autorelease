@@ -79,4 +79,4 @@ fix_relative_paths() {
 }
 
 # Find all project poms ignoring the /src/ paths (We don't want to scan code)
-find . -name pom.xml -not -path "*/src/*" | xargs -I^ -P8 bash -c "$(declare -f fix_relative_paths); fix_relative_paths ^"
+find . -name pom.xml -not -path "*/src/*" -print0 | xargs -0 -I^ -P8 bash -c "$(declare -f fix_relative_paths); fix_relative_paths ^"
