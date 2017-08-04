@@ -16,6 +16,24 @@
       "revId": "9ae30856ff773ffb42334ec85ceb961d869b3554",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba1f61a0_771745a4",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-08-04T20:01:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba1f61a0_574961cf",
+      "revId": "9ae30856ff773ffb42334ec85ceb961d869b3554",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
     }
   ]
 }
