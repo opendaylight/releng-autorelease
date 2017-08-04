@@ -138,3 +138,6 @@
 	path = yangtools
 	url = ../../yangtools
 	branch = .
+[submodule "eman"]
+	path = eman
+	url = https://git.opendaylight.org/gerrit/p/eman
