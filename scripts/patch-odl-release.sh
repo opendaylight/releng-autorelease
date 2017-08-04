@@ -41,7 +41,7 @@ scriptdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 # project during code freeze.
 EXPECTED_HASH=`grep "^${project} " $PATCH_DIR/taglist.log | awk '{ print $2 }'`
 if [ "$EXPECTED_HASH" == "" ]; then
-    parent_dir="$(dirname `pwd`)"
+    parent_dir="$(dirname "$(pwd)")"
     project="${parent_dir##*/}/$project"
     EXPECTED_HASH=`grep "^${project} " $PATCH_DIR/taglist.log | awk '{ print $2 }'`
 fi
@@ -64,13 +64,13 @@ fi
 git fetch ${PATCH_DIR}/${project/\//-}.bundle
 git merge FETCH_HEAD
 git tag -asm "OpenDaylight $RELEASE_TAG release" release/${RELEASE_TAG,,}
-find . -name pom.xml | xargs grep SNAPSHOT
+find . -name pom.xml -print0 | xargs -0 grep SNAPSHOT
 
 git checkout ${STABLE_BRANCH}
 # Release and then Bump so that the version.sh script creates the right patches
 $scriptdir/version.sh release $RELEASE_TAG
 $scriptdir/version.sh bump $RELEASE_TAG
 git commit -asm "Bumping versions by 0.0.1 for next dev cycle"
-find . -name pom.xml | xargs grep $RELEASE_TAG
+find . -name pom.xml -print0 | xargs -0 grep $RELEASE_TAG
 
 echo "Tagging and version bumping complete"
