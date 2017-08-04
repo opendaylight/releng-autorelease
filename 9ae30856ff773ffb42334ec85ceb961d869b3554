@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba1f61a0_574961cf",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-08-04T19:59:33Z",
+      "side": 1,
+      "message": "branch \u003d .\n\nAlso alphabetical order please.",
+      "revId": "9ae30856ff773ffb42334ec85ceb961d869b3554",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
