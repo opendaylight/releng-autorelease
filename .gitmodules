@@ -134,3 +134,7 @@
 	path = yangtools
 	url = ../../yangtools
 	branch = .
+[submodule "of-config"]
+	path = of-config
+	url = ../../of-config
+	branch = .
