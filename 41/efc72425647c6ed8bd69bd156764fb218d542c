@@ -1,0 +1,7 @@
+Code-Review+2: Thanh Ha <thanh.ha@linuxfoundation.org>
+Verified+1: jenkins-releng <jenkins-releng@opendaylight.org>
+Submitted-by: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-at: Tue, 08 Aug 2017 15:04:06 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/61338
+Project: releng/autorelease
+Branch: refs/heads/master
