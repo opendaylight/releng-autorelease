@@ -86,6 +86,10 @@
 	path = neutron
 	url = ../../neutron
 	branch = .
+[submodule "nic"]
+	path = nic
+	url = ../../nic
+	branch = .
 [submodule "ocpplugin"]
 	path = ocpplugin
 	url = ../../ocpplugin
