@@ -138,6 +138,10 @@
 	path = unimgr
 	url = ../../unimgr
 	branch = .
+[submodule "usc"]
+	path = usc
+	url = ../../usc
+	branch = .
 [submodule "vtn"]
 	path = vtn
 	url = ../../vtn
