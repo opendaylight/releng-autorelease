@@ -74,6 +74,10 @@
 	path = mdsal
 	url = ../../mdsal
 	branch = .
+[submodule "nemo"]
+	path = nemo
+	url = ../../nemo
+	branch = .
 [submodule "netconf"]
 	path = netconf
 	url = ../../netconf

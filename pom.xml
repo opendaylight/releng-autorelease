@@ -41,6 +41,7 @@
     <module>l2switch</module>
     <module>lispflowmapping</module>
     <module>mdsal</module>
+    <module>nemo</module>
     <module>netconf</module>
     <module>netvirt</module>
     <module>neutron</module>
