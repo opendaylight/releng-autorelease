@@ -153,4 +153,4 @@
 [submodule "yangtools"]
 	path = yangtools
 	url = ../../yangtools
-	branch = .
+	branch = v1.2.x
