@@ -42,6 +42,10 @@
 	path = eman
 	url = https://git.opendaylight.org/gerrit/p/eman
 	branch = .
+[submodule "faas"]
+	path = faas
+	url = ../../faas
+	branch = .
 [submodule "genius"]
 	path = genius
 	url = ../../genius
