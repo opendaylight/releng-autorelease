@@ -59,7 +59,12 @@ for module in $modules; do
     for search_module in $module_dependencies; do
         if [[ $search_module =~ .*/.* ]]; then
             if [[ ! $modules =~ .*$search_module.* ]]; then
-                module_dependencies=$(echo "$module_dependencies" | tr ' ' '\n' | sed -e "s@$search_module.*@@" | sort | uniq)
+                splited_module=$(echo "$search_module" | sed 's/\/.*//')
+                if [[ $modules =~ .*$splited_module.* ]]; then
+                    module_dependencies=$(echo "$module_dependencies" | tr ' ' '\n' | sed -e "s@$search_module@$splited_module@" | sort | uniq)
+                else
+                    module_dependencies=$(echo "$module_dependencies" | tr ' ' '\n' | sed -e "s@$search_module.*@@" | sort | uniq)
+                fi
             fi
         fi
     done
