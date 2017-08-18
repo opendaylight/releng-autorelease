@@ -138,6 +138,10 @@
 	path = topoprocessing
 	url = ../../topoprocessing
 	branch = .
+[submodule "tsdr"]
+	path = tsdr
+	url = ../../tsdr
+	branch = .
 [submodule "ttp"]
 	path = ttp
 	url = ../../ttp
