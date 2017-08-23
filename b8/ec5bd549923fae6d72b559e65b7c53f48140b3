@@ -1,0 +1,7 @@
+Verified+1: jenkins-releng <jenkins-releng@opendaylight.org>
+Code-Review+2: Anil Belur <abelur@linuxfoundation.org>
+Submitted-by: Anil Belur <abelur@linuxfoundation.org>
+Submitted-at: Wed, 23 Aug 2017 23:00:55 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/61958
+Project: releng/autorelease
+Branch: refs/heads/stable/boron
