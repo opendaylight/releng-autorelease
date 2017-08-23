@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba1f61a0_fe873bd5",
+        "filename": "scripts/list-project-dependencies.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-08-23T22:14:31Z",
+      "side": 1,
+      "message": "Not relevant to the change in question, but in general it would be good to combine them into a single if statement\n\nex: \n\nif [[  ]] and [[  ]]; then\n    ...\nfi",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 61,
+        "endChar": 59
+      },
+      "revId": "b8ec5bd549923fae6d72b559e65b7c53f48140b3",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
