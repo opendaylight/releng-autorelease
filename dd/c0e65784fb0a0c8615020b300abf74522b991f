@@ -1,0 +1,8 @@
+Verified+1: jenkins-releng <jenkins-releng@opendaylight.org>
+Code-Review+1: Johann David <jdavid@inocybe.com>
+Code-Review+2: Anil Belur <abelur@linuxfoundation.org>
+Submitted-by: Anil Belur <abelur@linuxfoundation.org>
+Submitted-at: Thu, 24 Aug 2017 12:31:29 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/62237
+Project: releng/autorelease
+Branch: refs/heads/stable/nitrogen
