@@ -23,8 +23,9 @@ fi
 
 release_major="$(echo ${release} | cut -f1 -d-)"  # The Release Code
 release_minor="$(echo ${release} | cut -f2 -d-)"  # The Service Release
+release_num="${release_minor#SR}"
 
-previous_release_num="$((${release_minor#SR}-1))"
+previous_release_num="$((release_num - 1))"
 previous_release_major="$release_major"
 previous_release_minor="SR$previous_release_num"
 
@@ -32,7 +33,7 @@ previous_release_minor="SR$previous_release_num"
 if [ "$previous_release_num" == "0" ]; then
     previous_release="$release_major"
 else
-    previous_release="$release_major-$release_minor"
+    previous_release="$release_major-$previous_release_minor"
 fi
 
 ####################
