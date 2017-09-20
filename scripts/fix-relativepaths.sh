@@ -35,6 +35,7 @@ fix_relative_paths() {
         "org.opendaylight.controller:mdsal-it-parent:controller/opendaylight/md-sal/mdsal-it-parent"
         "org.opendaylight.controller:config-parent:controller/opendaylight/config/config-parent"
         "org.opendaylight.controller:config-filtering-parent:controller/opendaylight/config/config-filtering-parent"
+        "org.opendaylight.controller:config-feature-parent:controller/features/config-feature-parent"
         "org.opendaylight.controller:config-plugin-parent:controller/opendaylight/config/config-plugin-parent"
         "org.opendaylight.controller:karaf-parent:controller/karaf/karaf-parent"
         # Controller - Workaround since script is not able to detect 'controller' group name for archetypes
