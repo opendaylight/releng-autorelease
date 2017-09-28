@@ -49,7 +49,9 @@
     <module>netide</module>
     <module>netvirt</module>
     <module>neutron</module>
+    <!-- Temporarily remove next from carbon
     <module>next</module>
+    -->
     <module>nic</module>
     <module>ocpplugin</module>
     <module>odlparent</module>
