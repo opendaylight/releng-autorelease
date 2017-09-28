@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba1f61a0_7c8bda1e",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-09-28T04:10:30Z",
+      "side": 1,
+      "message": "I would reference the bug here so that someone looking at this in the future can figure out if it\u0027s resolved or not.",
+      "revId": "e1364f1aa18d21170ce09ea5f0bbfff9755b2d2e",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
