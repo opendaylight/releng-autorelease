@@ -56,7 +56,6 @@
     <module>snmp</module>
     <module>snmp4sdn</module>
     <module>sxp</module>
-    <module>topoprocessing</module>
     <module>ttp</module>
     <module>unimgr</module>
     <module>usc</module>
