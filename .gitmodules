@@ -154,7 +154,3 @@
 	path = vtn
 	url = ../../vtn
 	branch = .
-[submodule "yangtools"]
-	path = yangtools
-	url = ../../yangtools
-	branch = .
