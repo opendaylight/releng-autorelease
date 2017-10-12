@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a245df4_cf5f6c71",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-10-12T23:07:58Z",
+      "side": 1,
+      "message": "oldparent -\u003e odlparent",
+      "range": {
+        "startLine": 7,
+        "startChar": 24,
+        "endLine": 7,
+        "endChar": 33
+      },
+      "revId": "f6de42693a8ea7e9de78f1c0a0ce95127aa98367",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a245df4_0f518462",
+        "filename": "scripts/fix-relativepaths.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-10-12T23:07:58Z",
+      "side": 1,
+      "message": "We probably don\u0027t need this comment. I\u0027ve confirmed that nothing references this parent outside of openflowjava so we can remove this.",
+      "revId": "f6de42693a8ea7e9de78f1c0a0ce95127aa98367",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
