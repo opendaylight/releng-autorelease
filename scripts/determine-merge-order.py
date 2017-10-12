@@ -49,13 +49,9 @@ def determine_merge_order(input_file='dependencies.log',
             node, prereq = regex_node.split(l)
             deps = tuple(regex_deps.split(prereq))
             if not prereq:
-                if node == 'integration/distribution':
-                    continue
                 G.add_node(node)
             else:
-                tups = [(val, node) for val in deps if (val != "odlparent"
-                                            or node == "yangtools"
-                                            or node == "next") ]
+                tups = [(val, node) for val in deps]
                 G.add_edges_from(tups)
 
     # traverse the graph to compute order
@@ -70,8 +66,6 @@ def determine_merge_order(input_file='dependencies.log',
     try:
         with open(output_file, 'w+') as whandle:
             for d in deps_order:
-                if d == "honeycomb" or d == "integration":
-                    continue
                 whandle.write(d + "\n")
     except IOError:
         print("Error on opening file:", output_file)
