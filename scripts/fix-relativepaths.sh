@@ -14,19 +14,6 @@
 
 fix_relative_paths() {
     PARENT_MAP=(
-        # Odlparent
-        "org.opendaylight.odlparent:odlparent:odlparent/odlparent"
-        "org.opendaylight.odlparent:odlparent-lite:odlparent/odlparent-lite"
-        "org.opendaylight.odlparent:features-parent:odlparent/features-parent"
-        "org.opendaylight.odlparent:single-feature-parent:odlparent/single-feature-parent"
-        "org.opendaylight.odlparent:feature-repo-parent:odlparent/feature-repo-parent"
-        "org.opendaylight.odlparent:bundle-parent:odlparent/bundle-parent"
-        "org.opendaylight.odlparent:karaf-parent:odlparent/karaf/karaf-parent"
-        "org.opendaylight.odlparent:opendaylight-karaf-empty:odlparent/karaf/opendaylight-karaf-empty"
-        "org.opendaylight.odlparent:karaf4-parent:odlparent/karaf/karaf4-parent"
-        "org.opendaylight.odlparent:opendaylight-karaf4-empty:odlparent/karaf/opendaylight-karaf4-empty"
-        # Yangtools
-        "org.opendaylight.yangtools:binding-parent:yangtools/code-generator/binding-parent"
         # Controller
         "org.opendaylight.controller:releasepom:controller"
         "org.opendaylight.controller:commons.opendaylight:controller/opendaylight/commons/opendaylight"
@@ -36,13 +23,10 @@ fix_relative_paths() {
         "org.opendaylight.controller:config-parent:controller/opendaylight/config/config-parent"
         "org.opendaylight.controller:config-filtering-parent:controller/opendaylight/config/config-filtering-parent"
         "org.opendaylight.controller:config-plugin-parent:controller/opendaylight/config/config-plugin-parent"
-        "org.opendaylight.controller:karaf-parent:controller/karaf/karaf-parent"
         # Controller - Workaround since script is not able to detect 'controller' group name for archetypes
         "org.opendaylight.controller.archetypes:archetypes-parent:controller/opendaylight/archetypes"
         # MD-SAL
         "org.opendaylight.mdsal:binding-parent:mdsal/binding/binding-parent"
-        # OpenFlowJava
-        "org.opendaylight.openflowjava:openflowjava-parent:openflowjava/parent"
     )
 
     pom=$1
