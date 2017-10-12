@@ -1,0 +1,8 @@
+Code-Review+1: Vratko Polák <vrpolak@cisco.com>
+Verified+1: jenkins-releng <jenkins-releng@opendaylight.org>
+Code-Review+2: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-by: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-at: Thu, 12 Oct 2017 16:47:04 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/64188
+Project: releng/autorelease
+Branch: refs/heads/master
