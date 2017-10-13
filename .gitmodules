@@ -14,10 +14,6 @@
 	path = bier
 	url = ../../bier
 	branch = .
-[submodule "cardinal"]
-	path = cardinal
-	url = ../../cardinal
-	branch = .
 [submodule "controller"]
 	path = controller
 	url = ../../controller
