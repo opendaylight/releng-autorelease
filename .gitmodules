@@ -134,10 +134,6 @@
 	path = sxp
 	url = ../../sxp
 	branch = .
-[submodule "ttp"]
-	path = ttp
-	url = ../../ttp
-	branch = .
 [submodule "unimgr"]
 	path = unimgr
 	url = ../../unimgr
