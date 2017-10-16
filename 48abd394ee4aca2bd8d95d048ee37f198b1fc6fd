@@ -22,6 +22,30 @@
       "revId": "48abd394ee4aca2bd8d95d048ee37f198b1fc6fd",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a245df4_55d2e6d2",
+        "filename": "scripts/determine-merge-order.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 2046
+      },
+      "writtenOn": "2017-10-16T15:13:02Z",
+      "side": 0,
+      "message": "The data is already logged in full: https://logs.opendaylight.org/releng/jenkins092/autorelease-release-oxygen/17/dependencies.log.gz\n\nThis script is just doing a cheap sort on the project list, no need for undocumented special cases here.",
+      "parentUuid": "9a245df4_159ceebf",
+      "range": {
+        "startLine": 56,
+        "startChar": 51,
+        "endLine": 58,
+        "endChar": 64
+      },
+      "revId": "48abd394ee4aca2bd8d95d048ee37f198b1fc6fd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
     }
   ]
 }
