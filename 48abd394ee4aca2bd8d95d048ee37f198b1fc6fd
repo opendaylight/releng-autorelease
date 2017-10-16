@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a245df4_159ceebf",
+        "filename": "scripts/determine-merge-order.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-10-16T12:12:58Z",
+      "side": 0,
+      "message": "this reason these lines were introduced to filter out data since these projects are in every line of the dependency.log.",
+      "range": {
+        "startLine": 56,
+        "startChar": 51,
+        "endLine": 58,
+        "endChar": 64
+      },
+      "revId": "48abd394ee4aca2bd8d95d048ee37f198b1fc6fd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
