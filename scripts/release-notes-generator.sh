@@ -21,7 +21,7 @@ if [ -z "$1" ]; then
     echo "    Ex: $0 Carbon-SR1"
 fi
 
-release_major="$(echo ${release} | cut -f1 -d-)"  # The Release Code
+release_major="$(echo ${release^} | cut -f1 -d-)"  # The Release Code
 release_minor="$(echo ${release} | cut -f2 -d-)"  # The Service Release
 release_num="${release_minor#SR}"
 
@@ -45,7 +45,7 @@ projects=($(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:mod
 echo ${projects[@]}
 
 {
-    release_txt="$release Release Notes"
+    release_txt="${release^} Release Notes"
     echo "$release_txt"
     printf '=%.0s' $(eval "echo {1.."${#release_txt}"}")
     echo -e "\n"
