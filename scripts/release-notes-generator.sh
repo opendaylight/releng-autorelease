@@ -45,9 +45,10 @@ projects=($(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:mod
 echo ${projects[@]}
 
 {
-    echo "$release_current Release Notes"
-    echo "------------------------"
-    echo
+    release_txt="$release Release Notes"
+    echo "$release_txt"
+    printf '=%.0s' $(eval "echo {1.."${#release_txt}"}")
+    echo -e "\n"
     if [ "$previous_release_num" == "0" ]; then
         release_msg="$previous_release_major Release"
     else
