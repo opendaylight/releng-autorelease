@@ -67,7 +67,7 @@ echo ${projects[@]}
 noteworthy_projects=()
 for project in "${projects[@]}"; do
     pushd "$project"
-    commits="$(git --no-pager log --no-merges --pretty=format:"%h%x09%s" --perl-regexp --author='^((?!jenkins-releng).*)$' release/carbon..origin/stable/carbon)"
+    commits="$(git --no-pager log --no-merges --pretty=format:"%h%x09%s" --perl-regexp --author='^((?!jenkins-releng).*)$' release/${previous_release,,}..release/${release,,})"
     if [ -z "$commits" ];
     then  # Project has no noteworthy changes so record them and pass
         echo "* $project" | tee -a "$outfile"
