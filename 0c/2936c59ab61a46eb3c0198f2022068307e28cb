@@ -1,0 +1,7 @@
+Verified+1: jenkins-releng <jenkins-releng@opendaylight.org>
+Code-Review+2: Anil Belur <abelur@linuxfoundation.org>
+Submitted-by: Anil Belur <abelur@linuxfoundation.org>
+Submitted-at: Fri, 20 Oct 2017 02:56:08 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/63330
+Project: releng/autorelease
+Branch: refs/heads/master
