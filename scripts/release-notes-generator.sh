@@ -94,14 +94,25 @@ for project in "${noteworthy_projects[@]}"; do
         commits=($commits)
         IFS=$SAVEIFS
 
+        # Search and update bugzilla Bug-ID and JIRA issue-id from commit messages.
+        # 1. If Jira issue-id is available on the commit message, use it.
+        # 2. If the Bug-ID is only available on the commit message, then retrive
+        #    the Jira issue-id using Bug-ID./sc.
+
         for commit in "${commits[@]}"; do
             commit_hash="$(echo $commit | awk '{print $1}')"
             subject="$(echo $commit | cut -d' ' -f2-)"
             bug_id="$(git --no-pager show --quiet $commit_hash | sed '/^.*[Bb][Uu][Gg][ -]\([0-9]\+\).*$/!d;s//\1/')"
             echo "* \`$commit_hash <https://git.opendaylight.org/gerrit/#/q/$commit_hash>\`_"
+            issue_id="$(git --no-pager show --quiet $commit_hash | grep -Po '((?![BUG])[A-Z][A-Z0-9]{1,25}-{1,2}\d+)')"
 
-            if [ -n "$bug_id" ]; then
-                echo "  \`BUG-$bug_id <https://bugs.opendaylight.org/show_bug.cgi?id=$bug_id>\`_"
+            if [ -n "$issue_id" ]; then
+                echo "  \`$issue_id <https://jira.opendaylight.org/browse/${issue_id}>\`_"
+            elif [ -n "$bug_id" ] && [ -n "$project" ] && [ -z "$issue_id" ]; then
+                issue_id=$(curl https://jira.opendaylight.org/rest/api/2/search\?jql\=project\=${project}%20and%20\"External%20issue%20ID\"\~${bug_id} | jq -r '.issues[].key')
+                if [ -n "$issue_id" ]; then
+                    echo "  \`$issue_id <https://jira.opendaylight.org/browse/${issue_id}>\`_"
+                fi
             fi
             echo "  : $subject"
         done
