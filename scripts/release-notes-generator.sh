@@ -13,6 +13,7 @@
 # OpenDaylight documentation project's docs/getting-started-guide/release_notes.rst
 # file to produce release notes for a Service Release.
 
+JIRA_URL="https://jira.opendaylight.org"
 release="$1"
 
 if [ -z "$1" ]; then
@@ -66,8 +67,10 @@ echo ${projects[@]}
 } 2>&1 >> "$outfile"
 
 noteworthy_projects=()
+echo
+echo "Skipping projects with no changes ..."
 for project in "${projects[@]}"; do
-    pushd "$project"
+    pushd "$project" > /dev/null
     commits="$(git --no-pager log --no-merges --pretty=format:"%h%x09%s" --perl-regexp --author='^((?!jenkins-releng).*)$' release/${previous_release,,}..release/${release,,})"
     if [ -z "$commits" ];
     then  # Project has no noteworthy changes so record them and pass
@@ -75,13 +78,15 @@ for project in "${projects[@]}"; do
     else  # Project has noteworthy changes so save it to array to scan later
         noteworthy_projects+=("$project")
     fi
-    popd
+    popd > /dev/null
 done
 
-echo "Projects remaining:"
+echo
+echo "Process remaing noteworthy projects:"
 for project in "${noteworthy_projects[@]}"; do
     echo | tee -a "$outfile"
-    pushd "$project"
+    echo "Project: $project"
+    pushd "$project" > /dev/null
     {
         size="${#project}"
         echo "$project"
@@ -94,18 +99,43 @@ for project in "${noteworthy_projects[@]}"; do
         commits=($commits)
         IFS=$SAVEIFS
 
+        # Search and update bugzilla Bug-ID and JIRA issue-id from commit messages.
+        # 1. If Jira issue-id is available on the commit message, use it.
+        # 2. If the Bug-ID is only available on the commit message, then retrive
+        #    the Jira issue-id using Bug-ID./sc.
+
         for commit in "${commits[@]}"; do
             commit_hash="$(echo $commit | awk '{print $1}')"
             subject="$(echo $commit | cut -d' ' -f2-)"
-            bug_id="$(git --no-pager show --quiet $commit_hash | sed '/^.*[Bb][Uu][Gg][ -]\([0-9]\+\).*$/!d;s//\1/')"
+            bug_id="$(git --no-pager show --quiet $commit_hash | sed '/^.*[Bb][Uu][Gg][ -]\([0-9]\+\).*$/!d;s//\1/' | head -1)"
             echo "* \`$commit_hash <https://git.opendaylight.org/gerrit/#/q/$commit_hash>\`_"
+            issue_id="$(git --no-pager show --quiet $commit_hash | grep -Po '((?![BUG])[A-Z][A-Z0-9]{1,9}-\d+)')"
 
-            if [ -n "$bug_id" ]; then
-                echo "  \`BUG-$bug_id <https://bugs.opendaylight.org/show_bug.cgi?id=$bug_id>\`_"
+            if [ -n "$issue_id" ]; then
+                echo "  \`$issue_id <${JIRA_URL}/browse/${issue_id}>\`_"
+            elif [ -n "$bug_id" ] && [ -n "$project" ] && [ -z "$issue_id" ]; then
+                [ -z $project ] && project=${project/\\\//-}
+                jira_query=${JIRA_URL}/rest/api/2/search\?jql\=project\=${project}%20and%20\\\"External%20issue%20ID\\\"\~${bug_id}
+                echo  "${jira_query}" >&2
+                resp=$(curl -sS --header "Accept: application/json" \
+                            -w %{http_code} -o "/tmp/${project}-${bug_id}.json" \
+                            ${JIRA_URL}/rest/api/2/search\?jql\=project\=${project}%20and%20\"External%20issue%20ID\"\~${bug_id})
+
+                status=$(echo "$resp" | awk 'END {print $NF}')
+                if [ "$status" != "200" ]; then
+                    echo "ERROR: Failed to run '$0'. Aborting..."
+                    #echo "$resp"
+                    exit "$status"
+                fi
+
+                issue_id=$(cat /tmp/${project}-${bug_id}.json | jq -r '.issues[].key')
+                if [ -n "$issue_id" ]; then
+                    echo "  \`$issue_id <${JIRA_URL}/browse/${issue_id}>\`_"
+                fi
             fi
             echo "  : $subject"
         done
         echo
     } 2>&1 >> "$outfile"
-    popd
+    popd > /dev/null
 done
