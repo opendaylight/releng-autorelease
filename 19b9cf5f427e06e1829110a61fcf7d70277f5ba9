@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a245df4_56229552",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-11-06T15:45:12Z",
+      "side": 1,
+      "message": "A Jira cannot have a colon or space between the key and the number. So the only option is -.\n\nJira IDs always look like RELENG-1234, DOCS-1234, etc...\n\nDOCS:123 and DOCS 123 are invalid Jira IDs.",
+      "range": {
+        "startLine": 107,
+        "startChar": 111,
+        "endLine": 107,
+        "endChar": 113
+      },
+      "revId": "19b9cf5f427e06e1829110a61fcf7d70277f5ba9",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a245df4_f612a907",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-11-06T15:45:12Z",
+      "side": 1,
+      "message": "-z ?",
+      "range": {
+        "startLine": 111,
+        "startChar": 60,
+        "endLine": 111,
+        "endChar": 65
+      },
+      "revId": "19b9cf5f427e06e1829110a61fcf7d70277f5ba9",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
