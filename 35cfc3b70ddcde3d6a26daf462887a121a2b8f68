@@ -22,6 +22,30 @@
       "revId": "35cfc3b70ddcde3d6a26daf462887a121a2b8f68",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a245df4_cf2d4897",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-11-06T22:58:45Z",
+      "side": 1,
+      "message": "Done! forgot to remove that while doing a quick test",
+      "parentUuid": "9a245df4_4f12f857",
+      "range": {
+        "startLine": 107,
+        "startChar": 106,
+        "endLine": 107,
+        "endChar": 109
+      },
+      "revId": "35cfc3b70ddcde3d6a26daf462887a121a2b8f68",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
     }
   ]
 }
