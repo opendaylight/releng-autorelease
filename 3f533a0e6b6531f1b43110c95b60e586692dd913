@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a245df4_89606b02",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2017-11-07T14:28:07Z",
+      "side": 1,
+      "message": "Why are you setting the project key to be something that can be up to 25 (26 counting the starting) characters long? Our JIRA configuration _only_ allows for 10 total key characters.\n\nThe original regex I gave you was specifically {1,9} on purpose.",
+      "range": {
+        "startLine": 107,
+        "startChar": 103,
+        "endLine": 107,
+        "endChar": 105
+      },
+      "revId": "3f533a0e6b6531f1b43110c95b60e586692dd913",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a245df4_c956e329",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2017-11-07T14:28:07Z",
+      "side": 1,
+      "message": "Do not allow for more \u0027--\u0027 _only_ allow for -. JIRA only supports KEY-##### don\u0027t go allowing markup around anything except what JIRA actually supports!",
+      "range": {
+        "startLine": 107,
+        "startChar": 107,
+        "endLine": 107,
+        "endChar": 112
+      },
+      "revId": "3f533a0e6b6531f1b43110c95b60e586692dd913",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
