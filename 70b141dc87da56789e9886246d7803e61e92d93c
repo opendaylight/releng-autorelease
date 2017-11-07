@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a245df4_1229408a",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-11-07T21:32:54Z",
+      "side": 1,
+      "message": "We should probably print before the curl which issue it\u0027s looking up. Also the output from curl\n\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n100    51    0    51    0     0     51      0 --:--:-- --:--:-- --:--:--    89\n\nIs not useful we should hide it from the console log.",
+      "revId": "70b141dc87da56789e9886246d7803e61e92d93c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
