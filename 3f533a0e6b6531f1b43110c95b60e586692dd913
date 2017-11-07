@@ -45,6 +45,54 @@
       "revId": "3f533a0e6b6531f1b43110c95b60e586692dd913",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a245df4_cfab8373",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-11-07T21:03:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a245df4_c956e329",
+      "range": {
+        "startLine": 107,
+        "startChar": 107,
+        "endLine": 107,
+        "endChar": 112
+      },
+      "revId": "3f533a0e6b6531f1b43110c95b60e586692dd913",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a245df4_6fa2579a",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-11-07T21:03:55Z",
+      "side": 1,
+      "message": "Sorry, dint realize the limit on Jira side of things, did this since ODL also pretty long project (ex: openflowpluginjava) :)",
+      "parentUuid": "9a245df4_89606b02",
+      "range": {
+        "startLine": 107,
+        "startChar": 103,
+        "endLine": 107,
+        "endChar": 105
+      },
+      "revId": "3f533a0e6b6531f1b43110c95b60e586692dd913",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
     }
   ]
 }
