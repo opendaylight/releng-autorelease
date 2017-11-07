@@ -93,6 +93,30 @@
       "revId": "3f533a0e6b6531f1b43110c95b60e586692dd913",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a245df4_2f3fbfd7",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-11-07T21:19:01Z",
+      "side": 1,
+      "message": "You mean OPNFLWPLUG ;)\n\nhttps://jira.opendaylight.org/secure/BrowseProjects.jspa?selectedCategory\u003dall\u0026selectedProjectType\u003dall\u0026contains\u003dopenflowplugin",
+      "parentUuid": "9a245df4_6fa2579a",
+      "range": {
+        "startLine": 107,
+        "startChar": 103,
+        "endLine": 107,
+        "endChar": 105
+      },
+      "revId": "3f533a0e6b6531f1b43110c95b60e586692dd913",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
     }
   ]
 }
