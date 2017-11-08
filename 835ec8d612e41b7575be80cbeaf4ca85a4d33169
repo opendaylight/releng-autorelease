@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a245df4_586c7735",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 6
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-11-08T15:10:25Z",
+      "side": 1,
+      "message": "We should run:\n\n (\u003e\u00262 echo \"$jira_query\")\n\nto print out a log to stderr just before each download so that we know what URLs the script is querying.",
+      "revId": "835ec8d612e41b7575be80cbeaf4ca85a4d33169",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a245df4_786fbb2b",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 6
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-11-08T15:10:25Z",
+      "side": 1,
+      "message": "Using `-sS` will make curl not print the download messages. This will cleanup stderr.",
+      "range": {
+        "startLine": 112,
+        "startChar": 32,
+        "endLine": 112,
+        "endChar": 34
+      },
+      "revId": "835ec8d612e41b7575be80cbeaf4ca85a4d33169",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a245df4_b875b3fb",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 6
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-11-08T15:10:25Z",
+      "side": 1,
+      "message": "Since we\u0027re reusing https://jira.opendaylight.org over and over we should make it a variable. It will also make the code line shorter.",
+      "revId": "835ec8d612e41b7575be80cbeaf4ca85a4d33169",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
