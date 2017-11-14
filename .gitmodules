@@ -110,6 +110,10 @@
 	path = ovsdb
 	url = ../../ovsdb
 	branch = .
+[submodule "p4plugin"]
+	path = p4plugin
+	url = ../../p4plugin
+	branch = .
 [submodule "packetcable"]
 	path = packetcable
 	url = ../../packetcable
