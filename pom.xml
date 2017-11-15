@@ -50,6 +50,7 @@
     <module>of-config</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
+    <module>p4plugin</module>
     <module>packetcable</module>
     <module>sfc</module>
     <module>snmp</module>
