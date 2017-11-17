@@ -94,10 +94,6 @@
 	path = nic
 	url = ../../nic
 	branch = .
-[submodule "ocpplugin"]
-	path = ocpplugin
-	url = ../../ocpplugin
-	branch = .
 [submodule "of-config"]
 	path = of-config
 	url = ../../of-config
