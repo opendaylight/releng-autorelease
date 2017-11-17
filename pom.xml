@@ -46,7 +46,6 @@
     <module>netvirt</module>
     <module>neutron</module>
     <module>nic</module>
-    <module>ocpplugin</module>
     <module>of-config</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
