@@ -130,6 +130,10 @@
 	path = sxp
 	url = ../../sxp
 	branch = .
+[submodule "tsdr"]
+	path = tsdr
+	url = ../../tsdr
+	branch = .
 [submodule "unimgr"]
 	path = unimgr
 	url = ../../unimgr
