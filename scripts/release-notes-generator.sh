@@ -114,7 +114,7 @@ for project in "${noteworthy_projects[@]}"; do
             if [ -n "$issue_id" ]; then
                 echo "  \`$issue_id <${JIRA_URL}/browse/${issue_id}>\`_"
             elif [ -n "$bug_id" ] && [ -n "$project" ] && [ -z "$issue_id" ]; then
-                [ -z $project ] && project=${project/\\\//-}
+                [ -n "$project" ] && project=${project/\//-}
                 jira_query=${JIRA_URL}/rest/api/2/search\?jql\=project\=${project}%20and%20\\\"External%20issue%20ID\\\"\~${bug_id}
                 echo  "${jira_query}" >&2
                 resp=$(curl -sS --header "Accept: application/json" \
