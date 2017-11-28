@@ -109,7 +109,7 @@ for project in "${noteworthy_projects[@]}"; do
             subject="$(echo $commit | cut -d' ' -f2-)"
             bug_id="$(git --no-pager show --quiet $commit_hash | sed '/^.*[Bb][Uu][Gg][ -]\([0-9]\+\).*$/!d;s//\1/' | head -1)"
             echo "* \`$commit_hash <https://git.opendaylight.org/gerrit/#/q/$commit_hash>\`_"
-            issue_id="$(git --no-pager show --quiet $commit_hash | grep -Po '((?![BUG])[A-Z][A-Z0-9]{1,9}-\d+)')"
+            issue_id="$(git --no-pager show --quiet $commit_hash | grep -Po '((?![BUG])[A-Z][A-Z0-9]{1,9}-\d+)' | head -1)"
 
             if [ -n "$issue_id" ]; then
                 echo "  \`$issue_id <${JIRA_URL}/browse/${issue_id}>\`_"
