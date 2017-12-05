@@ -145,6 +145,43 @@ for project in "${projects[@]}"; do
 done
 
 echo
+echo "Preloading Bugzilla to Jira ID mapping..."
+bug_list=()
+for project in "${noteworthy_projects[@]}"; do
+    pushd "$project" > /dev/null
+
+    commits="$(git --no-pager log --no-merges --pretty=format:"%h%x09%s" --perl-regexp --author='^((?!jenkins-releng).*)$' release/${previous_release,,}..release/${release,,})"
+    SAVEIFS=$IFS
+    IFS=$'\n'
+    commits=($commits)
+    IFS=$SAVEIFS
+
+    for commit in "${commits[@]}"; do
+        commit_hash="$(echo $commit | awk '{print $1}')"
+        subject="$(echo $commit | cut -d' ' -f2-)"
+        bug_id="$(git --no-pager show --quiet $commit_hash | sed '/^.*[Bb][Uu][Gg][ -]\([0-9]\+\).*$/!d;s//\1/' | head -1)"
+
+        if [ -n "$bug_id" ]; then
+            if ! array_contains bug_list "$bug_id"; then
+                bug_list+=("$project:$bug_id")
+            fi
+        fi
+    done
+
+    popd > /dev/null
+done
+
+if hash parallel 2>/dev/null; then
+    export -f get_jira_from_bz
+    parallel --jobs 200% --halt now,fail=1 \
+        "get_jira_from_bz $JIRA_URL {} > /dev/null" ::: ${bug_list[*]}
+else
+    for bug_id in "${bug_list[@]}"; do
+        get_jira_from_bz "$JIRA_URL" "$bug_id" > /dev/null
+    done
+fi
+
+echo
 echo "Process remaing noteworthy projects:"
 for project in "${noteworthy_projects[@]}"; do
     echo | tee -a "$outfile"
