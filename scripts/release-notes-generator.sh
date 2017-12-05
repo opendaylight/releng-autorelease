@@ -37,6 +37,69 @@ else
     previous_release="$release_major-$previous_release_minor"
 fi
 
+########################
+### HELPER FUNCTIONS ###
+########################
+
+array_contains() {
+    local array="$1[@]"
+    local seeking=$2
+    local in=1
+    for element in "${!array}"; do
+        if [[ $element == $seeking ]]; then
+            in=0
+            break
+        fi
+    done
+    return $in
+}
+
+get_jira_from_bz() {
+    # Get the equivalent Jira ID from a Bugzilla ID
+    #
+    # Uses a local cache if available to speed up lookups.
+    #
+    # Params:
+    #     jira_url: URL of Jira to query
+    #     item: Project and Bugzilla ID in the format PROJ:BUG_ID
+    #         (eg. aaa:BUG-1234)
+    # Return: Jira ID (eg. RELENG-1234)
+
+    local jira_url="$1"
+    local item="$2"
+
+    local project=$(echo "$item" | awk -F: '{print $1}')
+    local bug_id=$(echo "$item" | awk -F: '{print $2}')
+
+    BZ_CACHE="$HOME/.bz_cache"
+    if [ -e "$BZ_CACHE" ]; then
+        cache=$(awk -F':' -v pattern="$bug_id" '$0 ~ pattern {print $2}' "$BZ_CACHE" | head -n1)
+    fi
+
+    if [ -n "$cache" ]; then
+        >&2 echo "$bug_id found in cache."
+        issue_id="$cache"
+    else
+        jira_query=${jira_url}/rest/api/2/search\?jql\=project\=${project}%20and%20\"External%20issue%20ID\"\~${bug_id}
+        >&2 echo "Querying ${jira_query}" >&2
+        resp=$(curl -s -w "\n\n%{http_code}" --header "Accept: application/json" \
+            "$jira_query")
+
+        status=$(echo "$resp" | awk 'END {print $NF}')
+        if [ "$status" != "200" ]; then
+            echo "ERROR: Failed to query "$jira_query"."
+            exit "$status"
+        fi
+
+        json_data=$(echo "$resp" | head -n1)
+        issue_id=$(echo "$json_data" | jq -r '.issues[].key')
+
+        echo "$bug_id:$issue_id" >> "$BZ_CACHE"
+    fi
+
+    echo "$issue_id"
+}
+
 ####################
 ### START SCRIPT ###
 ####################
@@ -115,20 +178,8 @@ for project in "${noteworthy_projects[@]}"; do
                 echo "  \`$issue_id <${JIRA_URL}/browse/${issue_id}>\`_"
             elif [ -n "$bug_id" ] && [ -n "$project" ] && [ -z "$issue_id" ]; then
                 [ -n "$project" ] && project=${project/\//-}
-                jira_query=${JIRA_URL}/rest/api/2/search\?jql\=project\=${project}%20and%20\\\"External%20issue%20ID\\\"\~${bug_id}
-                echo  "${jira_query}" >&2
-                resp=$(curl -sS --header "Accept: application/json" \
-                            -w %{http_code} -o "/tmp/${project}-${bug_id}.json" \
-                            ${JIRA_URL}/rest/api/2/search\?jql\=project\=${project}%20and%20\"External%20issue%20ID\"\~${bug_id})
 
-                status=$(echo "$resp" | awk 'END {print $NF}')
-                if [ "$status" != "200" ]; then
-                    echo "ERROR: Failed to run '$0'. Aborting..."
-                    #echo "$resp"
-                    exit "$status"
-                fi
-
-                issue_id=$(cat /tmp/${project}-${bug_id}.json | jq -r '.issues[].key')
+                issue_id=$(get_jira_from_bz "$JIRA_URL" "$project:$bug_id")
                 if [ -n "$issue_id" ]; then
                     echo "  \`$issue_id <${JIRA_URL}/browse/${issue_id}>\`_"
                 fi
@@ -136,6 +187,6 @@ for project in "${noteworthy_projects[@]}"; do
             echo "  : $subject"
         done
         echo
-    } 2>&1 >> "$outfile"
+    } >> "$outfile"
     popd > /dev/null
 done
