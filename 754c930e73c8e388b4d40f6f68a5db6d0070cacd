@@ -1,0 +1,182 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1969be_6da76d50",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-12-06T11:09:08Z",
+      "side": 1,
+      "message": "Minor nit: create this file in /tmp if performance is a real issue being address in the change, since the RS nodes used tmpfs mapped to the RAM, and avoids and disk I/O unlike $HOME which is mounts to the storage device.",
+      "range": {
+        "startLine": 74,
+        "startChar": 4,
+        "endLine": 74,
+        "endChar": 30
+      },
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1969be_6d7e4db0",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-12-06T11:09:08Z",
+      "side": 1,
+      "message": "I am not sure how useful the cache file would be across runs, when the jobs starts of fresh the cache file is not available. but this would be useful when you run this locally",
+      "range": {
+        "startLine": 74,
+        "startChar": 4,
+        "endLine": 74,
+        "endChar": 30
+      },
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1969be_ed723de4",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-12-06T11:09:08Z",
+      "side": 1,
+      "message": "Do would want to make this function thread safe and serialize the reads and writes to the file?",
+      "range": {
+        "startLine": 76,
+        "startChar": 8,
+        "endLine": 76,
+        "endChar": 96
+      },
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1969be_0d6eb901",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-12-06T11:09:08Z",
+      "side": 1,
+      "message": "Do would want to make this function thread safe and serialize the reads and writes to the file? will need to be tested properly.",
+      "range": {
+        "startLine": 97,
+        "startChar": 0,
+        "endLine": 97,
+        "endChar": 47
+      },
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1969be_cd630119",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-12-06T11:09:08Z",
+      "side": 1,
+      "message": "we only need the short commit hash in the array here and not the commit_hash + summary.",
+      "range": {
+        "startLine": 153,
+        "startChar": 0,
+        "endLine": 157,
+        "endChar": 16
+      },
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1969be_8d810992",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-12-06T11:09:08Z",
+      "side": 1,
+      "message": "Minior nit: output the list of bug-ids to be processed by parallel",
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1969be_ad6845f6",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-12-06T11:09:08Z",
+      "side": 1,
+      "message": "export $BZ_CACHE its being shared by threads started from parallel.",
+      "range": {
+        "startLine": 175,
+        "startChar": 0,
+        "endLine": 177,
+        "endChar": 70
+      },
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1969be_2d7455ce",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 219,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-12-06T11:09:08Z",
+      "side": 1,
+      "message": "simply read the issue id directly from the cache file and its not required to call the function since all the processing is completed at this point in the code.",
+      "range": {
+        "startLine": 219,
+        "startChar": 16,
+        "endLine": 219,
+        "endChar": 75
+      },
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
