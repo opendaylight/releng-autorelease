@@ -166,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "7a1969be_3fff5736",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-12-08T04:12:51Z",
+      "side": 1,
+      "message": "I haven\u0027t looked into it but I suspect the reason is likely because we are querying Jira using a project identifier and sometimes we are querying the wrong project.\n\nI\u0027m not sure how the script determines which project to query in Jira but if it\u0027s making the assumption that the git repo always corresponds to the project then that might be a poor assumption to make since projects cross reference bugs in other projects. We\u0027ll need to smartly determine which project to query.",
+      "parentUuid": "7a1969be_9e76513d",
+      "range": {
+        "startLine": 76,
+        "startChar": 8,
+        "endLine": 76,
+        "endChar": 96
+      },
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a1969be_0d6eb901",
         "filename": "scripts/release-notes-generator.sh",
         "patchSetId": 1
