@@ -119,6 +119,53 @@
     },
     {
       "key": {
+        "uuid": "7a1969be_9e76513d",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-12-08T02:52:49Z",
+      "side": 1,
+      "message": "Also we need to serialize the r/w access to file $BZ_CACHE, without which we will se inconsitances in the file. for example ... see bug-id 7451 is repeated multiple times? \n\n8588:NETVIRT-706\n8609:NETVIRT-712\n8614:NETVIRT-714\n8549:\n8595:NETVIRT-709\n8585:NETVIRT-703\n7451:\n8581:NETVIRT-702\n8586:NETVIRT-704\n8589:NETVIRT-707\n7451:\n7451:\n8498:NETVIRT-682\n8417:NETVIRT-663\n8376:NETVIRT-652\n7599:\n8508:NETVIRT-683\n8539:NETVIRT-691\n8358:NETVIRT-648\n8485:NETVIRT-680\n8660:NEUTRON-150\n8537:NETVIRT-690\n8412:NETVIRT-662\n8772:\n8762:OPNFLWPLUG-916\n2188:OPNFLWPLUG-308\n8411:OPNFLWPLUG-889\n8668:OPNFLWPLUG-905\n8635:OPNFLWPLUG-899\n7664:OPNFLWPLUG-844\n4747:OPNFLWPLUG-581",
+      "parentUuid": "7a1969be_7300eeaa",
+      "range": {
+        "startLine": 76,
+        "startChar": 8,
+        "endLine": 76,
+        "endChar": 96
+      },
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1969be_7e73954d",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-12-08T02:52:49Z",
+      "side": 1,
+      "message": "I dont understand why some of the entries (non-duplicate) not have corresponding JIRA issue id? Are these missing on JIRA",
+      "range": {
+        "startLine": 76,
+        "startChar": 74,
+        "endLine": 76,
+        "endChar": 83
+      },
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a1969be_0d6eb901",
         "filename": "scripts/release-notes-generator.sh",
         "patchSetId": 1
@@ -241,6 +288,30 @@
       "side": 1,
       "message": "No need to output since BZ_CACHE is hardcoded in the function. (We should probably declare it as local though to be safe).",
       "parentUuid": "7a1969be_ad6845f6",
+      "range": {
+        "startLine": 175,
+        "startChar": 0,
+        "endLine": 177,
+        "endChar": 70
+      },
+      "revId": "754c930e73c8e388b4d40f6f68a5db6d0070cacd",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1969be_3e791d30",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2017-12-08T02:52:49Z",
+      "side": 1,
+      "message": "understood, it makes sense.",
+      "parentUuid": "7a1969be_d3d3a236",
       "range": {
         "startLine": 175,
         "startChar": 0,
