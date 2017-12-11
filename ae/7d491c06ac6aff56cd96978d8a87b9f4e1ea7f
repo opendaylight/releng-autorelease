@@ -1,0 +1,7 @@
+Verified+1: jenkins-releng <jenkins-releng@opendaylight.org>
+Code-Review+2: Anil Belur <askb23@gmail.com>
+Submitted-by: Anil Belur <askb23@gmail.com>
+Submitted-at: Mon, 11 Dec 2017 22:35:37 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/66231
+Project: releng/autorelease
+Branch: refs/heads/stable/carbon
