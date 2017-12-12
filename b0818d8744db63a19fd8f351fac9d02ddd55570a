@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ffa00a04_87fc2bb8",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 7766
+      },
+      "writtenOn": "2017-12-12T07:37:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "92faa351_235f5833",
+      "revId": "b0818d8744db63a19fd8f351fac9d02ddd55570a",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "55332301_f4f09253",
         "filename": "scripts/release-notes-generator.sh",
         "patchSetId": 2
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "961dfeea_4c6e379f",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 7766
+      },
+      "writtenOn": "2017-12-12T07:37:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "55332301_f4f09253",
+      "revId": "b0818d8744db63a19fd8f351fac9d02ddd55570a",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "802d87da_ec82fc53",
         "filename": "scripts/release-notes-generator.sh",
         "patchSetId": 2
@@ -47,6 +83,24 @@
       "writtenOn": "2017-12-12T00:34:06Z",
       "side": 1,
       "message": "Yes this is a write operation but I\u0027m not sure we need to be file locking... what\u0027s the benefit?",
+      "revId": "b0818d8744db63a19fd8f351fac9d02ddd55570a",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4ad36e49_fa73f4ad",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 7766
+      },
+      "writtenOn": "2017-12-12T07:37:23Z",
+      "side": 1,
+      "message": "Its good practice to lock reads/writes to file when you are accessing files parallelly. Using flock does not decrease the performance of the script in any way, and ensures consistency. I am unable to reproduce the issue at this point and can remove it.  However, I can remove this from the issue is not reproducible ...",
+      "parentUuid": "802d87da_ec82fc53",
       "revId": "b0818d8744db63a19fd8f351fac9d02ddd55570a",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
