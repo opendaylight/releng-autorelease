@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "92faa351_235f5833",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-12-12T00:34:06Z",
+      "side": 1,
+      "message": "I\u0027m not sure we need to file lock here. What\u0027s the benefit?\n\nEspecially here where all that\u0027s happening is a read. It is perfectly safe to read in parallel. Usually the only time you need to think about locking is in the case of writes.",
+      "revId": "b0818d8744db63a19fd8f351fac9d02ddd55570a",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "802d87da_ec82fc53",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-12-12T00:34:06Z",
+      "side": 1,
+      "message": "Yes this is a write operation but I\u0027m not sure we need to be file locking... what\u0027s the benefit?",
+      "revId": "b0818d8744db63a19fd8f351fac9d02ddd55570a",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "eeadf9cc_9de1ac8e",
         "filename": "scripts/release-notes-generator.sh",
         "patchSetId": 2
