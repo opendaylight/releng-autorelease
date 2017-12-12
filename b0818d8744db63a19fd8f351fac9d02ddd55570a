@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eeadf9cc_9de1ac8e",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 167,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-12-12T00:29:09Z",
+      "side": 1,
+      "message": "A more concise message would be:\n\n echo \"# of bugs to process: ${#bug_list[*]}\"",
+      "revId": "b0818d8744db63a19fd8f351fac9d02ddd55570a",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
