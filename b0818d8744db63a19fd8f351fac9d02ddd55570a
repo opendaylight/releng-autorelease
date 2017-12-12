@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "55332301_f4f09253",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-12-12T02:33:40Z",
+      "side": 1,
+      "message": "Renaming the cache variable makes the \"local cache\" entry above become a unused variable.",
+      "revId": "b0818d8744db63a19fd8f351fac9d02ddd55570a",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "802d87da_ec82fc53",
         "filename": "scripts/release-notes-generator.sh",
         "patchSetId": 2
