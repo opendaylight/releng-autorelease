@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7bcc3140_4889f7a0",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2017-12-12T00:28:00Z",
+      "side": 1,
+      "message": "echo \"# of bugs to process: ${#bug_list[*]}\"",
+      "revId": "e1c1f01c6341a190b11785a616ece207d292d3c1",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
