@@ -16,8 +16,6 @@
 JIRA_URL="https://jira.opendaylight.org"
 release="$1"
 
-BZ_CACHE="$HOME/.bz_cache"
-
 if [ -z "$1" ]; then
     echo "ERROR: Insufficient parameters."
     echo "Usage: $0 RELEASE"
@@ -43,60 +41,53 @@ fi
 ### HELPER FUNCTIONS ###
 ########################
 
-array_contains() {
-    local array="$1[@]"
-    local seeking=$2
-    local in=1
-    for element in "${!array}"; do
-        if [[ $element == $seeking ]]; then
-            in=0
-            break
-        fi
-    done
-    return $in
-}
-
 get_jira_from_bz() {
     # Get the equivalent Jira ID from a Bugzilla ID
     #
     # Uses a local cache if available to speed up lookups.
     #
     # Params:
-    #     jira_url: URL of Jira to query
     #     item: Project and Bugzilla ID in the format PROJ:BUG_ID
     #         (eg. aaa:BUG-1234)
     # Return: Jira ID (eg. RELENG-1234)
 
-    local jira_url="$1"
-    local item="$2"
+    local BZ_CACHE="$HOME/.bz_cache"
+    local cache
+    local bug_id=$(echo "$1" | awk -F: '{print $2}')
+    local project=$(echo "$1" | awk -F: '{print $1}')
 
-    local project=$(echo "$item" | awk -F: '{print $1}')
-    local bug_id=$(echo "$item" | awk -F: '{print $2}')
-
-    # BZ_CACHE="$HOME/.bz_cache"
     if [ -e "$BZ_CACHE" ]; then
-        cache=$(awk -F':' -v pattern="$bug_id" '$0 ~ pattern {print $2}' "$BZ_CACHE" | head -n1)
+        exec 5>"/tmp/lock"
+        flock -s 5
+        issue_id=$(awk -F':' -v pattern="$bug_id" '$0 ~ pattern {print $2}' "$BZ_CACHE" | head -n1)
+        flock -u 5
     fi
 
-    if [ -n "$cache" ]; then
+    if [ -n "$issue_id" ]; then
         >&2 echo "$bug_id found in cache."
-        issue_id="$cache"
     else
-        jira_query=${jira_url}/rest/api/2/search\?jql\=project\=${project}%20and%20\"External%20issue%20ID\"\~${bug_id}
+        jira_query=${JIRA_URL}/rest/api/2/search\?jql\=project\=${project}%20and%20\"External%20issue%20ID\"\~${bug_id}
         >&2 echo "Querying ${jira_query}" >&2
         resp=$(curl -s -w "\n\n%{http_code}" --header "Accept: application/json" \
             "$jira_query")
 
         status=$(echo "$resp" | awk 'END {print $NF}')
         if [ "$status" != "200" ]; then
-            echo "ERROR: Failed to query "$jira_query"."
-            exit "$status"
+            echo "ERROR: Failed to query "$jira_query"." >&2
+            exit "$status" >&2
         fi
 
         json_data=$(echo "$resp" | head -n1)
         issue_id=$(echo "$json_data" | jq -r '.issues[].key')
 
-        echo "$bug_id:$issue_id" >> "$BZ_CACHE"
+        if [ -n "$issue_id" ]; then
+            exec 7>"/tmp/lock"
+            flock -w 0.005 -x 7
+            echo "$bug_id:$issue_id" >> "$BZ_CACHE"
+            flock -u 7
+        else
+            echo "WARNING: Issue-id not found for ${bug_id}. Continuing .." >&2
+        fi
     fi
 
     echo "$issue_id"
@@ -136,7 +127,9 @@ echo
 echo "Skipping projects with no changes ..."
 for project in "${projects[@]}"; do
     pushd "$project" > /dev/null
-    commits="$(git --no-pager log --no-merges --pretty=format:"%h%x09%s" --perl-regexp --author='^((?!jenkins-releng).*)$' release/${previous_release,,}..release/${release,,})"
+    commits="$(git --no-pager log --no-merges --pretty=format:"%h%x09%s" \
+                   --perl-regexp --author='^((?!jenkins-releng).*)$' \
+                   release/${previous_release,,}..release/${release,,})"
     if [ -z "$commits" ];
     then  # Project has no noteworthy changes so record them and pass
         echo "* $project" | tee -a "$outfile"
@@ -152,15 +145,15 @@ bug_list=()
 for project in "${noteworthy_projects[@]}"; do
     pushd "$project" > /dev/null
 
-    commits="$(git --no-pager log --no-merges --pretty=format:"%h%x09%s" --perl-regexp --author='^((?!jenkins-releng).*)$' release/${previous_release,,}..release/${release,,})"
-    SAVEIFS=$IFS
-    IFS=$'\n'
+    commits=()
+    commits="$(git --no-pager log --no-merges --pretty=format:"%H" \
+                   --perl-regexp --author='^((?!jenkins-releng).*)$' \
+                   release/${previous_release,,}..release/${release,,})"
     commits=($commits)
-    IFS=$SAVEIFS
 
     for commit in "${commits[@]}"; do
-        commit_hash="$(echo $commit | awk '{print $1}')"
-        subject="$(echo $commit | cut -d' ' -f2-)"
+        commit_hash="$(git log --format="%h%x09" -n1 ${commit} | awk '{print $1}')"
+        subject="$(git log --format="%s" -n1 ${commit} | cut -d' ' -f1-)"
         bug_id="$(git --no-pager show --quiet $commit_hash | sed '/^.*[Bb][Uu][Gg][ -]\([0-9]\+\).*$/!d;s//\1/' | head -1)"
 
         if [ -n "$bug_id" ]; then
@@ -174,13 +167,13 @@ done
 echo "Size of list (bug_id) to be processed: ${#bug_list[*]}"
 
 if hash parallel 2>/dev/null; then
-    export BZ_CACHE
+    export JIRA_URL
     export -f get_jira_from_bz
-    parallel --jobs 200% --halt now,fail=1 \
-        "get_jira_from_bz $JIRA_URL {} > /dev/null" ::: ${bug_list[*]}
+    parallel --no-notice --jobs 200% --halt now,fail=1 \
+        "get_jira_from_bz {} > /dev/null" ::: ${bug_list[*]}
 else
     for bug_id in "${bug_list[@]}"; do
-        get_jira_from_bz "$JIRA_URL" "$bug_id" > /dev/null
+        get_jira_from_bz "$bug_id" > /dev/null
     done
 fi
 
@@ -196,20 +189,20 @@ for project in "${noteworthy_projects[@]}"; do
         for i in $(seq 1 $size); do echo -n "-"; done
         echo
 
-        commits="$(git --no-pager log --no-merges --pretty=format:"%h%x09%s" --perl-regexp --author='^((?!jenkins-releng).*)$' release/${previous_release,,}..release/${release,,})"
-        SAVEIFS=$IFS
-        IFS=$'\n'
+        # reset the array
+        commits=()
+        commits="$(git --no-pager log --no-merges --pretty=format:"%H" \
+                       --perl-regexp --author='^((?!jenkins-releng).*)$' \
+                         release/${previous_release,,}..release/${release,,})"
         commits=($commits)
-        IFS=$SAVEIFS
 
         # Search and update bugzilla Bug-ID and JIRA issue-id from commit messages.
         # 1. If Jira issue-id is available on the commit message, use it.
         # 2. If the Bug-ID is only available on the commit message, then retrive
         #    the Jira issue-id using Bug-ID./sc.
-
         for commit in "${commits[@]}"; do
-            commit_hash="$(echo $commit | awk '{print $1}')"
-            subject="$(echo $commit | cut -d' ' -f2-)"
+            commit_hash="$(git log --format="%h%x09" -n1 ${commit} | awk '{print $1}')"
+            subject="$(git log --format="%s" -n1 ${commit} | cut -d' ' -f1-)"
             bug_id="$(git --no-pager show --quiet $commit_hash | sed '/^.*[Bb][Uu][Gg][ -]\([0-9]\+\).*$/!d;s//\1/' | head -1)"
             echo "* \`$commit_hash <https://git.opendaylight.org/gerrit/#/q/$commit_hash>\`_"
             issue_id="$(git --no-pager show --quiet $commit_hash | grep -Po '((?![BUG])[A-Z][A-Z0-9]{1,9}-\d+)' | head -1)"
@@ -219,9 +212,7 @@ for project in "${noteworthy_projects[@]}"; do
             elif [ -n "$bug_id" ] && [ -n "$project" ] && [ -z "$issue_id" ]; then
                 [ -n "$project" ] && project=${project/\//-}
 
-                if [ -e "$BZ_CACHE" ]; then
-                    issue_id=$(awk -F':' -v pattern="$bug_id" '$0 ~ pattern {print $2}' "$BZ_CACHE" | head -n1)
-                fi
+                issue_id="$(get_jira_from_bz "$project:$bug_id")"
 
                 if [ -n "$issue_id" ]; then
                     echo "  \`$issue_id <${JIRA_URL}/browse/${issue_id}>\`_"
