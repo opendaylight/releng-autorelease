@@ -59,7 +59,7 @@ print_gav() {
 
 # Finds all pom.xml files in a directory and then spawns a bash shell to run
 # the print_gav function to parse GAV information from pom file.
-poms=($(find . -name pom.xml -not -path "./scripts/*" -not -path "*/src/*"))
+mapfile -t poms <<< "$(find . -name pom.xml -not -path "./scripts/*" -not -path "*/src/*"))"
 
 if hash parallel 2>/dev/null; then
     export -f print_gav
