@@ -22,6 +22,8 @@
 
   <modules>
     <!-- TODO: Make sure every module listed here contains a reminder to keep this list updated. -->
+    <module>mdsal/binding/mdsal-binding-generator-api</module>
+    <module>mdsal/binding/yang-binding</module>
     <module>mdsal/common/artifacts</module>
     <module>mdsal/model/artifacts</module>
 
