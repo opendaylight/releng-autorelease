@@ -16,6 +16,24 @@
       "revId": "c0af880fa9f2ee7c7a5196c604546d39a0cfe520",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9053670d_64f44bf7",
+        "filename": "scripts/generate-artifact-versions.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2018-02-04T15:16:25Z",
+      "side": 1,
+      "message": "There should only be 1 paran here. I\u0027m surprised things didn\u0027t break.",
+      "parentUuid": "be9f93eb_16634986",
+      "revId": "c0af880fa9f2ee7c7a5196c604546d39a0cfe520",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
     }
   ]
 }
