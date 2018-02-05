@@ -1,0 +1,7 @@
+Verified+1: jenkins-releng <jenkins-releng@opendaylight.org>
+Code-Review+2: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-by: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-at: Mon, 05 Feb 2018 13:54:44 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/67906
+Project: releng/autorelease
+Branch: refs/heads/stable/carbon
