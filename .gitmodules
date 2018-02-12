@@ -30,10 +30,6 @@
 	path = dluxapps
 	url = ../../dluxapps
 	branch = .
-[submodule "eman"]
-	path = eman
-	url = https://git.opendaylight.org/gerrit/p/eman
-	branch = .
 [submodule "faas"]
 	path = faas
 	url = ../../faas
