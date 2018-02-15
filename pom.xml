@@ -55,6 +55,7 @@
     <module>tsdr</module>
     <module>unimgr</module>
     <module>usc</module>
+    <module>vtn</module>
   </modules>
 
   <build>
