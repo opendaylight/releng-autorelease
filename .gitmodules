@@ -134,6 +134,10 @@
 	path = usc
 	url = ../../usc
 	branch = .
+[submodule "vtn"]
+	path = vtn
+	url = ../../vtn
+	branch = .
 [submodule "jsonrpc"]
 	path = jsonrpc
 	url = https://git.opendaylight.org/gerrit/jsonrpc
