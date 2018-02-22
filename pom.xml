@@ -54,7 +54,6 @@
     <module>snmp4sdn</module>
     <module>sxp</module>
     <module>tsdr</module>
-    <module>unimgr</module>
     <module>usc</module>
   </modules>
 
