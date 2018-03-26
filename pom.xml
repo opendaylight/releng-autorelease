@@ -51,7 +51,6 @@
     <module>packetcable</module>
     <module>sfc</module>
     <module>snmp</module>
-    <module>snmp4sdn</module>
     <module>sxp</module>
     <module>tsdr</module>
     <module>usc</module>
