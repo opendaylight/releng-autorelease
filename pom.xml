@@ -23,39 +23,22 @@
   <modules>
     <!-- Build OpenDaylight projects -->
     <module>aaa</module>
-    <module>alto</module>
     <module>bgpcep</module>
-    <module>bier</module>
     <module>controller</module>
     <module>coe</module>
     <module>daexim</module>
-    <module>dlux</module>
-    <module>dluxapps</module>
     <module>genius</module>
-    <module>groupbasedpolicy</module>
     <module>honeycomb/vbd</module>
     <module>infrautils</module>
     <module>integration/distribution</module>
-    <module>jsonrpc</module>
-    <module>l2switch</module>
     <module>lispflowmapping</module>
     <module>mdsal</module>
-    <module>nemo</module>
     <module>netconf</module>
     <module>netvirt</module>
     <module>neutron</module>
-    <module>of-config</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
-    <module>p4plugin</module>
-    <module>packetcable</module>
     <module>sfc</module>
-    <module>snmp</module>
-    <module>snmp4sdn</module>
-    <module>sxp</module>
-    <module>tsdr</module>
-    <module>usc</module>
-    <module>vtn</module>
   </modules>
 
   <build>
