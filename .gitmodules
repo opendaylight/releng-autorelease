@@ -2,17 +2,9 @@
 	path = aaa
 	url = ../../aaa
 	branch = .
-[submodule "alto"]
-	path = alto
-	url = ../../alto
-	branch = .
 [submodule "bgpcep"]
 	path = bgpcep
 	url = ../../bgpcep
-	branch = .
-[submodule "bier"]
-	path = bier
-	url = ../../bier
 	branch = .
 [submodule "controller"]
 	path = controller
@@ -26,21 +18,9 @@
 	path = daexim
 	url = ../../daexim
 	branch = .
-[submodule "dlux"]
-	path = dlux
-	url = ../../dlux
-	branch = .
-[submodule "dluxapps"]
-	path = dluxapps
-	url = ../../dluxapps
-	branch = .
 [submodule "genius"]
 	path = genius
 	url = ../../genius
-	branch = .
-[submodule "groupbasedpolicy"]
-	path = groupbasedpolicy
-	url = ../../groupbasedpolicy
 	branch = .
 [submodule "honeycomb/vbd"]
 	path = honeycomb/vbd
@@ -54,14 +34,6 @@
 	path = integration/distribution
 	url = ../../integration/distribution
 	branch = .
-[submodule "jsonrpc"]
-	path = jsonrpc
-	url = https://git.opendaylight.org/gerrit/jsonrpc
-	branch = .
-[submodule "l2switch"]
-	path = l2switch
-	url = ../../l2switch
-	branch = .
 [submodule "lispflowmapping"]
 	path = lispflowmapping
 	url = ../../lispflowmapping
@@ -69,10 +41,6 @@
 [submodule "mdsal"]
 	path = mdsal
 	url = ../../mdsal
-	branch = .
-[submodule "nemo"]
-	path = nemo
-	url = ../../nemo
 	branch = .
 [submodule "netconf"]
 	path = netconf
@@ -86,10 +54,6 @@
 	path = neutron
 	url = ../../neutron
 	branch = .
-[submodule "of-config"]
-	path = of-config
-	url = ../../of-config
-	branch = .
 [submodule "openflowplugin"]
 	path = openflowplugin
 	url = ../../openflowplugin
@@ -98,39 +62,7 @@
 	path = ovsdb
 	url = ../../ovsdb
 	branch = .
-[submodule "p4plugin"]
-	path = p4plugin
-	url = ../../p4plugin
-	branch = .
-[submodule "packetcable"]
-	path = packetcable
-	url = ../../packetcable
-	branch = .
 [submodule "sfc"]
 	path = sfc
 	url = ../../sfc
-	branch = .
-[submodule "snmp"]
-	path = snmp
-	url = ../../snmp
-	branch = .
-[submodule "snmp4sdn"]
-	path = snmp4sdn
-	url = ../../snmp4sdn
-	branch = .
-[submodule "sxp"]
-	path = sxp
-	url = ../../sxp
-	branch = .
-[submodule "tsdr"]
-	path = tsdr
-	url = ../../tsdr
-	branch = .
-[submodule "usc"]
-	path = usc
-	url = ../../usc
-	branch = .
-[submodule "vtn"]
-	path = vtn
-	url = ../../vtn
 	branch = .
