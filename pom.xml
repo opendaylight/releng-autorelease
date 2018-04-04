@@ -28,7 +28,6 @@
     <module>coe</module>
     <module>daexim</module>
     <module>genius</module>
-    <module>honeycomb/vbd</module>
     <module>infrautils</module>
     <module>integration/distribution</module>
     <module>lispflowmapping</module>
@@ -38,7 +37,6 @@
     <module>neutron</module>
     <module>openflowplugin</module>
     <module>ovsdb</module>
-    <module>sfc</module>
   </modules>
 
   <build>
