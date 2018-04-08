@@ -1,0 +1,7 @@
+Code-Review+2: Thanh Ha <thanh.ha@linuxfoundation.org>
+Verified+1: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-by: Thanh Ha <thanh.ha@linuxfoundation.org>
+Submitted-at: Sun, 08 Apr 2018 16:01:31 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/70628
+Project: releng/autorelease
+Branch: refs/heads/stable/nitrogen
