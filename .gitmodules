@@ -58,3 +58,6 @@
 	path = ovsdb
 	url = ../../ovsdb
 	branch = .
+[submodule "sfc"]
+	path = sfc
+	url = https://git.opendaylight.org/gerrit/sfc
