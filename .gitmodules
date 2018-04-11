@@ -54,10 +54,6 @@
 	path = ttp
 	url = ../../ttp
 	branch = .
-[submodule "vtn"]
-	path = vtn
-	url = ../../vtn
-	branch = .
 [submodule "yangtools"]
 	path = yangtools
 	url = ../../yangtools
