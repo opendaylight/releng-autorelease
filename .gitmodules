@@ -130,7 +130,3 @@
 	path = usc
 	url = ../../usc
 	branch = .
-[submodule "vtn"]
-	path = vtn
-	url = ../../vtn
-	branch = .

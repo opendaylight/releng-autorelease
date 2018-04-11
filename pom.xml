@@ -55,7 +55,6 @@
     <module>sxp</module>
     <module>tsdr</module>
     <module>usc</module>
-    <module>vtn</module>
   </modules>
 
   <build>
