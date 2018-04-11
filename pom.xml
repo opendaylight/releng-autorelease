@@ -60,7 +60,6 @@
     <module>ttp</module>
     <module>unimgr</module>
     <module>usc</module>
-    <module>vtn</module>
     <module>yangtools</module>
   </modules>
 
