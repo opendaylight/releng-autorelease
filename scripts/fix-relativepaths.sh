@@ -26,6 +26,8 @@ fix_relative_paths() {
         "org.opendaylight.controller:config-plugin-parent:controller/opendaylight/config/config-plugin-parent"
         # Controller - Workaround since script is not able to detect 'controller' group name for archetypes
         "org.opendaylight.controller.archetypes:archetypes-parent:controller/opendaylight/archetypes"
+        # Infrautils
+        "org.opendaylight.infrautils:common/parent"
         # MD-SAL
         "org.opendaylight.mdsal:binding-parent:mdsal/binding/binding-parent"
     )
