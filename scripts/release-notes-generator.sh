@@ -123,8 +123,8 @@ echo ${projects[@]}
 } 2>&1 > "$outfile"
 
 {
-    echo "Projects with No Noteworthy Changes"
-    echo "-----------------------------------"
+    echo "Projects with noteworthy Changes"
+    echo "--------------------------------"
     echo
 } 2>&1 >> "$outfile"
 
