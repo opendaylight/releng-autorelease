@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "70a2a31f_4f256b2d",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1723
+      },
+      "writtenOn": "2018-05-17T14:49:35Z",
+      "side": 1,
+      "message": "This class structure is confusing to me. It seems to do many things that aren\u0027t a logical grouping I\u0027d put into a class.",
+      "revId": "d97a13721b52e186d419edcf2e30d60dc5b9f8f4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8b88cf7e_983536f1",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1723
+      },
+      "writtenOn": "2018-05-17T14:49:35Z",
+      "side": 1,
+      "message": "I\u0027m surprised this passes verify, it should fail because of line length.",
+      "revId": "d97a13721b52e186d419edcf2e30d60dc5b9f8f4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "40e1a881_6db07000",
         "filename": "scripts/checklist_management/checklist.py",
         "patchSetId": 1
@@ -19,6 +53,154 @@
         "endLine": 14,
         "endChar": 26
       },
+      "revId": "d97a13721b52e186d419edcf2e30d60dc5b9f8f4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8fd74827_09365855",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1723
+      },
+      "writtenOn": "2018-05-17T14:49:35Z",
+      "side": 1,
+      "message": "If printing is all the logging we want to do, I\u0027m not sure it\u0027s worth having a helper function.",
+      "revId": "d97a13721b52e186d419edcf2e30d60dc5b9f8f4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d6281b22_ada6a687",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1723
+      },
+      "writtenOn": "2018-05-17T14:49:35Z",
+      "side": 1,
+      "message": "Not sure we need a getter for this",
+      "revId": "d97a13721b52e186d419edcf2e30d60dc5b9f8f4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "243c6364_773d5e00",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1723
+      },
+      "writtenOn": "2018-05-17T14:49:35Z",
+      "side": 1,
+      "message": "Is this fn basically marking a project as present? A fn name that describes the meaning of the logic, vs the wrote mechanics of the logic, would be helpful for understanding what\u0027s going on.",
+      "revId": "d97a13721b52e186d419edcf2e30d60dc5b9f8f4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ff54de1f_95e7c430",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1723
+      },
+      "writtenOn": "2018-05-17T14:49:35Z",
+      "side": 1,
+      "message": "Dates need to be variables",
+      "range": {
+        "startLine": 37,
+        "startChar": 26,
+        "endLine": 37,
+        "endChar": 52
+      },
+      "revId": "d97a13721b52e186d419edcf2e30d60dc5b9f8f4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6017f03a_8f6668ed",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1723
+      },
+      "writtenOn": "2018-05-17T14:49:35Z",
+      "side": 1,
+      "message": "What is this fn doing?",
+      "revId": "d97a13721b52e186d419edcf2e30d60dc5b9f8f4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3e244281_112f007c",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1723
+      },
+      "writtenOn": "2018-05-17T14:49:35Z",
+      "side": 1,
+      "message": "The date range we take attendance over should be a variable.",
+      "range": {
+        "startLine": 77,
+        "startChar": 0,
+        "endLine": 78,
+        "endChar": 54
+      },
+      "revId": "d97a13721b52e186d419edcf2e30d60dc5b9f8f4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa529478_51cfe4a4",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1723
+      },
+      "writtenOn": "2018-05-17T14:49:35Z",
+      "side": 1,
+      "message": "I think this will not work for some of the ways people have been recording presence, like #info project \u003cproject\u003e. imho better to make this more robust than fiddle with making everyone do it exactly right every meeting.",
+      "revId": "d97a13721b52e186d419edcf2e30d60dc5b9f8f4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "560cc2ae_39dbbfbb",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1723
+      },
+      "writtenOn": "2018-05-17T14:49:35Z",
+      "side": 1,
+      "message": "What is this fn doing?",
       "revId": "d97a13721b52e186d419edcf2e30d60dc5b9f8f4",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
