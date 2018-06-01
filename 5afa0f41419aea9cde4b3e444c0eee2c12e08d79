@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f5b3e44_192b919d",
+        "filename": "scripts/release-notes-generator.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2018-06-01T14:59:12Z",
+      "side": 1,
+      "message": "This is wrong. This is a heading for projects with NO noteworthy changes. See:\n\nhttp://docs.opendaylight.org/en/stable-nitrogen/release-notes/release-notes-nitrogen-sr1.html\n\nWe are now stating that all projects did not contribute any commits to a release have noteworthy changes.\n\nIt does produce an empty list if every project had changes in a release though. Perhaps the real fix is to check if an empty list is produced and print a \"None\" statement.",
+      "revId": "5afa0f41419aea9cde4b3e444c0eee2c12e08d79",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
