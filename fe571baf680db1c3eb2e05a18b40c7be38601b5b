@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "44b85652_b4b6b1cd",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 6258
+      },
+      "writtenOn": "2018-06-27T04:04:50Z",
+      "side": 1,
+      "message": "ordering was missed here.",
+      "range": {
+        "startLine": 41,
+        "startChar": 4,
+        "endLine": 41,
+        "endChar": 33
+      },
+      "revId": "fe571baf680db1c3eb2e05a18b40c7be38601b5b",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
