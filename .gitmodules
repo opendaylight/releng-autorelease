@@ -106,6 +106,10 @@
 	path = packetcable
 	url = ../../packetcable
 	branch = .
+[submodule "serviceutils"]
+	path = serviceutils
+	url = ../../serviceutils
+	branch = .
 [submodule "sfc"]
 	path = sfc
 	url = ../../sfc
