@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b503c6aa_7d27a068",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2018-06-27T02:41:20Z",
+      "side": 1,
+      "message": "abcdef: e before f.",
+      "revId": "d88dc9b98b4febc6b47789fc5254c06d4cbaa7fc",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e75f1574_739c92e2",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2018-06-27T02:41:20Z",
+      "side": 1,
+      "message": "abcdef: e before f.",
+      "revId": "d88dc9b98b4febc6b47789fc5254c06d4cbaa7fc",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
