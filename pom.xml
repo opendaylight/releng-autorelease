@@ -38,6 +38,7 @@
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>sfc</module>
+    <module>serviceutils</module>
   </modules>
 
   <build>
