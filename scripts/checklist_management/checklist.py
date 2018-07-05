@@ -3,6 +3,8 @@ import calendar
 import urllib2
 import re
 from bs4 import BeautifulSoup
+from pprint import pformat
+
 
 class Checklist:
     """
@@ -10,7 +12,7 @@ class Checklist:
     """
 
     def __init__(self):
-        self.pids = ['aaa','alto','bgpcep','coe','controller','daexim','genius','infrautils','lispflowmapping','mdsal','nemo','netconf','netvirt','neutron','openflowplugin','ovsdb','sfc','usc']
+        self.pids = ['aaa','bgpcep','coe','controller','daexim','genius','infrautils','lispflowmapping','mdsal','netconf','netvirt','neutron','openflowplugin','ovsdb','sfc','usc']
         self.projects = {}
 
     def log(self, text):
@@ -96,13 +98,16 @@ class Checklist:
         meetingprojects = []
         meetinghtml = urllib2.urlopen("https://meetings.opendaylight.org/opendaylight-meeting/" + str(year) + "/tsc/" + meeting)
         for line in meetinghtml:
-            match = re.search(r'#project (\w+)', line)
-            if match:
-                project = match.group(1)
-                project_id = str(project).lower()
-                if project_id not in meetingprojects:
-                    meetingprojects.append(project_id)
-                    self.process_tsc_project(project_id)
+            match = re.search(r'#project (.*)', line)
+            if match and match.group(1):
+                projects = match.group(1).split()
+                for project in projects:
+                    project_id = str(project).lower()
+                    print("project: {}".format(project_id))
+                    if project_id in self.pids:
+                        if project_id not in meetingprojects:
+                            meetingprojects.append(project_id)
+                            self.process_tsc_project(project_id)
         return 0
 
     def process_tsc_project(self, project):
@@ -139,8 +144,9 @@ class Checklist:
         self.process_autorelease()
         self.process_tsc()
         self.process_clm()
-        print(self.projects)
+        print(pformat(sorted(self.projects.items())))
         return 0
 
+
 checklist = Checklist();
-print(checklist.execute())
+checklist.execute()
