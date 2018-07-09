@@ -30,6 +30,7 @@ import re
 import sys
 import networkx as nx
 
+
 def determine_merge_order(input_file='dependencies.log',
                           output_file='merge-order.log'):
     try:
@@ -75,6 +76,7 @@ def determine_merge_order(input_file='dependencies.log',
 
     rhandle.close()
     whandle.close()
+
 
 if __name__ == '__main__':
     determine_merge_order()

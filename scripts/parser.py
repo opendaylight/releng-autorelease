@@ -29,7 +29,6 @@ import argparse
 import json
 import os
 import re
-import sys
 import xml.etree.ElementTree as ET
 
 try:
@@ -348,17 +347,15 @@ def main():
     parser = argparse.ArgumentParser(
         description='Generate json database for dnvtools rendering.')
     parser.add_argument('directory', type=str,
-        help='The directory containing the root pom of the project you want '
-             'to generate json database for.')
+                        help='The directory containing the root pom of the project '
+                             'you want to generate json database for.')
     parser.add_argument('output_file', type=str,
-        help='The path to the location you want to place the output json '
-             'database.')
+                        help='The path to the location you want to place the output json database.')
     parser.add_argument('--mvn-bin', type=str,
-        help='The path to the location of your mvn binary. '
-             '(default: /usr/bin/mvn)')
+                        help='The path to the location of your mvn binary. (default: /usr/bin/mvn)')
     parser.add_argument('--mvn-global-settings', type=str,
-        help='The path to the location of your mvn global settings file. '
-             '(default: ~/.m2/settings.xml)')
+                        help='The path to the location of your mvn global settings file. '
+                        '(default: ~/.m2/settings.xml)')
     args = parser.parse_args()
 
     # Initialize
