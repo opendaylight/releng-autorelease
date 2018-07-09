@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ec3fced6_8249c5f2",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2018-07-09T16:33:36Z",
+      "side": 1,
+      "message": "we need a license header.",
+      "revId": "07f9798ae3f452e64195f0dc960219d7f00da60e",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "52892fc0_14294da7",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2018-07-09T16:33:36Z",
+      "side": 1,
+      "message": "It\u0027s really hard to read this long horizontal line of text. I think it would be easier to maintain if it was written like this:\n\n self.pids \u003d [\n     \u0027aaa\u0027,\n     \u0027bgpcep\u0027,\n     \u0027coe\u0027,\n     ...\n     \u0027usc\u0027,\n ]",
+      "revId": "07f9798ae3f452e64195f0dc960219d7f00da60e",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c152f44e_788de19d",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2018-07-09T16:33:36Z",
+      "side": 1,
+      "message": "In Python we don\u0027t need parenthesis:\n\n if year \u003d\u003d currentDate.year:",
+      "revId": "07f9798ae3f452e64195f0dc960219d7f00da60e",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
