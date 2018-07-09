@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5a30bfc8_bb1b9ca0",
+        "filename": "scripts/checklist_management/checklist.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2264
+      },
+      "writtenOn": "2018-07-09T20:00:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ec3fced6_8249c5f2",
+      "revId": "07f9798ae3f452e64195f0dc960219d7f00da60e",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "52892fc0_14294da7",
         "filename": "scripts/checklist_management/checklist.py",
         "patchSetId": 3
