@@ -37,7 +37,7 @@
 [submodule "mdsal"]
 	path = mdsal
 	url = ../../mdsal
-	branch = .
+	branch = v2.6.x
 [submodule "netconf"]
 	path = netconf
 	url = ../../netconf
