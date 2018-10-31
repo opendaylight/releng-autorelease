@@ -34,10 +34,6 @@
 	path = lispflowmapping
 	url = ../../lispflowmapping
 	branch = .
-[submodule "mdsal"]
-	path = mdsal
-	url = ../../mdsal
-	branch = v2.6.x
 [submodule "netconf"]
 	path = netconf
 	url = ../../netconf
