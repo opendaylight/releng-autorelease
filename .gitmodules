@@ -58,7 +58,3 @@
 	path = serviceutils
 	url = ../../serviceutils
 	branch = .
-[submodule "sfc"]
-	path = sfc
-	url = https://git.opendaylight.org/gerrit/sfc
-	branch = .
