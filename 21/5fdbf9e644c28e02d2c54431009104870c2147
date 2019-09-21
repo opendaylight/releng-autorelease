@@ -1,0 +1,7 @@
+Verified+1: jenkins-releng <jenkins-releng@opendaylight.org>
+Code-Review+2: Thanh Ha (zxiiro) <zxiiro@gmail.com>
+Submitted-by: Thanh Ha (zxiiro) <zxiiro@gmail.com>
+Submitted-at: Sat, 21 Sep 2019 13:23:24 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/releng/autorelease/+/84568
+Project: releng/autorelease
+Branch: refs/heads/master
