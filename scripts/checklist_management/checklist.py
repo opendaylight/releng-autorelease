@@ -28,6 +28,7 @@ class Checklist:
             'daexim',
             'genius',
             'infrautils',
+            'jsonrpc',
             'lispflowmapping',
             'mdsal',
             'netconf',

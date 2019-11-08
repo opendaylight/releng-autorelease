@@ -30,6 +30,10 @@
 	path = integration/distribution
 	url = ../../integration/distribution
 	branch = .
+[submodule "jsonrpc"]
+	path = jsonrpc
+	url = ../../jsonrpc
+	branch = .
 [submodule "lispflowmapping"]
 	path = lispflowmapping
 	url = ../../lispflowmapping
