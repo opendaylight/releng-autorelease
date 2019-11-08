@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "35e37a71_8ad24ae0",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2019-11-08T14:30:53Z",
+      "side": 1,
+      "message": "This is failing git\u0027s config parser because it uses spaces instead of tabs. I\u0027ll update the patch.",
+      "revId": "d3e3606ca3ea80a1929d8a53a7252c787d83f63d",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    }
+  ]
+}
