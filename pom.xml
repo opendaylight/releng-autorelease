@@ -30,6 +30,7 @@
     <module>genius</module>
     <module>infrautils</module>
     <module>integration/distribution</module>
+    <module>jsonrpc</module>
     <module>lispflowmapping</module>
     <module>netconf</module>
     <module>netvirt</module>
