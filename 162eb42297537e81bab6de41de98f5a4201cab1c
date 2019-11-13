@@ -1,0 +1,293 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a79b1b5_8f73ffb0",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "Please run pep8 against this and fix all the pep8 errors as this script does not conform to pep8. pep8 is a simple cli tool your can run \"pep8 \u003cfile\u003e\". You can install it using pip install pep8.\n\nAlso in Python whitespace matters. Mixing tabs and spaces will make your code extremely difficult to debug. I highly recommend you follow pep8 and use 4 spaces for indents globally.",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_ef6153d4",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "In python docstrings should appear after a function definition for example:\n\n def systemCallMvnEffecitvePon(directoryLocation):\n     \"\"\"Calls the system function to generate effective-pom files\"\"\"",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_0f5fef0f",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "return is unnecessary if it\u0027s not returning any variable.",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_af9b5bc8",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "It\u0027s not obvious to me what a namespace being stripped looks like. Do you have an example?\n\nShould include example in the docstring.",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_8faa1fd3",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "use os.path.join() to create path names so that this code works on both Unix and Windows for example:\n\n with open(os.path.join(dirName, filename), \"r\") as xmlFile:",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_4fac07ee",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "If all you\u0027re doing is passing here then instead of if-else you should do a negative statement for example:\n\n if not root.tag \u003d\u003d \"modules\":\n     root \u003d root.find(\u0027modules\u0027)",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_efb8732c",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "Like above a statement that simply passes could be written shorter with:\n\n if root is None:\n     return modules",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_cf87b760",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "This can be written more simply as:\n\n if buildTag is None:\n     return dependency",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_6f7c6373",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "I\u0027m not a fan of the amount of nesting we have here. You should be able to make this query significantly more simple using an XPath search:\n\nhttps://docs.python.org/2/library/xml.etree.elementtree.html#xpath-support",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_4f93a7a3",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "Can be made simple using:\n\n if root is None:\n     return parent",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_ef8f1374",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 257,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "This function seems unnecessary as it seems to be just a redirect for os.path.isfile().",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_cfeed722",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 261,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "This would look neater written using str.format() if we only support Python 3. But in Python 2 we can do this instead to be more readable:\n\n groupId \u003d node[\u0027id\u0027][\u0027groupId\u0027]\n artifactId \u003d node[\u0027id\u0027][\u0027artifactId\u0027]\n version \u003d node[\u0027id\u0027][\u0027version\u0027]\n\n return \"%s:%s:%s\" % (groupId, artifactId, version)",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_6ff3030b",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "The function name should be more specific filterODLGroup() or something. Also a docstring to explain it\u0027s purpose would be useful here.",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_8ff8dfe6",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 367,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "if not checkPomfileExistence.... also use os.path.join() to create paths so that your code is cross compatible between OSes.",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_2fdd0b71",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 373,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "See above.",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_0fe4cf39",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 438,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "again the number of nesting is unreasonable to me. You should use XPath searches here to simplify your code.",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_afd03b54",
+        "filename": "scripts/parsar.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 454,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-14T00:13:45Z",
+      "side": 1,
+      "message": "no need for ./ if it\u0027s the same directory. Otherwise use os.path.join() to ensure your code is cross compatible.",
+      "revId": "162eb42297537e81bab6de41de98f5a4201cab1c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
