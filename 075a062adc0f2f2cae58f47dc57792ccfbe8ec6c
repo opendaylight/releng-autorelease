@@ -16,6 +16,23 @@
       "revId": "075a062adc0f2f2cae58f47dc57792ccfbe8ec6c",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_0db7db87",
+        "filename": "scripts/parser.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-24T17:07:20Z",
+      "side": 1,
+      "message": "Should leave 1 blank space between the summary line and the detailed description lines below.",
+      "revId": "075a062adc0f2f2cae58f47dc57792ccfbe8ec6c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
     }
   ]
 }
