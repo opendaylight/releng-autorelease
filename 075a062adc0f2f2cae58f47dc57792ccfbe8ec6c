@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a79b1b5_4dbdd367",
+        "filename": "scripts/parser.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-08-24T17:07:20Z",
+      "side": 1,
+      "message": "Imports should be in alphabetical order with groupings for standard libraries then thirdparty followed by your local libraries. Since all these are standard libraries please organize them alphabetically.",
+      "revId": "075a062adc0f2f2cae58f47dc57792ccfbe8ec6c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
