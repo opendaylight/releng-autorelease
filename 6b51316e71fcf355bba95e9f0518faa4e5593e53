@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a79b1b5_fd46a920",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-09-07T23:13:46Z",
+      "side": 1,
+      "message": "Should update your user.name to \"Abhishek Mittal\" you can do this permanently by setting:\n\n    git config --global user.name \"Abhishek Mittal\"\n\nIf you do not do this git uses your username as your name. Once that\u0027s done to fix this commit you can run:\n\n    git commit --amend --author \"Abhishek Mittal \u003cabhishekmittaliiit@gmail.com\u003e\"",
+      "revId": "6b51316e71fcf355bba95e9f0518faa4e5593e53",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_7d6299ae",
+        "filename": "scripts/dnvtools/landing/LICENSE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-09-07T23:15:58Z",
+      "side": 1,
+      "message": "Also I\u0027d prefer all 3rdparty tools to exist in a 3rdparty folder (or thirdparty, however you want to spell it).\n\nFor example:\n\n   scripts/dnvtools/thirdparty/landing\n\nThis makes it extremely clear that the tools we are pulling in are not maintained / developed by us.",
+      "revId": "6b51316e71fcf355bba95e9f0518faa4e5593e53",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
