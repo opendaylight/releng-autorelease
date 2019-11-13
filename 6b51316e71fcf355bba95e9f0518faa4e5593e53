@@ -19,6 +19,40 @@
     },
     {
       "key": {
+        "uuid": "3a79b1b5_9d5535c8",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-09-07T23:13:46Z",
+      "side": 1,
+      "message": "Commit messages should be written in present-tense, imperative. I\u0027d write this as \"Add DnvTools HTML Visualisation Code\".",
+      "revId": "6b51316e71fcf355bba95e9f0518faa4e5593e53",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a79b1b5_bd5031d5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2015-09-07T23:13:46Z",
+      "side": 1,
+      "message": "Please try to provide more details about this change. Explain the feature that is being added in detail and what libraries you are pulling in to achieve this feature.",
+      "revId": "6b51316e71fcf355bba95e9f0518faa4e5593e53",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a79b1b5_7d6299ae",
         "filename": "scripts/dnvtools/landing/LICENSE.md",
         "patchSetId": 1
