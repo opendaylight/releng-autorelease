@@ -10,10 +10,6 @@
 	path = controller
 	url = ../../controller
 	branch = .
-[submodule "coe"]
-	path = coe
-	url = ../../coe
-	branch = .
 [submodule "daexim"]
 	path = daexim
 	url = ../../daexim
@@ -61,8 +57,4 @@
 [submodule "serviceutils"]
 	path = serviceutils
 	url = ../../serviceutils
-	branch = .
-[submodule "sfc"]
-	path = sfc
-	url = https://git.opendaylight.org/gerrit/sfc
 	branch = .

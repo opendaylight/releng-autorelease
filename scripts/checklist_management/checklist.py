@@ -23,7 +23,6 @@ class Checklist:
         self.pids = [
             'aaa',
             'bgpcep',
-            'coe',
             'controller',
             'daexim',
             'genius',
@@ -36,7 +35,6 @@ class Checklist:
             'neutron',
             'openflowplugin',
             'ovsdb',
-            'sfc',
             'usc'
         ]
         self.projects = {}
