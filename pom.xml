@@ -25,7 +25,6 @@
     <module>aaa</module>
     <module>bgpcep</module>
     <module>controller</module>
-    <module>coe</module>
     <module>daexim</module>
     <module>genius</module>
     <module>infrautils</module>
@@ -38,7 +37,6 @@
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>serviceutils</module>
-    <module>sfc</module>
   </modules>
 
   <build>
