@@ -37,6 +37,7 @@
     <module>openflowplugin</module>
     <module>ovsdb</module>
     <module>serviceutils</module>
+	<module>detnet</module>
   </modules>
 
   <build>

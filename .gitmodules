@@ -58,3 +58,7 @@
 	path = serviceutils
 	url = ../../serviceutils
 	branch = .
+[submodule "detnet"]
+	path = detnet
+	url = ../../detnet
+	branch = .

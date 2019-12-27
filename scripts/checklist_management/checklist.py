@@ -36,6 +36,7 @@ class Checklist:
             'openflowplugin',
             'ovsdb',
             'usc'
+			'detnet'
         ]
         self.projects = {}
 
