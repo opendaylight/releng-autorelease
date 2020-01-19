@@ -1,0 +1,9 @@
+Verified+1: jenkins-releng <jenkins-releng@opendaylight.org>
+Code-Review+1: Luis Gomez <ecelgp@gmail.com>
+Code-Review+1: Jamo Luhrsen <jluhrsen@gmail.com>
+Code-Review+2: Anil Belur <abelur@linuxfoundation.org>
+Submitted-by: Anil Belur <abelur@linuxfoundation.org>
+Submitted-at: Sun, 19 Jan 2020 00:02:48 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/releng/autorelease/+/87012
+Project: releng/autorelease
+Branch: refs/heads/stable/neon
