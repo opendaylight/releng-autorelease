@@ -24,7 +24,6 @@
     <!-- Build OpenDaylight projects -->
     <module>aaa</module>
     <module>bgpcep</module>
-    <module>controller</module>
     <module>daexim</module>
     <module>genius</module>
     <module>infrautils</module>
