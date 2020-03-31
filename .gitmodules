@@ -6,10 +6,6 @@
 	path = bgpcep
 	url = ../../bgpcep
 	branch = .
-[submodule "controller"]
-	path = controller
-	url = ../../controller
-	branch = .
 [submodule "daexim"]
 	path = daexim
 	url = ../../daexim
