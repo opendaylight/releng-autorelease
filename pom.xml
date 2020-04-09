@@ -24,18 +24,8 @@
     <!-- Build OpenDaylight projects -->
     <module>aaa</module>
     <module>bgpcep</module>
-    <module>daexim</module>
-    <module>genius</module>
     <module>infrautils</module>
-    <module>integration/distribution</module>
-    <module>jsonrpc</module>
-    <module>lispflowmapping</module>
     <module>netconf</module>
-    <module>netvirt</module>
-    <module>neutron</module>
-    <module>openflowplugin</module>
-    <module>ovsdb</module>
-    <module>serviceutils</module>
   </modules>
 
   <build>
