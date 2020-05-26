@@ -5,7 +5,7 @@
   are made available under the terms of the Eclipse Distribution License v1.0
   which accompanies this distribution, and is available at
   http://www.eclipse.org/org/documents/edl-v10.php
- 
+
   Contributors:
     Thanh Ha (The Linux Foundation) - initial implementation
 -->
@@ -20,10 +20,8 @@
   <packaging>pom</packaging>
   <name>autorelease-validate-projects</name> <!-- Used by Sonar to set project name -->
 
+  <!-- TODO: Update validate autorelease job to no longer build this pom -->
   <modules>
-    <!-- TODO: Make sure every module listed here contains a reminder to keep this list updated. -->
-    <module>controller/opendaylight/config/config-artifacts</module>
-    <module>controller/opendaylight/md-sal/mdsal-artifacts</module>
   </modules>
 
   <build>
