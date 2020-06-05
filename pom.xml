@@ -21,7 +21,6 @@
   <name>autorelease</name> <!-- Used by Sonar to set project name -->
 
   <modules>
-    <!-- Build OpenDaylight projects -->
     <module>aaa</module>
     <module>bgpcep</module>
     <module>controller</module>
@@ -45,7 +44,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-install-plugin</artifactId>
-        <version>2.5.2</version>
+        <version>3.0.0-M1</version>
         <configuration>
           <skip>true</skip>
         </configuration>
@@ -53,7 +52,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-deploy-plugin</artifactId>
-        <version>2.8.2</version>
+        <version>3.0.0-M1</version>
         <configuration>
           <skip>true</skip>
         </configuration>
@@ -61,7 +60,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.0.0-M2</version>
+        <version>3.0.0-M3</version>
         <executions>
           <execution>
             <id>enforce-dependency-convergence</id>
