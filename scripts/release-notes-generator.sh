@@ -106,7 +106,7 @@ for project in "${noteworthy_projects[@]}"; do
         for commit in "${commits[@]}"; do
             commit_hash="$(git log --format="%h%x09" -n1 ${commit} | awk '{print $1}')"
             subject="$(git log --format="%s" -n1 ${commit} | cut -d' ' -f1-)"
-            echo "* \`$commit_hash <https://git.opendaylight.org/gerrit/#/q/$commit_hash>\`_"
+            echo "* \`$commit_hash <https://git.opendaylight.org/gerrit/q/$commit_hash>\`_"
             issue_id="$(git --no-pager show --quiet $commit_hash | grep -Po '([A-Z][A-Z0-9]{1,9}-\d+)' | head -1)"
 
             if [ -n "$issue_id" ]; then
