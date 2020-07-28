@@ -14,10 +14,6 @@
 	path = genius
 	url = ../../genius
 	branch = .
-[submodule "infrautils"]
-	path = infrautils
-	url = ../../infrautils
-	branch = .
 [submodule "integration/distribution"]
 	path = integration/distribution
 	url = ../../integration/distribution
