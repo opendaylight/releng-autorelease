@@ -30,10 +30,6 @@
 	path = netconf
 	url = ../../netconf
 	branch = .
-[submodule "netvirt"]
-	path = netvirt
-	url = ../../netvirt
-	branch = .
 [submodule "neutron"]
 	path = neutron
 	url = ../../neutron
