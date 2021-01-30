@@ -1,7 +1,3 @@
-[submodule "aaa"]
-	path = aaa
-	url = ../../aaa
-	branch = .
 [submodule "bgpcep"]
 	path = bgpcep
 	url = ../../bgpcep
