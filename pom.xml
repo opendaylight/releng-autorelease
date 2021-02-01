@@ -23,7 +23,6 @@
   <modules>
     <module>bgpcep</module>
     <module>daexim</module>
-    <module>genius</module>
     <module>integration/distribution</module>
     <module>jsonrpc</module>
     <module>lispflowmapping</module>
