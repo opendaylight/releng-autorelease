@@ -21,7 +21,6 @@
   <name>autorelease</name> <!-- Used by Sonar to set project name -->
 
   <modules>
-    <module>aaa</module>
     <module>bgpcep</module>
     <module>daexim</module>
     <module>genius</module>
