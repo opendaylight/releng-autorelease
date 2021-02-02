@@ -6,10 +6,6 @@
 	path = daexim
 	url = ../../daexim
 	branch = .
-[submodule "genius"]
-	path = genius
-	url = ../../genius
-	branch = .
 [submodule "integration/distribution"]
 	path = integration/distribution
 	url = ../../integration/distribution
