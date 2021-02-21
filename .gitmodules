@@ -18,10 +18,6 @@
 	path = lispflowmapping
 	url = ../../lispflowmapping
 	branch = .
-[submodule "netconf"]
-	path = netconf
-	url = ../../netconf
-	branch = .
 [submodule "neutron"]
 	path = neutron
 	url = ../../neutron
