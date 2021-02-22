@@ -1,0 +1,7 @@
+Verified+1: jenkins-releng
+Code-Review+2: Robert Varga <nite@hq.sk>
+Submitted-by: Robert Varga <nite@hq.sk>
+Submitted-at: Mon, 22 Feb 2021 09:00:55 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/releng/autorelease/+/95254
+Project: releng/autorelease
+Branch: refs/heads/master
