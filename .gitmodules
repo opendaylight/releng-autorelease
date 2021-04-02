@@ -1,7 +1,3 @@
-[submodule "bgpcep"]
-	path = bgpcep
-	url = ../../bgpcep
-	branch = .
 [submodule "daexim"]
 	path = daexim
 	url = ../../daexim

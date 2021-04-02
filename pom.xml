@@ -21,7 +21,6 @@
   <name>autorelease</name> <!-- Used by Sonar to set project name -->
 
   <modules>
-    <module>bgpcep</module>
     <module>daexim</module>
     <module>integration/distribution</module>
     <module>jsonrpc</module>
