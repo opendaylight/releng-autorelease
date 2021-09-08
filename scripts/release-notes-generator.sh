@@ -23,7 +23,7 @@ if [ -z "$1" ]; then
 fi
 
 release_major="$(echo ${release^} | cut -f1 -d-)"  # The Release Code
-release_minor="$(echo ${release} | cut -f2 -d-)"  # The Service Release
+release_minor="$(echo ${release} | cut -f2 -d-)"   # The Service Release
 release_num="${release_minor#SR}"
 
 previous_release_num="$((release_num - 1))"
@@ -60,15 +60,11 @@ echo ${projects[@]}
     echo
 } 2>&1 > "$outfile"
 
-{
-    echo "Projects with No Noteworthy Changes"
-    echo "-----------------------------------"
-    echo
-} 2>&1 >> "$outfile"
 
 noteworthy_projects=()
+nonoteworthy_projects=()
 echo
-echo "Skipping projects with no changes ..."
+echo "Dispatching projects with or without changes ..."
 for project in "${projects[@]}"; do
     pushd "$project" > /dev/null
     commits="$(git --no-pager log --no-merges --pretty=format:"%h%x09%s" \
@@ -76,15 +72,27 @@ for project in "${projects[@]}"; do
                    release/${previous_release,,}..release/${release,,})"
     if [ -z "$commits" ];
     then  # Project has no noteworthy changes so record them and pass
-        echo "* $project" | tee -a "$outfile"
+        nonoteworthy_projects+=("$project")
     else  # Project has noteworthy changes so save it to array to scan later
         noteworthy_projects+=("$project")
     fi
     popd > /dev/null
 done
 
+if [ ${#nonoteworthy_projects[@]} != 0 ];then
+    echo "Dumping list of projects with no changes ..."
+    {
+        echo "Projects with no noteworthy changes"
+        echo "-----------------------------------"
+        echo
+    } 2>&1 >> "$outfile"
+    for project in "${nonoteworthy_projects[@]}"; do
+        echo "* $project" | tee -a "$outfile"
+    done
+fi
+
 echo
-echo "Process remaing noteworthy projects:"
+echo "Process remaining noteworthy projects:"
 for project in "${noteworthy_projects[@]}"; do
     echo | tee -a "$outfile"
     echo "Project: $project"
