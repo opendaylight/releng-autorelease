@@ -7,4 +7,5 @@ target/
 # Python
 __pycache__/
 *.pyc
+.python-version
 
