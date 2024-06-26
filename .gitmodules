@@ -26,3 +26,6 @@
 	path = serviceutils
 	url = ../../serviceutils
 	branch = .
+[submodule "transportpce"]
+	path = transportpce
+	url = ../../transportpce

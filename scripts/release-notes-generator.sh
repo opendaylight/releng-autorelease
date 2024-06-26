@@ -42,7 +42,10 @@ fi
 ####################
 
 outfile="$(pwd)/release-notes.rst"
-projects=($(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:modules' -v '//x:module' pom.xml))
+# retrieve autorelease projects from pom.xml
+# and add other projects manually
+projects=($(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:modules' -v '//x:module' pom.xml) \
+transportpce)
 echo ${projects[@]}
 
 {
