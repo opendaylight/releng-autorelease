@@ -25,9 +25,7 @@
     <module>integration/distribution</module>
     <module>jsonrpc</module>
     <module>lispflowmapping</module>
-    <module>openflowplugin</module>
     <module>ovsdb</module>
-    <module>serviceutils</module>
   </modules>
 
   <properties>

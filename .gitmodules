@@ -14,15 +14,7 @@
 	path = lispflowmapping
 	url = ../../lispflowmapping
 	branch = .
-[submodule "openflowplugin"]
-	path = openflowplugin
-	url = ../../openflowplugin
-	branch = .
 [submodule "ovsdb"]
 	path = ovsdb
 	url = ../../ovsdb
-	branch = .
-[submodule "serviceutils"]
-	path = serviceutils
-	url = ../../serviceutils
 	branch = .
