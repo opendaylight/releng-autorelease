@@ -1,0 +1,8 @@
+Verified+1: ODL Required.GHA <releng+odl.required.gha@linuxfoundation.org>
+Verified+1: jenkins-releng ODL
+Code-Review+2: Anil Belur <abelur@linuxfoundation.org>
+Submitted-by: Anil Belur <abelur@linuxfoundation.org>
+Submitted-at: Tue, 11 Feb 2025 02:45:00 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/releng/autorelease/+/115284
+Project: releng/autorelease
+Branch: refs/heads/master
