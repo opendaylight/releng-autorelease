@@ -23,7 +23,8 @@ set -eu -o pipefail
 mkdir -p $PATCH_DIR
 pushd $PATCH_DIR
 wget -nv -O git-bundle.tar.gz "$GIT_BUNDLE_URL"
-tar zxvf git-bundle.tar.gz
+gzip -dc git-bundle.tar.gz | tar -xvzf -
+#tar zxvf git-bundle.tar.gz
 mv patches/* .
 popd
 
