@@ -20,12 +20,10 @@ fi
 # Ensure we fail the if any steps fail.
 set -eu -o pipefail
 
+
 mkdir -p $PATCH_DIR
 pushd $PATCH_DIR
-wget -nv -O git-bundle.tar.gz "$GIT_BUNDLE_URL"
-gunzip git-bundle.tar.gz
-tar -xvf git-bundle.tar
-mv patches/* .
+wget -nv -O- "$GIT_BUNDLE_URL" | gunzip | gunzip | tar xv --strip-components=1
 popd
 
 # Patch and tag
