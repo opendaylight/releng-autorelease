@@ -1,0 +1,38 @@
+---
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2026 The Linux Foundation
+
+name: GitHub to Gerrit Sync
+
+# yamllint disable-line rule:truthy
+on:
+  workflow_dispatch:
+  pull_request_target:
+    types: [opened, reopened, edited, synchronize]
+    branches:
+      - master
+      - main
+
+concurrency:
+  # yamllint disable-line rule:line-length
+  group: ${{ github.workflow }}-${{ github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  github2gerrit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Convert GitHub PR to Gerrit Change
+        # yamllint disable-line rule:line-length
+        uses: lfreleng-actions/github2gerrit-action@de8477030c26a8020e9c95cd6312d5647392b347 # v1.0.8
+        with:
+          GERRIT_SSH_PRIVKEY_G2G: ${{ secrets.GERRIT_SSH_PRIVKEY_G2G }}
+          GERRIT_KNOWN_HOSTS: ${{ vars.GERRIT_KNOWN_HOSTS }}
+          GERRIT_SSH_USER_G2G: ${{ vars.GERRIT_SSH_USER_G2G }}
+          GERRIT_SSH_USER_G2G_EMAIL: ${{ vars.GERRIT_SSH_USER_G2G_EMAIL }}
+          ORGANIZATION: "opendaylight"
