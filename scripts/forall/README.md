@@ -10,13 +10,14 @@ as well as all the repos participating in the Lithium release.
 ## Repo Lists
 
 There are two repo lists at the moment
-* `odl-repos.txt` which contains all current ODL repos.
-* `li-repos.txt` which contains all ODL repos that are currently
-                 participating in the Lithium release.
-* `he-repos.txt` which contains all ODL repost that participated in
-                 the Helium release.
-* `h-repos.txt` which contains all ODL repost that participated in
-                the Hydrogen release.
+
+- `odl-repos.txt` which contains all current ODL repos.
+- `li-repos.txt` which contains all ODL repos that are currently
+  participating in the Lithium release.
+- `he-repos.txt` which contains all ODL repost that participated in
+  the Helium release.
+- `h-repos.txt` which contains all ODL repost that participated in
+  the Hydrogen release.
 
 Note that `odl-repos.txt` has two lines commented out for projects
 that I believe are not currently updating their repos. They are still
@@ -38,6 +39,7 @@ curl https://git.opendaylight.org/gerrit/projects/?d | grep :.*{ | egrep -o [-a-
 ```
 
 ## using for-all.pl
+
 The general syntax is
 
 ```
@@ -47,7 +49,7 @@ The general syntax is
 By default, it runs `cd <line> && <command>` for each `<line>` in
 `<file>` where any occurrence of `{}` in `<command>` is replaced by
 the text in `<line>` after the last `/`. Any occurrence of `{f}` is
-replaced by `<line>`. This is useful for using the different parts of a 
+replaced by `<line>`. This is useful for using the different parts of a
 repository name when it is hierarchical, e.g., `releng/builder`.
 
 If you pass `--no-cd` as an option it will skip the cd before
@@ -62,7 +64,7 @@ For example, to clone all of the repos in Lithium, you would do
 something like:
 
 ```
-./odlutils/for-all.pl --no-cd odlutils/li-repos.txt "git clone https://git.opendaylight.org/gerrit/{f}.git" 
+./odlutils/for-all.pl --no-cd odlutils/li-repos.txt "git clone https://git.opendaylight.org/gerrit/{f}.git"
 ```
 
 An example of working with existing cloned repos would be something

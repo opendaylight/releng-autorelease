@@ -25,4 +25,3 @@ ignore = scripts/release-notes-generator.sh
 shell = bash
 indent_size = 4
 use_spaces = yeah
-

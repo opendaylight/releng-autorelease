@@ -1,20 +1,20 @@
 [submodule "daexim"]
-	path = daexim
-	url = ../../daexim
-	branch = .
+    path = daexim
+    url = ../../daexim
+    branch = .
 [submodule "integration/distribution"]
-	path = integration/distribution
-	url = ../../integration/distribution
-	branch = .
+    path = integration/distribution
+    url = ../../integration/distribution
+    branch = .
 [submodule "jsonrpc"]
-	path = jsonrpc
-	url = ../../jsonrpc
-	branch = .
+    path = jsonrpc
+    url = ../../jsonrpc
+    branch = .
 [submodule "lispflowmapping"]
-	path = lispflowmapping
-	url = ../../lispflowmapping
-	branch = .
+    path = lispflowmapping
+    url = ../../lispflowmapping
+    branch = .
 [submodule "ovsdb"]
-	path = ovsdb
-	url = ../../ovsdb
-	branch = .
+    path = ovsdb
+    url = ../../ovsdb
+    branch = .
