@@ -269,7 +269,7 @@ def getDependencyVersion(node):
 
 def checkValidModule(moduleName):
     """Checks whether a module is valid opendaylight module or not"""
-    if re.search("^org\.opendaylight", moduleName):
+    if re.search(r"^org\.opendaylight", moduleName):
         return True
     else:
         return False
@@ -278,7 +278,7 @@ def checkValidModule(moduleName):
 def findProjectOfModule(projectMapping, module):
     """Return the project in which the module is found"""
     module = re.sub('org.opendaylight.', '', module)
-    module = re.sub('\..*$', '', module)
+    module = re.sub(r'\..*$', '', module)
     return module
 
 

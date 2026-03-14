@@ -22,8 +22,9 @@ if [ -z "$1" ]; then
     echo "    Ex: $0 Carbon-SR1"
 fi
 
-release_major="$(echo ${release^} | cut -f1 -d-)"  # The Release Code
-release_minor="$(echo ${release} | cut -f2 -d-)"   # The Service Release
+# shellcheck disable=SC2034
+release_major="$(echo "${release^}" | cut -f1 -d-)"  # The Release Code
+release_minor="$(echo "${release}" | cut -f2 -d-)"   # The Service Release
 release_num="${release_minor#SR}"
 
 previous_release_num="$((release_num - 1))"
@@ -42,12 +43,15 @@ fi
 ####################
 
 outfile="$(pwd)/release-notes.rst"
+# shellcheck disable=SC2207
 projects=($(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -m '//x:modules' -v '//x:module' pom.xml))
+# shellcheck disable=SC2068
 echo ${projects[@]}
 
 {
     release_txt="${release^} Release Notes"
     echo "$release_txt"
+    # shellcheck disable=SC2183,SC2046,SC2027
     printf '=%.0s' $(eval "echo {1.."${#release_txt}"}")
     echo -e "\n"
     if [ "$previous_release_num" == "0" ]; then
@@ -58,7 +62,7 @@ echo ${projects[@]}
     echo "This page details changes and bug fixes between the $release_msg"
     echo "and the $release_major Stability Release ${release_minor#SR} ($release) of OpenDaylight."
     echo
-} 2>&1 > "$outfile"
+} > "$outfile" 2>&1
 
 
 noteworthy_projects=()
@@ -66,17 +70,17 @@ nonoteworthy_projects=()
 echo
 echo "Dispatching projects with or without changes ..."
 for project in "${projects[@]}"; do
-    pushd "$project" > /dev/null
+    pushd "$project" > /dev/null || continue
     commits="$(git --no-pager log --no-merges --pretty=format:"%h%x09%s" \
                    --perl-regexp --author='^((?!jenkins-releng).*)$' \
-                   release/${previous_release,,}..release/${release,,})"
+                   "release/${previous_release,,}..release/${release,,}")"
     if [ -z "$commits" ];
     then  # Project has no noteworthy changes so record them and pass
         nonoteworthy_projects+=("$project")
     else  # Project has noteworthy changes so save it to array to scan later
         noteworthy_projects+=("$project")
     fi
-    popd > /dev/null
+    popd > /dev/null || true
 done
 
 if [ ${#nonoteworthy_projects[@]} != 0 ];then
@@ -85,7 +89,7 @@ if [ ${#nonoteworthy_projects[@]} != 0 ];then
         echo "Projects with no noteworthy changes"
         echo "-----------------------------------"
         echo
-    } 2>&1 >> "$outfile"
+    } >> "$outfile" 2>&1
     for project in "${nonoteworthy_projects[@]}"; do
         echo "* $project" | tee -a "$outfile"
     done
@@ -96,26 +100,25 @@ echo "Process remaining noteworthy projects:"
 for project in "${noteworthy_projects[@]}"; do
     echo | tee -a "$outfile"
     echo "Project: $project"
-    pushd "$project" > /dev/null
+    pushd "$project" > /dev/null || continue
     {
         size="${#project}"
         echo "$project"
-        for i in $(seq 1 $size); do echo -n "-"; done
+        for _i in $(seq 1 "$size"); do echo -n "-"; done
         echo
 
-        # reset the array
-        commits=()
-        commits="$(git --no-pager log --no-merges --pretty=format:"%H" \
+        # read commits into array
+        # shellcheck disable=SC2207
+        commits=($(git --no-pager log --no-merges --pretty=format:"%H" \
                        --perl-regexp --author='^((?!jenkins-releng).*)$' \
-                         release/${previous_release,,}..release/${release,,})"
-        commits=($commits)
+                         "release/${previous_release,,}..release/${release,,}"))
 
         # Search and update JIRA issue-id from commit messages.
         for commit in "${commits[@]}"; do
-            commit_hash="$(git log --format="%h%x09" -n1 ${commit} | awk '{print $1}')"
-            subject="$(git log --format="%s" -n1 ${commit} | cut -d' ' -f1-)"
+            commit_hash="$(git log --format="%h%x09" -n1 "${commit}" | awk '{print $1}')"
+            subject="$(git log --format="%s" -n1 "${commit}" | cut -d' ' -f1-)"
             echo "* \`$commit_hash <https://git.opendaylight.org/gerrit/q/$commit_hash>\`_"
-            issue_id="$(git --no-pager show --quiet $commit_hash | grep -Po '([A-Z][A-Z0-9]{1,9}-\d+)' | head -1)"
+            issue_id="$(git --no-pager show --quiet "$commit_hash" | grep -Po '([A-Z][A-Z0-9]{1,9}-\d+)' | head -1)"
 
             if [ -n "$issue_id" ]; then
                 echo "  \`$issue_id <${JIRA_URL}/browse/${issue_id}>\`_"
@@ -124,5 +127,5 @@ for project in "${noteworthy_projects[@]}"; do
         done
         echo
     } >> "$outfile"
-    popd > /dev/null
+    popd > /dev/null || true
 done

@@ -45,9 +45,9 @@ def determine_merge_order(input_file='dependencies.log',
 
     # build a directed graph from the list of jobs
     G = nx.DiGraph()
-    for l in raw.splitlines():
-        if len(l):
-            node, prereq = regex_node.split(l)
+    for line in raw.splitlines():
+        if len(line):
+            node, prereq = regex_node.split(line)
             deps = tuple(regex_deps.split(prereq))
             if not prereq:
                 G.add_node(node)
