@@ -63,7 +63,7 @@ mapfile -t poms <<< "$(find . -name pom.xml -not -path "./scripts/*" -not -path 
 
 if hash parallel 2>/dev/null; then
     export -f print_gav
-    parallel --jobs 200% --halt now,fail=1 "print_gav $VERSION_FILE {}" ::: ${poms[*]}
+    parallel --jobs 200% --halt now,fail=1 "print_gav $VERSION_FILE {}" ::: "${poms[@]}"
 else
     for pom in "${poms[@]}"; do
         print_gav "$VERSION_FILE" "$pom"
