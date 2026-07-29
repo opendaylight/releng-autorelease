@@ -1,0 +1,9 @@
+Verified+1: ODL Required.GHA <releng+odl.required.gha@linuxfoundation.org>
+Code-Review+2: Anil Belur <abelur@linuxfoundation.org>
+Verified+1: ODL GitHub Actions <releng+odl-github-actions@linuxfoundation.org>
+Verified+1: Anil Belur <abelur@linuxfoundation.org>
+Submitted-by: Anil Belur <abelur@linuxfoundation.org>
+Submitted-at: Wed, 29 Jul 2026 07:25:03 +0000
+Reviewed-on: https://git.opendaylight.org/gerrit/c/releng/autorelease/+/124280
+Project: releng/autorelease
+Branch: refs/heads/stable/chromium
